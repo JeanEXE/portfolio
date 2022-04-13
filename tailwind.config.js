@@ -3,15 +3,17 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
 	content: ["./src/**/*.{html,js,tsx,ts}"],
 	theme: {
-		extend: {},
-		colors: {
-			transparent: 'transparent',
-			current: 'currentColor',
-			white: '#ffffff',
-			black: '#000',
-			yellow: '#fcee0a',
-			blue: '#00f0ff',
+		extend: {
+			colors: {
+				transparent: 'transparent',
+				current: 'currentColor',
+				white: '#ffffff',
+				black: '#000',
+				yellow: '#fcee0a',
+				blue: '#00f0ff',
+			},
 		},
+
 	},
 	plugins: [
 		plugin(function ({ addUtilities }) {

@@ -3,6 +3,7 @@ import * as React from 'react';
 import Header from './components/Header';
 import Tag from './components/Tag';
 import SkillBar from './components/SkillBar';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -11,7 +12,7 @@ function App() {
             <div className='pt-5 mx-7 sm:mx-20'>
                 <div className='flex'>
                     <img
-                        className=' w-32 h-32 mr-5 sm:w-52 sm:mr-10 sm:h-60'
+                        className='w-28 h-28 mr-5 sm:w-52 sm:mr-10 sm:h-60'
                         src='https://www.oversodoinverso.com.br/wp-content/uploads/2020/09/apu.png'
                     />
                     <div>
@@ -39,7 +40,9 @@ function App() {
                     <div className='mt-10 sm:w-5/12'>
                         <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
                         <p className='text-sm  font-semibold mb-2 sm:text-2xl'>Professional Experience</p>
-                        <p className='text-[13px] font-medium mb-1 sm:text-[16px]'>Fullstack Developer at Isabela FLores (2019 - Atualmente) https://www.isabelaflores.com/</p>
+                        <p className='text-[13px] font-medium mb-1 sm:text-[16px]'>Fullstack Developer at{" "}
+                            <a href="https://www.isabelaflores.com/" className="no-underline font-semibold text-blue" target="_blank">Isabela Flores</a> /{" "}
+                            <a href="https://www.floresonline.com.br" className="no-underline font-semibold text-blue" target="_blank">Flores Online</a> (2019 - Atualmente)</p>
                         <p className='text-xs text-gray-400 sm:text-[16px]'>Participei ativamente do desenvolvimento de 2 Apps (Gingo / Gingo Business)<br />do início a publicação nas stores (Android/iOS).<br />
                             -App de delivery/Chat em tempo real<br />
                             -Gerenciamento de pedidos/cardápio via Gingo Business<br />
@@ -79,7 +82,7 @@ function App() {
                         <SkillBar stack={'Java'} width='w-1/12' />
                         <SkillBar stack={'SQLite'} width='w-6/12' />
                         <SkillBar stack={'MongoDB'} width='w-7/12' />
-                        <SkillBar stack={'Fireabase: Crash / Report/ Analytics'} width='w-4/6' />
+                        <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width='w-4/6' />
                         <SkillBar stack={'Redux'} width='w-4/6' />
                         <SkillBar stack={'API Rest'} width='w-5/6' />
                         <SkillBar stack={'Codepush'} width='w-5/6' />
@@ -87,6 +90,7 @@ function App() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div >
     )
 }

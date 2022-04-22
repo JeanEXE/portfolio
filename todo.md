@@ -24,11 +24,14 @@ animação glitch no nome
 
 
 ### ideias
+fazer tela de loader ao abrir a pagina com um botao loading, porcentagem e uma barra de carregamento
 usar o firebase pra fazer contagem de acessos (Analytics)
 analytics ao chegar no final da pagina
 
 frase pra barra amarela: Estou disponivel para novos projetos
 made by me with <3 especially to practice my react skills and learn tailwind css
+trocar o sm pra md na responsividade
 
 ### Anotações
 ``` sticky top-0 z-50  ``` pra travar o header da pagina fora do scroll
+ver sobre o https://vercel.com/ pra dar deploy no site

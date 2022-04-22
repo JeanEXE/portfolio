@@ -4,7 +4,7 @@ import circle_name from '../assets/img/circle_name.png'
 
 const AnimatedBadge = () => {
     return (
-        <div className='hidden sm:block w-56 h-56 relative top-[-280px] left-16'>
+        <div className='hidden sm:block w-56 h-56 relative top-[-0px] left-16'>
             <img
                 className=' rounded-full absolute ml-[33px] mt-[33px] z-10'
                 src={circle}

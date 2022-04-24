@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Tag from './components/Tag';
 import SkillBar from './components/SkillBar';
 import Footer from './components/Footer';
+import AnimatedBadge from './components/AnimatedBadge';
+import Contact from './components/Contact';
 
 function App() {
     return (
@@ -12,12 +14,12 @@ function App() {
             <div className='pt-5 mx-7 sm:mx-20'>
                 <div className='flex'>
                     <img
-                        className='w-28 h-28 mr-5 sm:w-52 sm:mr-10 sm:h-60'
+                        className='w-28 h-28 mr-5 md:w-52 md:mr-10 md:h-60'
                         src='https://www.oversodoinverso.com.br/wp-content/uploads/2020/09/apu.png'
                     />
                     <div>
-                        <p className='text-xs sm:text-4xl font-semibold '>Jean Reis -<span className='text-[11px] sm:text-2xl font-semibold ml-2'>Brazil, SP</span></p>
-                        <p className='text-1xl sm:text-7xl font-semibold'>Fullstack<br />Developer</p>
+                        <p className='text-xs md:text-4xl font-semibold '>Jean Reis -<span className='text-[11px] md:text-2xl font-semibold ml-2'>Brazil, SP</span></p>
+                        <p className='text-1xl md:text-7xl font-semibold'>Fullstack<br />Developer</p>
                         <div className='flex flex-wrap'>
                             <Tag text='React Native' />
                             <Tag text='Node.js' />
@@ -89,6 +91,10 @@ function App() {
                         <SkillBar stack={'Git'} width='w-5/6' />
                     </div>
                 </div>
+            </div>
+            <div className="flex justify-between items-center bg-blackSec py-10">
+                <AnimatedBadge />
+                <Contact />
             </div>
             <Footer />
         </div >

@@ -8,23 +8,23 @@ import whatsapp from '../assets/svg/icon-whatsapp.svg'
 import telegram from '../assets/svg/icon-telegram.svg'
 
 const Contact = () => {
-    const [widthAnim, setWidthAnim] = useState('w-0 sm:w-0')
+    const [widthAnim, setWidthAnim] = useState('w-0')
     const myRef = useRef()
     const { inViewport } = useInViewport(myRef)
 
     useEffect(() => {
-        if (inViewport && widthAnim == 'w-0 sm:w-0') {
+        if (inViewport && widthAnim == 'w-0') {
             setTimeout(() => {
-                setWidthAnim('w-full sm:w-7/12')
+                setWidthAnim('w-11/12 sm:w-7/12')
             }, 400)
         }
     }, [inViewport])
 
     return (
-        <div className={`ml-5 sm:ml-0 flex-col  transition-width duration-1000 ease-in-out ${widthAnim}`}>
+        <div className={`flex-col  transition-width duration-1000 ease-in-out ${widthAnim}`}>
             <div className='whitespace-nowrap overflow-hidden'>
                 <div className=' flex w-full'>
-                    <p className='text-[18px] sm:text-[32px] pr-4 sm:pr-20 min-w-fit sm:h-12 font-semibold overflow-hidden'>Contact Me!</p>
+                    <p className='text-[18px] sm:text-[32px] pr-4 sm:pr-20 min-w-fit h-6 sm:h-12 font-semibold overflow-hidden'>Contact Me!</p>
                     <div className="bg-yellow w-full h-4 mt-1 sm:mt-4" />
                 </div>
                 <div className='flex items-center mt-5'>

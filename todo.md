@@ -11,16 +11,18 @@ testes
 
 
 ### rodapé:
-made with React.js / Tailwind CSS
-botao voltar ao topo
 linkar botoes de contato
 
 
 ### Animações:
-animar barra azul de skill, ao renderizar ir aumentando o width (fazer a animação ao focar os elementos)
-animar os icones svg, girar o nome
 animar a barra amarela, nome passando da direita pra esquerda
 animação glitch no nome
+
+
+### Sessões:
+fazer sessão de projetos
+fazer sessão de artigos (carrossel de cards com background cinza)
+fazer sessão de status, contador de visitas/pessoas online atualmente (Interested in numbers? I've got you covered.)
 
 
 ### ideias
@@ -31,6 +33,7 @@ analytics ao chegar no final da pagina
 frase pra barra amarela: Estou disponivel para novos projetos
 made by me with <3 especially to practice my react skills and learn tailwind css
 trocar o sm pra md na responsividade
+
 
 ### Anotações
 ``` sticky top-0 z-50  ``` pra travar o header da pagina fora do scroll

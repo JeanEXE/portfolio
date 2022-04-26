@@ -1,32 +1,18 @@
-import './App.css';
 import * as React from 'react';
 import Header from './components/Header';
-import Tag from './components/Tag';
 import SkillBar from './components/SkillBar';
 import Footer from './components/Footer';
 import AnimatedBadge from './components/AnimatedBadge';
 import Contact from './components/Contact';
+import Profile from './components/Profile';
 
 function App() {
     return (
         <div className=" flex-1 min-h-screen bg-black">
             <Header />
-            <div className='pt-5 mx-7 sm:mx-20'>
-                <div className='flex'>
-                    <img
-                        className='w-28 h-28 mr-5 md:w-52 md:mr-10 md:h-60'
-                        src='https://www.oversodoinverso.com.br/wp-content/uploads/2020/09/apu.png'
-                    />
-                    <div>
-                        <p className='text-xs md:text-4xl font-semibold '>Jean Reis -<span className='text-[11px] md:text-2xl font-semibold ml-2'>Brazil, SP</span></p>
-                        <p className='text-1xl md:text-7xl font-semibold'>Fullstack<br />Developer</p>
-                        <div className='flex flex-wrap'>
-                            <Tag text='React Native' />
-                            <Tag text='Node.js' />
-                        </div>
-                    </div>
-                </div>
-                <div className='py-20 sm:flex sm:justify-between'>
+            <div className='pt-2 sm:pt-5 mx-5 sm:mx-20'>
+                <Profile />
+                <div className='py-12 sm:py-20 sm:flex sm:justify-between'>
                     <div className='sm:w-5/12'>
                         <p className='text-2xl sm:text-6xl font-semibold'>About Me</p>
                         <p className='text-xs text-gray-400 indent-4 sm:text-[16px]'>Hey 👋 I'm Jean, Trabalho a 3 anos como Fullstack, utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.

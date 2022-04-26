@@ -1,4 +1,3 @@
-import './../App.css'
 import * as React from 'react'
 import { useEffect, useState, useRef } from 'react'
 import { useInViewport } from 'react-in-viewport'

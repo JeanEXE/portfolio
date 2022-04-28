@@ -35,7 +35,3 @@
 html {
 	@apply text-white
 }
-
-div {
-	white-space: pre-wrap;
-}

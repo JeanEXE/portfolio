@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,6 +32,11 @@
 	div {
 		/* font-family: roboto-mono; */
 		font-family: sans-serif;
+	}
+
+	h1 {
+		font-family: 'Tomorrow';
+		font-weight: bold;
 	}
 }
 

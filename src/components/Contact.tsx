@@ -24,7 +24,7 @@ const Contact = () => {
         <div className={`flex-col  transition-width duration-1000 ease-in-out ${widthAnim}`}>
             <div className='whitespace-nowrap overflow-hidden'>
                 <div className=' flex w-full'>
-                    <p className='text-[18px] sm:text-[32px] pr-4 sm:pr-20 min-w-fit h-6 sm:h-12 font-semibold overflow-hidden'>Contact Me!</p>
+                    <h1 className='text-[18px] sm:text-[32px] pr-4 sm:pr-20 min-w-fit h-6 sm:h-12 overflow-hidden'>Contact Me!</h1>
                     <div className="bg-yellow w-full h-4 mt-1 sm:mt-4" />
                 </div>
                 <div className='flex items-center mt-5'>

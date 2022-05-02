@@ -6,6 +6,7 @@ body {
 
 .hero {
     font-family: 'Tomorrow';
+    font-style: italic;
     filter: drop-shadow(0 1px 3px);
 }
 

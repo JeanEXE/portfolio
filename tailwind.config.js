@@ -4,8 +4,19 @@ module.exports = {
 	content: ["./src/**/*.{html,js,tsx,ts}"],
 	theme: {
 		extend: {
+			keyframes: {
+				rightToLeft: {
+					'0%': {
+						transform: 'translateX(98vw)'
+					},
+					'100%': {
+						transform: 'translateX(-50vw)'
+					}
+				},
+			},
 			animation: {
 				'spin-slow': 'spin 18s linear infinite',
+				'scrollzada': 'rightToLeft 10s infinite linear'
 			},
 			transitionProperty: {
 				'width': 'width'

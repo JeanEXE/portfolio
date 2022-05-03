@@ -58,13 +58,12 @@ function App() {
                             <p className='text-[13px]  font-medium sm:text-[16px]'>Graduado em Engenharia de Software pela UNIFAE (2016 - 2019)</p>
                         </div>
                     </div>
-
-                    <div className="bg-yellow flex flex-col justify-between content-between  h-32 absolute left-0  w-full" ref={refContact}>
-                        <Separator inverted />
-                        {/* <p className=' text-black animate-scrollzada'>jean reis jean reis jean reis jean reis</p> */}
-                        <Separator />
+                    {/* <div className="bg-yellow flex flex-col justify-between content-between  h-32 absolute left-0  w-full" ref={refContact}>
+                    <Separator inverted />
+                    <p className=' text-black animate-scrollzada'>jean reis jean reis jean reis jean reis</p>
+                    <Separator />
                     </div>
-                    <div className='h-36' />
+                    <div className='h-36' /> */}
                     <div className='py-7 sm:flex justify-between'>
                         <div>
                             <h1 className='text-2xl sm:text-6xl font-bold mb-5' ref={refSkills}>Hard Skills</h1>
@@ -95,7 +94,7 @@ function App() {
                             <SkillBar stack={'Git'} width='w-5/6' />
                         </div>
                     </div>
-                    <div className="flex justify-between items-center bg-blackSec py-10 absolute left-0 w-full" ref={refContact}>
+                    <div className="flex justify-between items-center py-10 absolute left-0 w-full" ref={refContact}>
                         <AnimatedBadge />
                         <Contact />
                     </div>

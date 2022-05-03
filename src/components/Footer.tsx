@@ -12,7 +12,7 @@ const Footer = () => {
 
     const renderMobile = () => (
         <div className='py-14 px-5 grid grid-row-2 gap-16 justify-center'>
-            <div className='flex-col justify-center items-center'>
+            <div className='flex-col justify-center items-center text-black font-semibold'>
                 <p className='flex justify-center'>Coded by me, made by <img src={heart} className='w-4 ml-1' />.</p>
                 <p className='text-center'>Especially to practice </p>
                 <p className='flex items-center h-8 justify-center'>my <img src={react} className='h-10 mb-[2px]' /> skills</p>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <img src={tailwind} className='w-32' />
                 </p>
             </div>
-            <div className='text-center'>
+            <div className='text-center text-black font-semibold'>
                 Todo trabalho que faço
                 <p>sempre terá muito</p>
                 <p> esforço dedicação,</p>
@@ -30,11 +30,11 @@ const Footer = () => {
     )
 
     const renderWeb = () => (
-        <div className='py-20 grid grid-col-2 grid-flow-col  gap-24  xl:gap-80 justify-center items-center font-semibold'>
+        <div className='py-20 grid grid-col-2 grid-flow-col  gap-24  xl:gap-80 justify-center items-center text-black font-semibold'>
             <div>
-                <p className='flex text-black'>Coded by me, made by <img src={heart} className='h-5 ml-1' />.  Especially</p>
-                <p className='flex text-black items-center h-10 justify-center'>to practice my <img src={react} className='h-12 mb-[3px]' /> skills </p>
-                <p className='flex text-black items-center  h-9 justify-center'>and learn <img src={tailwind} className='w-36 h-20' /></p>
+                <p className='flex'>Coded by me, made by <img src={heart} className='h-5 ml-1' />.  Especially</p>
+                <p className='flex items-center h-10 justify-center'>to practice my <img src={react} className='h-12 mb-[3px]' /> skills </p>
+                <p className='flex items-center h-8 justify-center'>and learn <img src={tailwind} className='w-36 h-20' /></p>
             </div>
             <div className='text-center text-black font-semibold'>
                 Todo trabalho que faço sempre terá muito<p className='flex justify-center'>esforço, dedicação, proatividade e <img src={coffe} className='w-5 h-5 ml-1' /></p>

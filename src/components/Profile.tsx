@@ -14,9 +14,9 @@ const Profile = () => {
                 <p className='text-[16px] sm:text-[22px] font-semibold mb-3'>Jean Reis <span className='text-[13px] sm:text-[18px] font-semibold'>- Brazil, SP</span></p>
                 <p className='text-[33px] sm:text-[55px] font-semibold tracking-[5px] hero glitch layers leading-none' data-text="Fullstack"><span>Fullstack</span></p>
                 <p className='text-[33px] sm:text-[55px] font-semibold tracking-[5px] hero glitch layers' data-text="Developer"><span>Developer</span></p>
-                <div className='flex flex-wrap mt-3'>
+                <div className='flex flex-wrap mt-3 justify-center gap-4 '>
                     <Tag text='React Native' />
-                    <Tag text='Node.js' />
+                    <Tag text='Node.js' width='w-[90px] sm:w-[130px]' />
                 </div>
             </div>
         </div>
@@ -29,9 +29,9 @@ const Profile = () => {
                 <p className='text-[26px] font-semibold'>Jean Reis <span className='text-[22px] font-semibold'>- Brazil, SP</span></p>
                 <p className='text-[70px] font-semibold leading-none tracking-[10px] hero glitch layers' data-text="Fullstack"><span>Fullstack</span></p>
                 <p className='text-[70px] font-semibold leading-none tracking-[10px] hero glitch layers' data-text="Developer"><span>Developer</span></p>
-                <div className='flex flex-wrap mt-8'>
+                <div className='flex flex-wrap mt-8 gap-5'>
                     <Tag text='React Native' />
-                    <Tag text='Node.js' />
+                    <Tag text='Node.js' width='w-[130px] lg:w-[140px]' />
                 </div>
             </div>
         </div>

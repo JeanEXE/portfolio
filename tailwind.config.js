@@ -9,13 +9,7 @@ module.exports = {
 			'lg': '1024px',
 			'xl': '1280px',
 			'xx': '1430px',
-			'2xl': '1536px',
-			'desktop': '1280px',
-			// 'tablet': '640px',
-			// 	// => @media (min-width: 640px) { ... }
-
-			// 	'laptop': '1024px',
-			// 	// => @media (min-width: 1024px) { ... }
+			'2xl': '1536px'
 		},
 		extend: {
 			keyframes: {

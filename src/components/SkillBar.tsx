@@ -18,10 +18,10 @@ const SkillBar = ({ stack, width }: { stack: string, width: string }) => {
 
 
     return (
-        <div ref={myRef} className='flex  w-full  mb-5 items-center sm:w-full'>
+        <div ref={myRef} className='flex  w-full  mb-5 items-center'>
             <p className=' w-28  pr-2 text-[12px] text-right font-semibold sm:w-2/4'>{stack}</p>
-            <div className=' border w-full h-[1.1rem] sm:w-3/4'>
-                <div className={`bg-blue h-[1.0rem]  transition-width duration-1000 ease-in-out ${widthAnim}`} />
+            <div className='w-full h-[1.1rem] sm:w-3/4 polygon-button bg-[#303030e0]'>
+                <div className={`bg-blue h-[100%] transition-width duration-1000 ease-in-out ${widthAnim} `} />
             </div>
         </div>
     )

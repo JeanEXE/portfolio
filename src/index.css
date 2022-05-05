@@ -26,6 +26,10 @@
 	.scrollbar::-webkit-scrollbar-thumb:hover {
 		@apply bg-yellow;
 	}
+
+	.polygon-button {
+		clip-path: polygon(97% 0, 100% 55%, 100% 100%, 3% 100%, 0% 55%, 0 0);
+	}
 }
 
 @layer base {

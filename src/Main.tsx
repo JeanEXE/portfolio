@@ -98,7 +98,7 @@ function App() {
                         <AnimatedBadge />
                         <Contact />
                     </div>
-                    <div className=' h-72' />
+                    <div className='h-80' />
                     <Footer />
                 </div>
             </div>

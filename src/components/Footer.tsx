@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { useState, useRef, useEffect } from 'react'
+import { useInViewport } from 'react-in-viewport'
 import arrow from '../assets/svg/icon-arrow.svg'
 import coffe from '../assets/svg/icon-coffe.svg'
 import heart from '../assets/svg/icon-heart.svg'
@@ -9,9 +11,18 @@ import Separator from './Separator'
 
 const Footer = () => {
     const { width } = useDimensions()
+    const [animate, setAnimate] = useState('py-0')
+    const myRef = useRef()
+    const { inViewport } = useInViewport(myRef)
+
+    useEffect(() => {
+        if (inViewport && animate == 'py-0') {
+            width > 768 ? setAnimate('py-20') : setAnimate('py-14')
+        }
+    }, [inViewport])
 
     const renderMobile = () => (
-        <div className='py-14 px-5 grid grid-row-2 gap-16 justify-center'>
+        <div className={`${animate} transition-all  duration-1000 ease-in-out px-5 grid grid-row-2 gap-16 justify-center`}>
             <div className='flex-col justify-center items-center text-black font-semibold'>
                 <p className='flex justify-center'>Coded by me, made by <img src={heart} className='w-4 ml-1' />.</p>
                 <p className='text-center'>Especially to practice </p>
@@ -30,7 +41,7 @@ const Footer = () => {
     )
 
     const renderWeb = () => (
-        <div className='py-20 grid grid-col-2 grid-flow-col  gap-24  xl:gap-80 justify-center items-center text-black font-semibold'>
+        <div className={`${animate} transition-all  duration-1000 ease-in-out flex gap-24 xl:gap-80 justify-center items-center text-black font-semibold`}>
             <div>
                 <p className='flex'>Coded by me, made by <img src={heart} className='h-5 ml-1' />.  Especially</p>
                 <p className='flex items-center h-10 justify-center'>to practice my <img src={react} className='h-12 mb-[3px]' /> skills </p>
@@ -43,13 +54,13 @@ const Footer = () => {
     )
 
     return (
-        <div className='pb-5 absolute w-full left-0 bg-black  pt-10'>
+        <div className='pb-5 absolute w-full left-0 bg-black'>
             <div className=' bg-yellow '>
                 <Separator inverted />
                 {width > 768 ? renderWeb() : renderMobile()}
                 <Separator />
             </div>
-            <div className=' w-full flex h-20 justify-center items-center'>
+            <div className=' w-full flex h-20 justify-center items-center' ref={myRef}>
                 <button
                     onClick={() => window.scroll({ top: 0, left: 0, behavior: 'smooth' })}
                     className='mt-6 mb-5 flex align-center justify-center  animate-bounce'

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../styles/Tag.css'
+import './Tag.css'
 
 const Tag = ({ text, width = 'w-[110px] sm:w-[150px] lg:w-[160px]' }: { text: string, width?: string }) => {
     return (

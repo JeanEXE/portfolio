@@ -1,4 +1,4 @@
-@import './GlitchAnimation.css';
+@import '../../styles/GlitchAnimation.css';
 
 :root {
     --yellow-color: #fcee09;

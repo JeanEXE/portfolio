@@ -2,7 +2,7 @@ import * as React from 'react'
 import '../styles/CyberpunkGlitch.css'
 import profilePic from '../assets/img/profile.png'
 import useDimensions from '../hooks/useDimensions';
-import Tag from './Tag';
+import Tag from './Tag/Tag';
 
 const Profile = () => {
     const { width } = useDimensions()

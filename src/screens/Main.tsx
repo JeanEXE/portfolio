@@ -1,17 +1,17 @@
 import * as React from 'react';
 import { useRef, Fragment } from 'react';
-import Header from './components/Header';
-import SkillBar from './components/SkillBar';
-import Footer from './components/Footer';
-import AnimatedBadge from './components/AnimatedBadge';
-import Contact from './components/Contact';
-import Profile from './components/Profile';
-import gingo from './assets/img/gingo.png'
-import gBusiness from './assets/img/gBusiness.png'
-import Tag from './components/Tag/Tag';
-import CardProject from './components/CardProject';
+import Header from '../components/Header';
+import SkillBar from '../components/SkillBar';
+import Footer from '../components/Footer';
+import AnimatedBadge from '../components/AnimatedBadge';
+import Contact from '../components/Contact';
+import Profile from '../components/Profile';
+import gingo from '../assets/img/gingo.png'
+import gBusiness from '../assets/img/g_business.png'
+import Tag from '../components/Tag/Tag';
+import CardProject from '../components/CardProject';
 
-function App() {
+function Main() {
     const refAbout = useRef(null)
     const refProjects = useRef(null)
     const refSkills = useRef(null)
@@ -149,4 +149,4 @@ function App() {
     )
 }
 
-export default App;
+export default Main;

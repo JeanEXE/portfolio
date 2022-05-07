@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 640px) {
     .btn {
-        height: 35px;
+        /* height: 35px; */
         border: 0;
         border: 0;
         outline: none;
@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 640px) {
     .btn {
-        height: 45px;
+        /* height: 45px; */
         border: 0;
         border: 0;
         outline: none;

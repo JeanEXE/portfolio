@@ -2,7 +2,7 @@ import * as React from 'react';
 import Separator from './Separator';
 import '../styles/GlitchAnimation.css'
 
-const Header = ({ ref1, ref2, ref3 }: { ref1: any, ref2: any, ref3: any }) => {
+const Header = ({ ref1, ref2, ref3, ref4 }: { ref1: any, ref2: any, ref3: any, ref4: any }) => {
     const executeScroll = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
     return (
@@ -16,6 +16,10 @@ const Header = ({ ref1, ref2, ref3 }: { ref1: any, ref2: any, ref3: any }) => {
                     <button className="btnContainer btnText" onClick={() => executeScroll(ref1)}>
                         <span className="btnGlitch" />
                         <span className=" ml-5">About me_</span>
+                    </button>
+                    <button className="btnContainer btnText" onClick={() => executeScroll(ref4)}>
+                        <span className="btnGlitch" />
+                        <span className=" ml-5">Projects_</span>
                     </button>
                     <button className="btnContainer btnText" onClick={() => executeScroll(ref2)}>
                         <span className="btnGlitch" />

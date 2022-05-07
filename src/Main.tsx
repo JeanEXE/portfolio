@@ -1,15 +1,19 @@
 import * as React from 'react';
-import { useRef } from 'react';
+import { useRef, Fragment } from 'react';
 import Header from './components/Header';
 import SkillBar from './components/SkillBar';
 import Footer from './components/Footer';
 import AnimatedBadge from './components/AnimatedBadge';
 import Contact from './components/Contact';
 import Profile from './components/Profile';
-import Separator from './components/Separator';
+import gingo from './assets/img/gingo.png'
+import gBusiness from './assets/img/gBusiness.png'
+import Tag from './components/Tag/Tag';
+import CardProject from './components/CardProject';
 
 function App() {
     const refAbout = useRef(null)
+    const refProjects = useRef(null)
     const refSkills = useRef(null)
     const refContact = useRef(null)
 
@@ -19,6 +23,7 @@ function App() {
                 ref1={refAbout}
                 ref2={refSkills}
                 ref3={refContact}
+                ref4={refProjects}
             />
             <div className='flex flex-col justify-center items-center'>
                 <div className='pt-2 sm:pt-5 mx-5 md:mx-10 lg:mx-20 max-w-full  lg:max-w-7xl'>
@@ -64,6 +69,44 @@ function App() {
                     <Separator />
                     </div>
                     <div className='h-36' /> */}
+                    <div className='py-7 sm:flex justify-between'>
+                        <div>
+                            <h1 className='text-2xl sm:text-6xl font-bold mb-5' ref={refProjects}>Projects</h1>
+                            <p className='text-xs sm:text-2xl'>a section with my biggest works</p>
+                            <div className='grid gap-3 sm:gap-6 grid-cols-1 xl:grid-cols-2 mt-7'>
+                                <CardProject
+                                    name={'Gingo'}
+                                    image={gingo}
+                                    tags={
+                                        <Fragment>
+                                            <Tag text='React Native' width='w-[110px]' small />
+                                            <Tag text='Node.js' width='w-[80px]' small />
+                                        </Fragment>
+                                    }
+                                    description={
+                                        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+                                    }
+                                />
+                                <CardProject
+                                    name={'Gingo Business'}
+                                    image={gBusiness}
+                                    tags={
+                                        <Fragment>
+                                            <Tag text='React Native' width='w-[110px]' small />
+                                            <Tag text='Node.js' width='w-[80px]' small />
+                                        </Fragment>
+                                    }
+                                    description={
+                                        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                        labore et dolore.`
+                                    }
+                                />
+                            </div>
+                        </div>
+
+                    </div>
                     <div className='py-7 sm:flex justify-between'>
                         <div>
                             <h1 className='text-2xl sm:text-6xl font-bold mb-5' ref={refSkills}>Hard Skills</h1>

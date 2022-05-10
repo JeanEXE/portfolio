@@ -5,9 +5,10 @@ import '../styles/GlitchAnimation.css'
 const Header = ({ ref1, ref2, ref3, ref4 }: { ref1: any, ref2: any, ref3: any, ref4: any }) => {
     const executeScroll = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
+    //sticky top-0 z-50
     return (
-        <header className="bg-yellow  pt-4 mb-10 flex flex-col items-center">
-            <div className='flex flex-col justify-between md:flex-row md:items-center sm:px-10 lg:px-20 xx:px-0 lg:max-w-7xl w-full pb-2'>
+        <header className="bg-yellow  pt-3 mb-10 flex flex-col items-center">
+            <div className='flex flex-col justify-between md:flex-row md:items-center sm:px-10 lg:px-20 xx:px-0 lg:max-w-7xl w-full pb-1'>
                 <div className='flex  ml-5 sm:ml-0'>
                     <div className="btnContainer flex" >
                         <p className='btnText text-[20px]'>jeanreis</p>

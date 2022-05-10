@@ -11,18 +11,20 @@ import Separator from './Separator'
 
 const Footer = () => {
     const { width } = useDimensions()
-    const [animate, setAnimate] = useState('py-0')
+    const [animate, setAnimate] = useState('opacity-0')
     const myRef = useRef()
     const { inViewport } = useInViewport(myRef)
 
     useEffect(() => {
-        if (inViewport && animate == 'py-0') {
-            width > 768 ? setAnimate('py-20') : setAnimate('py-14')
+        if (inViewport && animate == 'opacity-0') {
+            setTimeout(() => {
+                setAnimate('animate-fade-in-up')
+            }, 100)
         }
     }, [inViewport])
 
     const renderMobile = () => (
-        <div className={`${animate} transition-all  duration-1000 ease-in-out px-5 grid grid-row-2 gap-16 justify-center`}>
+        <div className={`${animate} py-14 transition-all px-5 grid grid-row-2 gap-16 justify-center`}>
             <div className='flex-col justify-center items-center text-black font-semibold'>
                 <p className='flex justify-center'>Coded by me, made by <img src={heart} className='w-4 ml-1' />.</p>
                 <p className='text-center'>Especially to practice </p>
@@ -41,7 +43,7 @@ const Footer = () => {
     )
 
     const renderWeb = () => (
-        <div className={`${animate} transition-all  duration-1000 ease-in-out flex gap-24 xl:gap-80 justify-center items-center text-black font-semibold`}>
+        <div className={`${animate} py-20 transition-all flex gap-24 xl:gap-80 justify-center items-center text-black font-semibold`}>
             <div>
                 <p className='flex'>Coded by me, made by <img src={heart} className='h-5 ml-1' />.  Especially</p>
                 <p className='flex items-center h-10 justify-center'>to practice my <img src={react} className='h-12 mb-[3px]' /> skills </p>

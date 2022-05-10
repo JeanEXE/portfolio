@@ -26,11 +26,10 @@ function Main() {
                 ref4={refProjects}
             />
             <div className='flex flex-col justify-center items-center'>
-                <div className='pt-2 sm:pt-5 mx-5 md:mx-10 lg:mx-20 max-w-full  lg:max-w-7xl'>
+                <div className='pt-2 sm:pt-5 mx-5 md:mx-10 lg:mx-20 max-w-full  lg:max-w-7xl animate-fade-in-up'>
                     <Profile />
                     <div className='py-12 sm:py-20 sm:flex sm:justify-between'>
                         <div className='sm:w-5/12'>
-
                             <h1 className='text-2xl sm:text-6xl font-bold mb-5' ref={refAbout}>About Me</h1>
                             <p className='text-xs text-gray-400 indent-4 sm:text-[16px]'>Hey 👋 I'm Jean, Trabalho a 3 anos como Fullstack, utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.
                                 Após entender como a arquitetura, gerenciamento de estados e a componentização do react funciona, procurei aprender mais sobre performance,

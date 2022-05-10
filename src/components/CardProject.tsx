@@ -5,7 +5,7 @@ const CardProject = ({ name, image, tags, description, params }: { name: string,
     return (
         <div className='flex flex-col sm:flex-row border-2  sm:pr-8 rounded-lg gap-2 sm:gap-4 overflow-hidden relative'>
 
-            <img className='bg-neutral-300  object-contain h-44 sm:h-full w-full sm:w-60 xl:w-48' src={image} />
+            <img className='bg-neutral-300  object-contain h-44 sm:h-full w-full sm:w-60 xl:w-48  grayscale-[35%]' src={image} />
 
             <div className='flex flex-col gap-2 pt-1 pb-3 px-6 sm:px-0 mb-10'>
                 <h1 className='text-[25px] sm:text-[32px]'>{name}</h1>

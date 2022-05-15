@@ -1,0 +1,10 @@
+.indicator {
+    background-color: var(--unselected-color);
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin: 3px;
+}
+
+.indicator.active {
+    background: var(--blue-color);
+}

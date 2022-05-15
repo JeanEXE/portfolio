@@ -1,11 +1,5 @@
 @import '../../styles/GlitchAnimation.css';
 
-:root {
-    --yellow-color: #fcee09;
-    --black-color: #0B0B0C;
-    --blue-color: #00f0ff;
-}
-
 @media screen and (max-width: 640px) {
     .btn {
         /* height: 35px; */
@@ -49,7 +43,6 @@
     left: 2px;
     right: 2px;
     bottom: 2px;
-    background-color: var(--black-color);
     clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
 }
 

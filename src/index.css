@@ -30,9 +30,23 @@
 	.polygon-button {
 		clip-path: polygon(97% 0, 100% 55%, 100% 100%, 3% 100%, 0% 55%, 0 0);
 	}
+
+	.polygon-card {
+		clip-path: polygon(100% 0%, 100% 80%, 85% 100%, 0% 100%, 0% 100%, 0 0);
+	}
+
+	.polygon-card-mobile {
+		clip-path: polygon(90% 0, 100% 30px, 100% 100%, 0% 100%, 0% 100%, 0 0);
+	}
 }
 
 @layer base {
+	:root {
+		--yellow-color: #fcee0a;
+		--blue-color: #00f0ff;
+		--unselected-color: #303030e0;
+	}
+
 	div {
 		/* font-family: roboto-mono; */
 		font-family: sans-serif;

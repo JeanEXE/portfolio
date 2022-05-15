@@ -26,7 +26,7 @@ function Main() {
                 ref4={refProjects}
             />
             <div className='flex flex-col justify-center items-center'>
-                <div className='pt-2 sm:pt-5 mx-5 md:mx-10 lg:mx-20 max-w-full  lg:max-w-7xl animate-fade-in-up'>
+                <div className='pt-2 sm:pt-5 px-5 md:px-10 lg:px-20 max-w-full  lg:max-w-7xl animate-fade-in-up'>
                     <Profile />
                     <div className='py-12 sm:py-20 sm:flex sm:justify-between'>
                         <div className='sm:w-5/12'>
@@ -70,8 +70,8 @@ function Main() {
                     <div className='h-36' /> */}
                     <div className='py-7 sm:flex justify-between'>
                         <div>
-                            <h1 className='text-2xl sm:text-6xl font-bold mb-5' ref={refProjects}>Projects</h1>
-                            <p className='text-xs sm:text-2xl'>a section with my biggest works</p>
+                            <h1 className='text-2xl sm:text-6xl font-bold mb-5' ref={refProjects}>Portfolio</h1>
+                            <p className='text-xs sm:text-2xl'>a section with the projects that i worked</p>
                             <div className='grid gap-3 sm:gap-6 grid-cols-1 xl:grid-cols-2 mt-7'>
                                 <CardProject
                                     name={'Gingo'}

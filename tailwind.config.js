@@ -57,6 +57,7 @@ module.exports = {
 				blackSec: '#121212',
 				yellow: '#fcee0a',
 				blue: '#00f0ff',
+				unselected: '#303030e0'
 			},
 		},
 

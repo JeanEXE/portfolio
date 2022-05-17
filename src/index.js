@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from "react-router-dom";
+import ScrollToTop from './helpers/ScrollToTop';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Router from './Router';
@@ -12,6 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Router />
     </BrowserRouter>
   </React.StrictMode>

@@ -38,6 +38,10 @@
 	.polygon-card-mobile {
 		clip-path: polygon(90% 0, 100% 30px, 100% 100%, 0% 100%, 0% 100%, 0 0);
 	}
+
+	.indicator {
+		clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	}
 }
 
 @layer base {

@@ -4,8 +4,8 @@ import './Tag.css'
 const Tag = ({ text, width = 'w-[110px] sm:w-[150px] lg:w-[160px]', small, backgroundColor = 'bg-black' }: { text: string, width?: string, small?: boolean, backgroundColor?: string }) => {
     if (small) {
         return (
-            <div className={`btn cursor-default h-[30px] ${width}`}>
-                <span className={`btn__content text-[10px] ${backgroundColor}`}>{text}</span>
+            <div className={`btn cursor-default h-[27px] ${width}`}>
+                <span className={`btn__content text-[9px] ${backgroundColor}`}>{text}</span>
                 <span className="btn__glitch"></span>
             </div>
         )

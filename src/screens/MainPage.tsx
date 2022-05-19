@@ -11,7 +11,7 @@ import gBusiness from '../assets/img/g_business.png'
 import Tag from '../components/Tag/Tag';
 import CardProject from '../components/CardProject';
 
-function Main() {
+function MainPage() {
     const refAbout = useRef()
     const refProjects = useRef()
     const refSkills = useRef()
@@ -145,4 +145,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default MainPage;

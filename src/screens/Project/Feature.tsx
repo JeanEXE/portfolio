@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FeatureType, TagType } from '../../types/Types';
-import Tag from '../Tag/Tag';
+import Tag from '../../components/Tag/Tag';
 
 const Feature = ({ title, image, tags, description, mobile }: FeatureType) => {
     if (mobile) {

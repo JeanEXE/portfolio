@@ -2,13 +2,13 @@ import * as React from 'react';
 import { useState, useRef } from 'react';
 import { Fragment } from 'react';
 import Footer from '../../components/Footer';
-import HeaderProject from '../../components/Project/HeaderProject';
+import HeaderProject from './HeaderProject';
 import Tag from '../../components/Tag/Tag';
 import github from '../../assets/svg/icon-github.svg'
 import arrow from '../../assets/svg/icon-arrow.svg'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import Feature from '../../components/Project/Feature';
+import Feature from './Feature';
 import useDimensions from '../../hooks/useDimensions';
 import gingoData from '../../data/Gingo.ts';
 import { useParams } from 'react-router-dom';
@@ -19,7 +19,7 @@ type ObjLiteral = {
     [nameProject: string]: ProjectType
 }
 
-const Gingo = () => {
+const ProjectPage = () => {
     const { width } = useDimensions()
     const { nameProject } = useParams()
 
@@ -226,4 +226,4 @@ const Gingo = () => {
     )
 }
 
-export default Gingo
+export default ProjectPage

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import { DATA } from '../json/Gingo.ts'
+import { CardProjectType } from '../types/Types';
 
-const CardProject = ({ name, image, tags, description, params }: { name: string, image: any, tags: JSX.Element, description: string, params?: string }) => {
+const CardProject = ({ name, image, tags, description }: CardProjectType) => {
     return (
         <div className='flex flex-col sm:flex-row border-2  sm:pr-8 rounded-lg gap-2 sm:gap-4 overflow-hidden relative'>
 

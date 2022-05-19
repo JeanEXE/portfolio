@@ -1,18 +1,18 @@
 import * as React from 'react';
-import ging from '../../assets/img/Gingo/gingo1.jpg'
+import { FeatureType, TagType } from '../../types/Types';
 import Tag from '../Tag/Tag';
 
-const Feature = ({ title, image, tags, description, mobile }: { title: string, image?: any, tags: any, description?: string, mobile?: boolean }) => {
+const Feature = ({ title, image, tags, description, mobile }: FeatureType) => {
     if (mobile) {
         return (
             <div className=' flex flex-col items-center  gap-4 bg-blackSec py-10 polygon-card-mobile'>
 
-                <img src={ging} className='w-[60vw] max-w-[350px]   rounded-md' />
+                <img src="https://i.imgur.com/ohXtP7h.gif" className='w-[60vw] max-w-[350px]   rounded-md' />
 
                 <div className='px-3 gap-5 flex flex-col text-center'>
                     <p>{title}</p>
                     <div className='flex justify-center flex-wrap gap-2 '>
-                        {tags.map((element: any, index: any) => (
+                        {tags.map((element: TagType, index: number) => (
                             <Tag key={index} text={element.text} width={element.width} backgroundColor='bg-blackSec' small />
                         ))}
                     </div>
@@ -26,19 +26,18 @@ const Feature = ({ title, image, tags, description, mobile }: { title: string, i
                     </p>
                 </div>
             </div>
-
         )
     }
 
     return (
         <div className='flex gap-10 bg-blackSec px-12 py-10 polygon-card'>
 
-            <img src={ging} className=' w-[350px] rounded-md' />
+            <img src="https://i.imgur.com/ohXtP7h.gif" className=' w-[320px] rounded-md' />
 
             <div className=' w-1/2 py-4 gap-5 flex flex-col'>
                 <h1>{title}</h1>
                 <div className='flex flex-wrap gap-3 '>
-                    {tags.map((element: any, index: number) => (
+                    {tags.map((element: TagType, index: number) => (
                         <Tag key={index} text={element.text} width={element.width} backgroundColor='bg-blackSec' small />
                     ))}
                 </div>
@@ -49,7 +48,6 @@ const Feature = ({ title, image, tags, description, mobile }: { title: string, i
                 </p>
             </div>
         </div>
-
     )
 }
 

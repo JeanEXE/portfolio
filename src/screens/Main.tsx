@@ -12,10 +12,10 @@ import Tag from '../components/Tag/Tag';
 import CardProject from '../components/CardProject';
 
 function Main() {
-    const refAbout = useRef(null)
-    const refProjects = useRef(null)
-    const refSkills = useRef(null)
-    const refContact = useRef(null)
+    const refAbout = useRef()
+    const refProjects = useRef()
+    const refSkills = useRef()
+    const refContact = useRef()
 
     return (
         <div className=" flex-1 min-h-screen bg-black">

@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import * as ReactDOMClient from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from './helpers/ScrollToTop';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Router from './Router';
 
-const root = ReactDOM.createRoot(
+const root = ReactDOMClient.createRoot(
   document.getElementById("root")
 );
 

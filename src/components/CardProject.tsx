@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import { DATA } from '../json/Gingo.ts'
 
 const CardProject = ({ name, image, tags, description, params }: { name: string, image: any, tags: JSX.Element, description: string, params?: string }) => {
     return (
@@ -15,7 +16,7 @@ const CardProject = ({ name, image, tags, description, params }: { name: string,
                 <p className=' indent-4 line-clamp-5  sm:line-clamp-3 text-[15px]  lg:text-[16px] xl:text-[14px]'>{description}</p>
             </div>
             <button className='absolute right-6 bottom-3'>
-                <Link to="/project">
+                <Link to={`/project/${name}`}>
                     <p className='text-blue text-[16px] sm:text-[18px]  font-bold underline'>Read More</p>
                 </Link>
             </button>

@@ -54,6 +54,7 @@
 	div {
 		/* font-family: roboto-mono; */
 		font-family: sans-serif;
+		white-space: pre-wrap
 	}
 
 	h1 {

@@ -49,7 +49,7 @@ const HeaderProject = ({ name }: { name: string }) => {
 
             <div className='w-[500px] bg-[#202020] h-[80px]'>
                 <div className='flex h-full   items-center  ml-5 '>
-                    <h1>Project:&nbsp;&nbsp;Gingo</h1>
+                    <h1>Project:&nbsp;&nbsp;{name}</h1>
                 </div>
             </div>
             <div className='relative  border-r-transparent  border-[#202020] border-r-[80px] border-t-[80px]' />

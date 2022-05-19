@@ -7,7 +7,7 @@ export default function Router() {
     return (
         <Routes>
             <Route path="/" element={<Main />} />
-            <Route path="project" element={<Gingo />} />
+            <Route path="project/:nameProject" element={<Gingo />} />
         </Routes>
     )
 }

@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { TagType } from '../../types/Types';
 import './Tag.css'
 
-const Tag = ({ text, width = 'w-[110px] sm:w-[150px] lg:w-[160px]', small, backgroundColor = 'bg-black' }: { text: string, width?: string, small?: boolean, backgroundColor?: string }) => {
+const Tag = ({ text, width = 'w-[110px] sm:w-[150px] lg:w-[160px]', small, backgroundColor = 'bg-black' }: TagType) => {
     if (small) {
         return (
             <div className={`btn cursor-default h-[27px] ${width}`}>

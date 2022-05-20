@@ -50,9 +50,13 @@
 		--unselected-color: #303030e0;
 	}
 
+	body {
+		font-family: 'Tomorrow';
+	}
+
 	div {
 		/* font-family: roboto-mono; */
-		font-family: sans-serif;
+		/* font-family: 'Tomorrow'; */
 		white-space: pre-wrap
 	}
 

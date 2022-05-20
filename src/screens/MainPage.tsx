@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useRef, Fragment } from 'react';
+import { useRef } from 'react';
 import Header from '../components/Header';
 import SkillBar from '../components/SkillBar';
 import Footer from '../components/Footer';
@@ -8,7 +8,6 @@ import Contact from '../components/Contact';
 import Profile from '../components/Profile';
 import gingo from '../assets/img/gingo.png'
 import gBusiness from '../assets/img/g_business.png'
-import Tag from '../components/Tag/Tag';
 import CardProject from '../components/CardProject';
 
 function MainPage() {
@@ -30,8 +29,8 @@ function MainPage() {
                     <Profile />
                     <div className='py-12 sm:py-20 sm:flex sm:justify-between'>
                         <div className='sm:w-5/12'>
-                            <h1 className='mb-5' ref={refAbout}>About Me</h1>
-                            <p className='text-xs text-gray-400 indent-4 sm:text-[16px]'>Hey 👋 I'm Jean, Trabalho a 3 anos como Fullstack, utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.
+                            <h1 ref={refAbout}>About Me</h1>
+                            <p className='text-[14px] sm:text-[16px]  font-light text-gray-400 indent-4'>Hey 👋 I'm Jean, Trabalho a 3 anos como Fullstack, utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.
                                 Após entender como a arquitetura, gerenciamento de estados e a componentização do react funciona, procurei aprender mais sobre performance,
                                 aprendi a gerenciar estados de forma mais controlada, e a utilizar o react memo para controlar renderizações desnecessárias,
                                 foi nesse momento que descobri gostar muito de performance e otimizações, busco sempre aplicar conceitos de clean code e abstração é uma palavra que gosto bastante.
@@ -43,11 +42,13 @@ function MainPage() {
                         </div>
                         <div className='mt-10 sm:w-5/12'>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className='text-sm  font-semibold mb-2 sm:text-2xl'>Professional Experience</p>
-                            <p className='text-[13px] font-medium mb-1 sm:text-[16px]'>Fullstack Developer at{" "}
-                                <a href="https://www.isabelaflores.com/" className="no-underline font-semibold text-blue" target="_blank">Isabela Flores</a> /{" "}
-                                <a href="https://www.floresonline.com.br" className="no-underline font-semibold text-blue" target="_blank">Flores Online</a> (2019 - Atualmente)</p>
-                            <p className='text-xs text-gray-400 sm:text-[16px]'>Participei ativamente do desenvolvimento de 2 Apps (Gingo / Gingo Business)<br />do início a publicação nas stores (Android/iOS).<br />
+                            <p className='text-[21px] sm:text-[25px] xl:text-[32px] font-semibold mb-2'>Professional Experience</p>
+                            <p className='text-[13px] sm:text-[16px]  mb-1'>Fullstack Developer at
+                                <a href="https://www.isabelaflores.com/" className="no-underline font-semibold text-blue" target="_blank">  Isabela Flores</a> /
+                                <a href="https://www.floresonline.com.br" className="no-underline font-semibold text-blue" target="_blank"> Flores Online</a>
+                                {'\n'}(2019 - Atualmente)</p>
+                            <p className='text-[14px] sm:text-[16px] text-gray-400'>
+                                Participei ativamente do desenvolvimento de 2 Apps (Gingo / Gingo Business)<br />do início a publicação nas stores (Android/iOS).<br />
                                 -App de delivery/Chat em tempo real<br />
                                 -Gerenciamento de pedidos/cardápio via Gingo Business<br />
                                 -Notificações Firebase/APNS<br />
@@ -58,8 +59,8 @@ function MainPage() {
                                 -SQLite / MongoDB<br />
                             </p>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className='text-sm  font-semibold mb-2 sm:text-2xl'>Formação Academica</p>
-                            <p className='text-[13px]  font-medium sm:text-[16px]'>Graduado em Engenharia de Software pela UNIFAE (2016 - 2019)</p>
+                            <p className='text-[21px] sm:text-[25px] xl:text-[32px] font-semibold mb-2'>Formação Academica</p>
+                            <p className='text-[13px] sm:text-[16px] '>Graduado em Engenharia de Software<br />pela UNIFAE (2016 - 2019)</p>
                         </div>
                     </div>
                     {/* <div className="bg-yellow flex flex-col justify-between content-between  h-32 absolute left-0  w-full" ref={refContact}>
@@ -70,18 +71,16 @@ function MainPage() {
                     <div className='h-36' /> */}
                     <div className='py-7 sm:flex justify-between'>
                         <div>
-                            <h1 className='text-2xl sm:text-6xl font-bold mb-5' ref={refProjects}>Portfolio</h1>
-                            <p className='text-xs sm:text-2xl'>a section with the projects that i worked</p>
+                            <h1 ref={refProjects}>Portfolio</h1>
+                            <p className='text-[14px] sm:text-[17px]'>a section with the projects that i worked</p>
                             <div className='grid gap-3 sm:gap-6 grid-cols-1 xl:grid-cols-2 mt-7'>
                                 <CardProject
                                     name={'Gingo'}
                                     image={gingo}
-                                    tags={
-                                        <Fragment>
-                                            <Tag text='React Native' width='w-[110px]' small />
-                                            <Tag text='Node.js' width='w-[80px]' small />
-                                        </Fragment>
-                                    }
+                                    tags={[
+                                        { text: 'React Native', width: 'w-[110px]' },
+                                        { text: 'Node.js', width: 'w-[80px]' }
+                                    ]}
                                     description={
                                         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
                                     }
@@ -89,12 +88,10 @@ function MainPage() {
                                 <CardProject
                                     name={'Gingo Business'}
                                     image={gBusiness}
-                                    tags={
-                                        <Fragment>
-                                            <Tag text='React Native' width='w-[110px]' small />
-                                            <Tag text='Node.js' width='w-[80px]' small />
-                                        </Fragment>
-                                    }
+                                    tags={[
+                                        { text: 'React Native', width: 'w-[110px]' },
+                                        { text: 'Node.js', width: 'w-[80px]' }
+                                    ]}
                                     description={
                                         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.`
                                     }
@@ -105,16 +102,16 @@ function MainPage() {
                     </div>
                     <div className='py-7 sm:flex justify-between'>
                         <div>
-                            <h1 className='text-2xl sm:text-6xl font-bold mb-5' ref={refSkills}>Hard Skills</h1>
-                            <p className='text-xs sm:text-2xl'>know a litlle about my skills</p>
+                            <h1 ref={refSkills}>Hard Skills</h1>
+                            <p className='text-[14px] sm:text-[17px]'>know a litlle about my skills</p>
                         </div>
                         <div className='sm:w-6/12'>
                             <div className='flex  w-full  mt-5 mb-2 items-center'>
                                 <p className='w-28 sm:w-2/4'></p>
                                 <div className=' flex justify-between w-full h-[1.1rem] sm:w-3/4'>
-                                    <p className='text-[10px] sm:text-1xl'>Basic</p>
-                                    <p className='text-[10px] sm:text-1xl'>Intermediate</p>
-                                    <p className='text-[10px] sm:text-1xl'>Advanced</p>
+                                    <p className='text-[10px] sm:text-[11px]'>Basic</p>
+                                    <p className='text-[10px] sm:text-[11px]'>Intermediate</p>
+                                    <p className='text-[10px] sm:text-[11px]'>Advanced</p>
                                 </div>
                             </div>
                             <SkillBar stack={'React Native'} width='w-full' />

@@ -16,7 +16,7 @@ const Feature = ({ title, image, tags, description, mobile }: FeatureType) => {
                             <Tag key={index} text={element.text} width={element.width} backgroundColor='bg-blackSec' small />
                         ))}
                     </div>
-                    <p className=' text-[14px] text-left'>{description}</p>
+                    <p className='text-[14px] text-left'>{description}</p>
                 </div>
             </div>
         )
@@ -25,16 +25,16 @@ const Feature = ({ title, image, tags, description, mobile }: FeatureType) => {
     return (
         <div className='flex gap-10 bg-blackSec px-12 py-10 polygon-card'>
 
-            <img src={image} className=' w-[320px] rounded-md' />
+            <img src={image} className=' h-[600px] rounded-md' />
 
             <div className=' w-1/2 py-4 gap-5 flex flex-col'>
-                <h1>{title}</h1>
+                <p className='font-medium text-[35px] '>{title}</p>
                 <div className='flex flex-wrap gap-3 '>
                     {tags.map((element: TagType, index: number) => (
                         <Tag key={index} text={element.text} width={element.width} backgroundColor='bg-blackSec' small />
                     ))}
                 </div>
-                <p>{description}</p>
+                <p className='text-[16px] text-left'>{description}</p>
             </div>
         </div>
     )

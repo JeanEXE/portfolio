@@ -26,7 +26,7 @@ export type ProjectType = {
 export type CardProjectType = {
     name: string,
     image: any,
-    tags: JSX.Element,
+    tags: TagType[],
     description: string
 }
 

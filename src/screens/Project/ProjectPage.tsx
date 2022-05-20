@@ -108,17 +108,17 @@ const ProjectPage = () => {
             <div className='py-20 flex gap-32 justify-between'>
                 <div className=' '>
                     <img src={iconChall} className='h-10 mb-4' />
-                    <h1 className='mb-4'>Desafios</h1>
-                    {props.challenge}
+                    <p className='font-semibold text-[40px] mb-4'>Desafios</p>
+                    <p className='text-[16px]'>{props.challenge}</p>
                 </div>
                 <div className=' '>
                     <img src={iconLearn} className='h-10 mb-4' />
-                    <h1 className='mb-4'>Aprendizados</h1>
-                    {props.learned}
+                    <p className='font-semibold text-[40px] mb-4'>Aprendizados</p>
+                    <p className='text-[16px]'>{props.learned}</p>
                 </div>
             </div>
 
-            <h1 className='mt-16 mb-8'>Features</h1>
+            <p className='font-semibold text-[45px] mb-4 mt-16'>Features</p>
 
             <div className='w-full relative  flex flex-col'>
                 <Slide
@@ -179,18 +179,23 @@ const ProjectPage = () => {
 
             <div className='flex flex-col gap-16 justify-between mt-16'>
                 <div className=' '>
-                    <img src={iconChall} className='h-8 mb-3' />
-                    <h1 className='mb-3'>Desafios</h1>
-                    {props.challenge}
+                    <div className='flex mb-3 items-center'>
+                        <img src={iconChall} className='h-8 mr-3' />
+                        <p className='font-semibold text-[28px]'>Desafios</p>
+                    </div>
+                    <p className='text-[14px]'>{props.challenge}</p>
                 </div>
                 <div className=' '>
-                    <img src={iconLearn} className='h-8 mb-3' />
-                    <h1 className='mb-3'>Aprendizados</h1>
-                    {props.learned}
+                    <div className='flex mb-3 items-center'>
+                        <img src={iconLearn} className='h-8 mr-3' />
+                        <p className='font-semibold text-[28px]'>Aprendizados</p>
+                    </div>
+
+                    <p className='text-[14px]'>{props.learned}</p>
                 </div>
             </div>
 
-            <h1 className='mt-16'>Features</h1>
+            <p className='font-semibold text-[28px] mt-16'>Features</p>
 
             <div className='w-full relative flex flex-col'>
                 <IndicatorCustom

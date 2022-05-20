@@ -30,7 +30,7 @@ function MainPage() {
                     <Profile />
                     <div className='py-12 sm:py-20 sm:flex sm:justify-between'>
                         <div className='sm:w-5/12'>
-                            <h1 className='text-2xl sm:text-6xl font-bold mb-5' ref={refAbout}>About Me</h1>
+                            <h1 className='mb-5' ref={refAbout}>About Me</h1>
                             <p className='text-xs text-gray-400 indent-4 sm:text-[16px]'>Hey 👋 I'm Jean, Trabalho a 3 anos como Fullstack, utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.
                                 Após entender como a arquitetura, gerenciamento de estados e a componentização do react funciona, procurei aprender mais sobre performance,
                                 aprendi a gerenciar estados de forma mais controlada, e a utilizar o react memo para controlar renderizações desnecessárias,

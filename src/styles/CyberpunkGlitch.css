@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@1,600&display=swap');
-
 body {
     background: #111;
 }
 
 .hero {
     font-family: 'Tomorrow';
+    font-weight: 700;
     font-style: italic;
     filter: drop-shadow(0 1px 3px);
 }

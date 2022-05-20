@@ -7,9 +7,9 @@ export type TagType = {
 
 export type FeatureType = {
     title: string,
-    image?: string,
+    image: string,
     tags: TagType[],
-    description?: string,
+    description: string,
     mobile?: boolean
 }
 

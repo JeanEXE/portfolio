@@ -4,7 +4,8 @@ import { Fragment } from 'react';
 import Footer from '../../components/Footer';
 import HeaderProject from './HeaderProject';
 import Tag from '../../components/Tag/Tag';
-import github from '../../assets/svg/icon-github.svg'
+import iconChall from '../../assets/svg/icon-chall.svg'
+import iconLearn from '../../assets/svg/icon-learn.svg'
 import arrow from '../../assets/svg/icon-arrow.svg'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -104,15 +105,15 @@ const ProjectPage = () => {
                 </div>
             </div>
 
-            <div className='py-20 flex gap-20 justify-between'>
+            <div className='py-20 flex gap-32 justify-between'>
                 <div className=' '>
-                    <img src={github} className='w-10 h-10 mr-4' />
-                    <h1>Desafios</h1>
+                    <img src={iconChall} className='h-10 mb-4' />
+                    <h1 className='mb-4'>Desafios</h1>
                     {props.challenge}
                 </div>
                 <div className=' '>
-                    <img src={github} className='w-10 h-10 mr-4' />
-                    <h1>Aprendizados</h1>
+                    <img src={iconLearn} className='h-10 mb-4' />
+                    <h1 className='mb-4'>Aprendizados</h1>
                     {props.learned}
                 </div>
             </div>
@@ -127,7 +128,9 @@ const ProjectPage = () => {
                         <Feature
                             key={index}
                             title={element.title}
+                            image={element.image}
                             tags={element.tags}
+                            description={element.description}
                         />
                     ))}
                 </Slide>
@@ -176,13 +179,13 @@ const ProjectPage = () => {
 
             <div className='flex flex-col gap-16 justify-between mt-16'>
                 <div className=' '>
-                    <img src={github} className='w-10 h-10 mr-4' />
-                    <h1>Desafios</h1>
+                    <img src={iconChall} className='h-8 mb-3' />
+                    <h1 className='mb-3'>Desafios</h1>
                     {props.challenge}
                 </div>
                 <div className=' '>
-                    <img src={github} className='w-10 h-10 mr-4' />
-                    <h1>Aprendizados</h1>
+                    <img src={iconLearn} className='h-8 mb-3' />
+                    <h1 className='mb-3'>Aprendizados</h1>
                     {props.learned}
                 </div>
             </div>
@@ -203,7 +206,9 @@ const ProjectPage = () => {
                         <Feature
                             key={index}
                             title={element.title}
+                            image={element.image}
                             tags={element.tags}
+                            description={element.description}
                             mobile
                         />
                     ))}

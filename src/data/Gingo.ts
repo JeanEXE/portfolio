@@ -1,7 +1,7 @@
 import gingo from '../assets/img/gingo.png'
 import ging from '../assets/img/Gingo/gingo1.jpg'
 import ging2 from '../assets/img/Gingo/gingo2.jpg'
-import { ProjectType } from '../types/Types'
+import { FeatureType, ProjectType } from '../types/Types'
 
 const ARR_IMAGES = [
     ging,
@@ -26,9 +26,10 @@ const ARR_TAGS = [
     { text: 'Node.js', width: 'w-[90px] sm:w-[130px]' },
 ]
 
-const ARR_FEATURES = [
+const ARR_FEATURES: FeatureType[] = [
     {
         title: 'Push Notification',
+        image: "https://i.imgur.com/ohXtP7h.gif",
         tags: [
             { text: 'Firebase', width: 'w-[70px] sm:w-[90px]' },
             { text: 'APNS', width: 'w-[70px] sm:w-[90px]' },
@@ -36,10 +37,18 @@ const ARR_FEATURES = [
             { text: 'Socket.io', width: 'w-[70px] sm:w-[90px]' },
             { text: 'APNS', width: 'w-[70px] sm:w-[90px]' },
             { text: 'APNS', width: 'w-[70px] sm:w-[90px]' },
-        ]
+        ],
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum
+t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum`
     },
     {
         title: 'Chat: Vídeo',
+        image: "https://i.imgur.com/ohXtP7h.gif",
         tags: [
             { text: 'Firebase', width: 'w-[70px] sm:w-[90px]' },
             { text: 'APNS', width: 'w-[70px] sm:w-[90px]' },
@@ -47,7 +56,14 @@ const ARR_FEATURES = [
             { text: 'Socket.io', width: 'w-[70px] sm:w-[90px]' },
             { text: 'APNS', width: 'w-[70px] sm:w-[90px]' },
             { text: 'APNS', width: 'w-[70px] sm:w-[90px]' },
-        ]
+        ],
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum
+t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+sunt in culpa qui officia deserunt mollit anim id est laborum`
     },
 ]
 

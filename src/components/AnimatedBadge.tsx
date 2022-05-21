@@ -1,6 +1,6 @@
 import * as React from 'react';
 import circle from '../assets/img/circle.png'
-import circle_name from '../assets/img/circle_name.png'
+import circleName from '../assets/img/circle_name.png'
 
 const AnimatedBadge = () => {
     return (
@@ -9,10 +9,12 @@ const AnimatedBadge = () => {
                 <img
                     className=' rounded-full absolute ml-[33px] mt-[33px] z-10'
                     src={circle}
+                    alt=''
                 />
                 <img
                     className=' rounded-full border animate-spin-slow bg-black'
-                    src={circle_name}
+                    src={circleName}
+                    alt=''
                 />
             </div>
         </div>

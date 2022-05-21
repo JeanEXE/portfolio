@@ -49,11 +49,11 @@ const ProjectPage = () => {
     )
 
     const ArrowCustom = (left = true) => (
-        <img src={arrow} className={`${left ? '-left-5 sm:left-2 -rotate-90' : '-right-5 sm:right-2 rotate-90'} h-5 sm:h-7 absolute cursor-pointer`} />
+        <img src={arrow} alt='' className={`${left ? '-left-5 sm:left-2 -rotate-90' : '-right-5 sm:right-2 rotate-90'} h-5 sm:h-7 absolute cursor-pointer`} />
     )
 
     const slideImgProps: any = useRef({
-        transitionDuration: 240,
+        transitionDuration: 150,
         autoplay: false,
         prevArrow: ArrowCustom(),
         nextArrow: ArrowCustom(false),
@@ -63,7 +63,7 @@ const ProjectPage = () => {
     }).current
 
     const slideFeatureProps: any = useRef({
-        transitionDuration: 240,
+        transitionDuration: 150,
         autoplay: false,
         prevArrow: ArrowCustom(),
         nextArrow: ArrowCustom(false),
@@ -76,13 +76,13 @@ const ProjectPage = () => {
         <Fragment>
             <div className='flex justify-between  pt-40'>
                 <div className=' w-1/2'>
-                    <img src={props.image} className=' h-[180px] ' />
+                    <img src={props.image} className=' h-[180px] ' alt='' />
                     <div className='flex flex-wrap mt-3 mb-7  gap-4 '>
                         {props.tags.map((element: TagType, index: number) => (
                             <Tag key={index} text={element.text} width={element?.width} />
                         ))}
                     </div>
-                    <p>{props.description}</p>
+                    <p className=' text-textColor'>{props.description}</p>
                 </div>
                 <div className=' w-[500px] flex justify-center'>
                     <div className='w-full relative flex flex-col'>
@@ -91,7 +91,7 @@ const ProjectPage = () => {
                         >
                             {props.images.map((element, index) => (
                                 <div className="flex justify-center max-h-full " key={index} >
-                                    <img src={element} className='w-[350px] ' />
+                                    <img src={element} className='w-[350px]' alt='' />
                                 </div>
                             ))}
                         </Slide>
@@ -101,24 +101,23 @@ const ProjectPage = () => {
                             refSlide={slideImgRef}
                         />
                     </div>
-
                 </div>
             </div>
 
             <div className='py-20 flex gap-32 justify-between'>
                 <div className=' '>
-                    <img src={iconChall} className='h-10 mb-4' />
+                    <img src={iconChall} className='h-9 mb-2' alt='' />
                     <p className='font-semibold text-[40px] mb-4'>Desafios</p>
-                    <p className='text-[16px]'>{props.challenge}</p>
+                    <p className='text-[16px]  text-textColor'>{props.challenge}</p>
                 </div>
                 <div className=' '>
-                    <img src={iconLearn} className='h-10 mb-4' />
+                    <img src={iconLearn} className='h-9 mb-2' alt='' />
                     <p className='font-semibold text-[40px] mb-4'>Aprendizados</p>
-                    <p className='text-[16px]'>{props.learned}</p>
+                    <p className='text-[16px]  text-textColor'>{props.learned}</p>
                 </div>
             </div>
 
-            <p className='font-semibold text-[45px] mb-4 mt-16'>Features</p>
+            <p className='font-semibold text-[45px] mb-4'>Features</p>
 
             <div className='w-full relative  flex flex-col'>
                 <Slide
@@ -147,14 +146,14 @@ const ProjectPage = () => {
     const renderMobile = () => (
         <Fragment>
             <div className='flex  flex-col items-center pt-24 gap-6'>
-                <img src={props.image} className=' h-[180px]' />
+                <img src={props.image} className=' h-[180px]' alt='' />
                 <div className='flex flex-wrap gap-4 '>
                     {props.tags.map((element, index) => (
                         <Tag key={index} text={element.text} width={element?.width} />
                     ))}
                 </div>
 
-                <p className=' text-center  max-w-md'>{props.description}</p>
+                <p className=' text-center  max-w-md  text-textColor'>{props.description}</p>
 
                 <div className=' max-w-md w-full  flex  justify-center '>
                     <div className='w-full relative flex flex-col'>
@@ -169,7 +168,7 @@ const ProjectPage = () => {
                         >
                             {props.images.map((element, index) => (
                                 <div className="flex justify-center max-h-full" key={index} >
-                                    <img src={element} className='w-[65vw] max-w-[280px]' />
+                                    <img src={element} className='w-[65vw] max-w-[280px]' alt='' />
                                 </div>
                             ))}
                         </Slide>
@@ -180,18 +179,18 @@ const ProjectPage = () => {
             <div className='flex flex-col gap-16 justify-between mt-16'>
                 <div className=' '>
                     <div className='flex mb-3 items-center'>
-                        <img src={iconChall} className='h-8 mr-3' />
+                        <img src={iconChall} className='h-8 mr-3' alt='' />
                         <p className='font-semibold text-[28px]'>Desafios</p>
                     </div>
-                    <p className='text-[14px]'>{props.challenge}</p>
+                    <p className='text-[14px]  text-textColor'>{props.challenge}</p>
                 </div>
                 <div className=' '>
                     <div className='flex mb-3 items-center'>
-                        <img src={iconLearn} className='h-8 mr-3' />
+                        <img src={iconLearn} className='h-8 mr-3' alt='' />
                         <p className='font-semibold text-[28px]'>Aprendizados</p>
                     </div>
 
-                    <p className='text-[14px]'>{props.learned}</p>
+                    <p className='text-[14px]  text-textColor'>{props.learned}</p>
                 </div>
             </div>
 

@@ -13,7 +13,7 @@ const Contact = () => {
     const { inViewport } = useInViewport(myRef)
 
     useEffect(() => {
-        if (inViewport && widthAnim == 'w-0') {
+        if (inViewport && widthAnim === 'w-0') {
             setTimeout(() => {
                 setWidthAnim('w-11/12 sm:w-7/12')
             }, 400)
@@ -28,24 +28,24 @@ const Contact = () => {
                     <div className="bg-yellow w-full h-4" />
                 </div>
                 <div className='flex flex-col gap-2 mt-5'>
-                    <a className='flex items-center font-light' target="_blank" href="https://linkedin.com/in/jean-reis-91505a1b2/">
-                        <img src={linkedin} className='w-6 h-6 mr-4' />
+                    <a className='flex items-center font-light' target="_blank" href="https://linkedin.com/in/jean-reis-91505a1b2/" rel="noreferrer">
+                        <img src={linkedin} className='w-6 h-6 mr-4' alt='' />
                         <p className='h-6 overflow-hidden text-[14px] sm:text-[16px]  font-semibold'>Linkedin</p>
                     </a>
-                    <a className='flex items-center' target="_blank" href="https://github.com/JeanEXE">
-                        <img src={github} className='w-6 h-6 mr-4' />
+                    <a className='flex items-center' target="_blank" href="https://github.com/JeanEXE" rel="noreferrer">
+                        <img src={github} className='w-6 h-6 mr-4' alt='' />
                         <p className='h-6 overflow-hidden text-[14px] sm:text-[16px] font-semibold'>GitHub</p>
                     </a>
                     <div className='flex items-center'>
-                        <img src={gmail} className='w-6 h-6 mr-4' />
+                        <img src={gmail} className='w-6 h-6 mr-4' alt='' />
                         <p className='h-6 overflow-hidden text-[14px] sm:text-[16px] font-light'>jeansreiss@gmail.com</p>
                     </div>
                     <div className='flex items-center'>
-                        <img src={whatsapp} className='w-6 h-6 mr-4' />
+                        <img src={whatsapp} className='w-6 h-6 mr-4' alt='' />
                         <p className='h-6 overflow-hidden text-[14px] sm:text-[16px] font-light'>+55 (35) 99242-9970</p>
                     </div>
                     <div className='flex items-center' ref={myRef}>
-                        <img src={telegram} className='w-6 h-6 mr-4' />
+                        <img src={telegram} className='w-6 h-6 mr-4' alt='' />
                         <p className='h-6 overflow-hidden text-[14px] sm:text-[16px] font-light'>@jean_exe</p>
                     </div>
                 </div>

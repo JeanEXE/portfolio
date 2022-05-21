@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import arrow from '../assets/svg/icon-arrow.svg'
 import { CardProjectType, TagType } from '../types/Types';
 import Tag from './Tag/Tag';
 
@@ -7,7 +8,7 @@ const CardProject = ({ name, image, tags, description }: CardProjectType) => {
     return (
         <div className='flex flex-col sm:flex-row border-2  sm:pr-8 rounded-md gap-2 sm:gap-4 overflow-hidden relative bg-blackSec'>
 
-            <img className='bg-neutral-300  object-contain h-44 sm:h-full w-full sm:w-60 xl:w-48  grayscale-[35%]' src={image} />
+            <img className='bg-gray-300  object-contain h-44 sm:h-full w-full sm:w-60 xl:w-48  grayscale-[35%]' src={image} alt='' />
 
             <div className='flex flex-col gap-2 pt-1 pb-3 px-6 sm:px-0 mb-10'>
                 <p className='font-medium text-[23px] sm:text-[28px]'>{name}</p>
@@ -20,7 +21,7 @@ const CardProject = ({ name, image, tags, description }: CardProjectType) => {
             </div>
             <button className='absolute right-6 bottom-3'>
                 <Link to={`/project/${name}`}>
-                    <p className='text-blue text-[16px] sm:text-[18px]  font-bold underline'>Read More</p>
+                    <p className='text-blue text-[17px] font-semibold flex items-center'>Full Project <img src={arrow} className={`h-4 bottom-1 rotate-90`} alt='' /></p>
                 </Link>
             </button>
         </div>

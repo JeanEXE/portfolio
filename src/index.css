@@ -55,8 +55,6 @@
 	}
 
 	div {
-		/* font-family: roboto-mono; */
-		/* font-family: 'Tomorrow'; */
 		white-space: pre-wrap
 	}
 
@@ -82,5 +80,5 @@
 }
 
 html {
-	@apply text-white
+	@apply text-gray-100
 }

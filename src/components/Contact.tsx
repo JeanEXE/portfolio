@@ -18,13 +18,13 @@ const Contact = () => {
                 setWidthAnim('w-11/12 sm:w-7/12')
             }, 400)
         }
-    }, [inViewport])
+    }, [inViewport, widthAnim])
 
     return (
         <div className={`flex-col  transition-width duration-1000 ease-in-out ${widthAnim}`}>
             <div className='whitespace-nowrap overflow-hidden gap-5'>
                 <div className=' flex w-full items-center justify-center'>
-                    <p className='pr-4 sm:pr-20 min-w-fit overflow-hidden font-bold  text-[23px] sm:text-[30px] lg:text-[43px]'>Contact Me!</p>
+                    <p className='pr-4 sm:pr-20 min-w-fit overflow-hidden font-bold whitespace-nowrap text-[23px] sm:text-[30px] lg:text-[43px]'>Contact Me!</p>
                     <div className="bg-yellow w-full h-4" />
                 </div>
                 <div className='flex flex-col gap-2 mt-5'>

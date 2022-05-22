@@ -21,7 +21,7 @@ const Footer = () => {
                 setAnimate('animate-fade-in-up')
             }, 100)
         }
-    }, [inViewport])
+    }, [inViewport, animate])
 
     const renderMobile = () => (
         <div className={`${animate} py-12 px-5 flex flex-col gap-12 justify-center text-black text-center font-bold text-[16px]`}>

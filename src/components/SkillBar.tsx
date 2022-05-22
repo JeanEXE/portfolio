@@ -15,7 +15,7 @@ const SkillBar = ({ stack, width }: SkillBarType) => {
                 setWidthAnim(width)
             }, 400)
         }
-    }, [inViewport])
+    }, [inViewport, widthAnim, width])
 
 
     return (

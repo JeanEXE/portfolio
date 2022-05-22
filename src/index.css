@@ -66,14 +66,12 @@
 
 	@media screen and (max-width: 900px) {
 		h1 {
-			font-family: 'Tomorrow';
 			font-size: 45px
 		}
 	}
 
 	@media screen and (max-width: 600px) {
 		h1 {
-			font-family: 'Tomorrow';
 			font-size: 35px
 		}
 	}

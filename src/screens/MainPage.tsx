@@ -44,8 +44,8 @@ function MainPage() {
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
                             <p className='text-[21px] sm:text-[25px] xl:text-[32px] font-semibold mb-2'>Professional Experience</p>
                             <p className='text-[13px] sm:text-[16px]  mb-1'>Fullstack Developer at
-                                <a href="https://www.isabelaflores.com/" className="no-underline font-semibold text-blue" target="_blank" rel="noreferrer">  Isabela Flores</a> /
-                                <a href="https://www.floresonline.com.br" className="no-underline font-semibold text-blue" target="_blank" rel="noreferrer"> Flores Online</a>
+                                <a href="https://www.isabelaflores.com/" className="no-underline font-semibold hover:text-blue" target="_blank" rel="noreferrer">  Isabela Flores</a> /
+                                <a href="https://www.floresonline.com.br" className="no-underline font-semibold hover:text-blue" target="_blank" rel="noreferrer"> Flores Online</a>
                                 {'\n'}(2019 - Atualmente)</p>
                             <p className='text-[14px] sm:text-[16px] text-textColor'>
                                 Participei ativamente do desenvolvimento de 2 Apps (Gingo / Gingo Business)<br />do início a publicação nas stores (Android/iOS).<br />
@@ -59,8 +59,8 @@ function MainPage() {
                                 -SQLite / MongoDB<br />
                             </p>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className='text-[21px] sm:text-[25px] xl:text-[32px] font-semibold mb-2'>Formação Academica</p>
-                            <p className='text-[13px] sm:text-[16px] '>Graduado em Engenharia de Software<br />pela UNIFAE (2016 - 2019)</p>
+                            <p className='text-[21px] sm:text-[25px] xl:text-[32px] font-semibold mb-2'>Education</p>
+                            <p className='text-[13px] sm:text-[16px]'>Bachelor of Software Engineering<br />at UNIFAE (2016 - 2019)</p>
                         </div>
                     </div>
                     {/* <div className="bg-yellow flex flex-col justify-between content-between  h-32 absolute left-0  w-full" ref={refContact}>

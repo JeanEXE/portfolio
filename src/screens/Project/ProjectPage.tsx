@@ -76,7 +76,7 @@ const ProjectPage = () => {
         <Fragment>
             <div className='flex justify-between  pt-40'>
                 <div className=' w-1/2'>
-                    <img src={props.image} className=' h-[180px] ' alt='' />
+                    <img src={props.logo} className=' h-[180px] ' alt='' />
                     <div className='flex flex-wrap mt-3 mb-7  gap-4 '>
                         {props.tags.map((element: TagType, index: number) => (
                             <Tag key={index} text={element.text} width={element?.width} />
@@ -104,41 +104,47 @@ const ProjectPage = () => {
                 </div>
             </div>
 
-            <div className='py-20 flex gap-32 justify-between'>
-                <div className=' '>
-                    <img src={iconChall} className='h-9 mb-2' alt='' />
-                    <p className='font-semibold text-[40px] mb-4'>Desafios</p>
-                    <p className='text-[16px]  text-textColor'>{props.challenge}</p>
+            {(props.challenge && props.learned) &&
+                <div className='py-20 flex gap-32 justify-between'>
+                    <div className=' '>
+                        <img src={iconChall} className='h-9 mb-2' alt='' />
+                        <p className='font-semibold text-[40px] mb-4'>Challenges</p>
+                        <p className='text-[16px]  text-textColor'>{props.challenge}</p>
+                    </div>
+                    <div className=' '>
+                        <img src={iconLearn} className='h-9 mb-2' alt='' />
+                        <p className='font-semibold text-[40px] mb-4'>Learnings</p>
+                        <p className='text-[16px]  text-textColor'>{props.learned}</p>
+                    </div>
                 </div>
-                <div className=' '>
-                    <img src={iconLearn} className='h-9 mb-2' alt='' />
-                    <p className='font-semibold text-[40px] mb-4'>Aprendizados</p>
-                    <p className='text-[16px]  text-textColor'>{props.learned}</p>
-                </div>
-            </div>
+            }
 
-            <p className='font-semibold text-[45px] mb-4'>Features</p>
+            {props.features &&
+                <Fragment>
+                    <p className='font-semibold text-[45px] mb-4'>Features</p>
 
-            <div className='w-full relative  flex flex-col'>
-                <Slide
-                    {...slideFeatureProps}
-                >
-                    {props.features.map((element, index) => (
-                        <Feature
-                            key={index}
-                            title={element.title}
-                            image={element.image}
-                            tags={element.tags}
-                            description={element.description}
+                    <div className='w-full relative  flex flex-col'>
+                        <Slide
+                            {...slideFeatureProps}
+                        >
+                            {props.features.map((element, index) => (
+                                <Feature
+                                    key={index}
+                                    title={element.title}
+                                    image={element.image}
+                                    tags={element.tags}
+                                    description={element.description}
+                                />
+                            ))}
+                        </Slide>
+                        <IndicatorCustom
+                            values={props.features}
+                            stateSelect={featureSelect}
+                            refSlide={slideFeatureRef}
                         />
-                    ))}
-                </Slide>
-                <IndicatorCustom
-                    values={props.features}
-                    stateSelect={featureSelect}
-                    refSlide={slideFeatureRef}
-                />
-            </div>
+                    </div>
+                </Fragment>
+            }
         </Fragment>
     )
 
@@ -146,7 +152,7 @@ const ProjectPage = () => {
     const renderMobile = () => (
         <Fragment>
             <div className='flex  flex-col items-center pt-24 gap-6'>
-                <img src={props.image} className=' h-[180px]' alt='' />
+                <img src={props.logo} className=' h-[180px]' alt='' />
                 <div className='flex flex-wrap gap-4 '>
                     {props.tags.map((element, index) => (
                         <Tag key={index} text={element.text} width={element?.width} />
@@ -176,48 +182,53 @@ const ProjectPage = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-16 justify-between mt-16'>
-                <div className=' '>
-                    <div className='flex mb-3 items-center'>
-                        <img src={iconChall} className='h-8 mr-3' alt='' />
-                        <p className='font-semibold text-[28px]'>Desafios</p>
+            {(props.challenge && props.learned) &&
+                <div className='flex flex-col gap-16 justify-between mt-16'>
+                    <div>
+                        <div className='flex mb-3 items-center'>
+                            <img src={iconChall} className='h-7 mr-3' alt='' />
+                            <p className='font-semibold text-[28px]'>Challenges</p>
+                        </div>
+                        <p className='text-[14px]  text-textColor'>{props.challenge}</p>
                     </div>
-                    <p className='text-[14px]  text-textColor'>{props.challenge}</p>
-                </div>
-                <div className=' '>
-                    <div className='flex mb-3 items-center'>
-                        <img src={iconLearn} className='h-8 mr-3' alt='' />
-                        <p className='font-semibold text-[28px]'>Aprendizados</p>
+                    <div>
+                        <div className='flex mb-3 items-center'>
+                            <img src={iconLearn} className='h-7 mr-3' alt='' />
+                            <p className='font-semibold text-[28px]'>Learnings</p>
+                        </div>
+
+                        <p className='text-[14px]  text-textColor'>{props.learned}</p>
                     </div>
-
-                    <p className='text-[14px]  text-textColor'>{props.learned}</p>
                 </div>
-            </div>
+            }
 
-            <p className='font-semibold text-[28px] mt-16'>Features</p>
-
-            <div className='w-full relative flex flex-col'>
-                <IndicatorCustom
-                    values={props.features}
-                    stateSelect={featureSelect}
-                    refSlide={slideFeatureRef}
-                />
-                <Slide
-                    {...slideFeatureProps}
-                    canSwipe={true}
-                >
-                    {props.features.map((element, index) => (
-                        <Feature
-                            key={index}
-                            title={element.title}
-                            image={element.image}
-                            tags={element.tags}
-                            description={element.description}
-                            mobile
+            {props.features &&
+                <Fragment>
+                    <p className='font-semibold text-[28px] mt-16'>Features</p>
+                    <div className='w-full relative flex flex-col'>
+                        <IndicatorCustom
+                            values={props.features}
+                            stateSelect={featureSelect}
+                            refSlide={slideFeatureRef}
                         />
-                    ))}
-                </Slide>
-            </div>
+                        <Slide
+                            {...slideFeatureProps}
+                            canSwipe={true}
+                        >
+                            {props.features.map((element, index) => (
+                                <Feature
+                                    key={index}
+                                    title={element.title}
+                                    image={element.image}
+                                    tags={element.tags}
+                                    description={element.description}
+                                    mobile
+                                />
+                            ))}
+                        </Slide>
+                    </div>
+                </Fragment>
+            }
         </Fragment>
     )
 
@@ -229,7 +240,6 @@ const ProjectPage = () => {
                     {width > 868 ? renderWeb() : renderMobile()}
                 </div>
             </div>
-
             <Footer />
         </div>
     )

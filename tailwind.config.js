@@ -12,6 +12,9 @@ module.exports = {
 			'2xl': '1536px'
 		},
 		extend: {
+			// screens: {  usado pra não dar hover no mobile
+			// 	'betterhover': { 'raw': '(hover: hover)' },
+			// },
 			fontFamily: {
 				tomorrow: ["Tomorrow"],
 			},
@@ -70,18 +73,6 @@ module.exports = {
 		require('@tailwindcss/line-clamp'),
 		plugin(function ({ addUtilities }) {
 			addUtilities({
-				// '.scrollbar-hide': {
-				// 	/* IE and Edge */
-				// 	'-ms-overflow-style': 'none',
-
-				// 	/* Firefox */
-				// 	'scrollbar-width': 'none',
-
-				// 	/* Safari and Chrome */
-				// 	'&::-webkit-scrollbar': {
-				// 		display: 'none'
-				// 	}
-				// }
 			})
 		})
 	],

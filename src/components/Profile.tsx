@@ -9,11 +9,11 @@ const Profile = () => {
 
     const renderMobile = () => (
         <div className='flex flex-col  items-center'>
-            <img className='w-40 h-40 rounded-full sm:h-60 sm:w-60' src={profilePic} alt='' />
+            <img className='h-44 rounded-full sm:h-60' src={profilePic} alt='' />
             <div className='flex flex-col items-center mt-3 font-semibold'>
                 <p className='text-[16px] sm:text-[22px] mb-3'>Jean Reis <span className='text-[13px] sm:text-[18px]'>- Brazil, SP</span></p>
-                <p className='text-[37px] sm:text-[55px] tracking-[5px] hero glitch layers leading-none' data-text="Fullstack"><span>Fullstack</span></p>
-                <p className='text-[37px] sm:text-[55px] tracking-[5px] hero glitch layers' data-text="Developer"><span>Developer</span></p>
+                <p className='text-[11vw] sm:text-[65px] tracking-[5px] hero glitch layers leading-none' data-text="Fullstack"><span>Fullstack</span></p>
+                <p className='text-[11vw] sm:text-[65px] tracking-[5px] hero glitch layers' data-text="Developer"><span>Developer</span></p>
                 <div className='flex flex-wrap mt-3 justify-center gap-4 '>
                     <Tag text='React Native' />
                     <Tag text='Node.js' width='w-[90px] sm:w-[130px]' />

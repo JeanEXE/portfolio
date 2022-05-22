@@ -17,9 +17,9 @@ const HeaderProject = ({ name }: { name: string }) => {
                 </div>
             </div>
             <div className='flex overflow-hidden  animate-slide-left'>
-                <div className='w-[230px] bg-[#202020] h-[45px]'>
+                <div className='w-[240px] bg-[#202020] h-[45px]'>
                     <div className='flex h-full   items-center  ml-5'>
-                        <p className='font-semibold text-[16px] '>Project:&nbsp;&nbsp;&nbsp;{name}</p>
+                        <p className='font-semibold text-[16px]'>Project_{name}</p>
                     </div>
                 </div>
                 <div className='relative  border-r-transparent bottom-[-0px]  left-[-1px] border-[#202020] border-r-[45.8px] border-t-[45.8px]' />
@@ -42,7 +42,7 @@ const HeaderProject = ({ name }: { name: string }) => {
 
             <div className='w-[500px] bg-[#202020] h-[80px]'>
                 <div className='flex h-full   items-center  ml-5 '>
-                    <p className='font-semibold text-[21px]'>Project:&nbsp;&nbsp;{name}</p>
+                    <p className='font-semibold text-[21px]'>Project_{name}</p>
                 </div>
             </div>
             <div className='relative  border-r-transparent  border-[#202020] border-r-[80px] border-t-[80px]' />

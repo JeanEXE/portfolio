@@ -14,13 +14,13 @@ export type FeatureType = {
 }
 
 export type ProjectType = {
-    image: string,
+    logo: string,
+    tags: TagType[],
     description: string,
-    challenge: string,
-    learned: string,
-    features: FeatureType[],
     images: string[],
-    tags: TagType[]
+    challenge?: string,
+    learned?: string,
+    features?: FeatureType[]
 }
 
 export type CardProjectType = {

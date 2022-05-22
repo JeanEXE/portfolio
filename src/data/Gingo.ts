@@ -87,7 +87,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 sunt in culpa qui officia deserunt mollit anim id est laborum`
 
 const DATA: ProjectType = {
-    image: gingo,
+    logo: gingo,
     tags: ARR_TAGS,
     features: ARR_FEATURES,
     description: DESC_PROJETO,

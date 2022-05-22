@@ -30,11 +30,11 @@ const Contact = () => {
                 <div className='flex flex-col gap-2 mt-5'>
                     <a className='flex items-center font-light' target="_blank" href="https://linkedin.com/in/jean-reis-91505a1b2/" rel="noreferrer">
                         <img src={linkedin} className='w-6 h-6 mr-4' alt='' />
-                        <p className='h-6 overflow-hidden text-[14px] sm:text-[16px]  font-semibold'>Linkedin</p>
+                        <p className='h-6 overflow-hidden text-[14px] sm:text-[16px]  font-semibold hover:text-blue'>Linkedin</p>
                     </a>
                     <a className='flex items-center' target="_blank" href="https://github.com/JeanEXE" rel="noreferrer">
                         <img src={github} className='w-6 h-6 mr-4' alt='' />
-                        <p className='h-6 overflow-hidden text-[14px] sm:text-[16px] font-semibold'>GitHub</p>
+                        <p className='h-6 overflow-hidden text-[14px] sm:text-[16px] font-semibold hover:text-blue'>GitHub</p>
                     </a>
                     <div className='flex items-center'>
                         <img src={gmail} className='w-6 h-6 mr-4' alt='' />

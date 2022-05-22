@@ -34,10 +34,10 @@ const Footer = () => {
                 </p>
             </div>
             <div>
-                Todo trabalho que faço
-                <p>sempre terá muito</p>
-                <p> esforço dedicação,</p>
-                <p className='flex justify-center'>proatividade e <img src={coffe} className='w-5 h-5' alt='' /></p>
+                Every work i do
+                <p>will always have </p>
+                <p>a lot of effort,</p>
+                <p className='flex justify-center'>proactivity and <img src={coffe} className='w-5' alt='' /></p>
             </div>
         </div>
     )
@@ -45,13 +45,13 @@ const Footer = () => {
     const renderWeb = () => (
         <div className={`${animate} py-16 flex gap-16 xl:gap-80 justify-center items-center text-black font-bold text-[18px]`}>
             <div>
-                <p className='flex'>Coded by me, made by <img src={heart} className='h-5 ml-1' alt='' />.   Especially</p>
+                <p className='flex'>Coded by me, made by <img src={heart} className='h-5 mt-[2px]' alt='' />.  Especially</p>
                 <p className='flex items-center h-10 justify-center'>to practice my <img src={react} className='h-12 mb-[3px]' alt='' /> skills </p>
                 <p className='flex items-center h-8 justify-center'>and learn <img src={tailwind} className='w-36 h-20' alt='' /></p>
             </div>
             <div>
-                Todo trabalho que faço sempre terá muito
-                <p className='flex justify-center items-center'>esforço, dedicação, proatividade e <img src={coffe} className='w-5' alt='' /></p>
+                Every work i do will always have a lot of
+                <p className='flex justify-center items-center'>effort, proactivity and <img src={coffe} className='w-5' alt='' /></p>
             </div>
         </div>
     )

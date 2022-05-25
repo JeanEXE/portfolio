@@ -1,40 +1,17 @@
 @import '../../styles/GlitchAnimation.css';
 
-@media screen and (max-width: 640px) {
-    .btn {
-        /* height: 35px; */
-        border: 0;
-        border: 0;
-        outline: none;
-        background-color: var(--yellow-color);
-        position: relative;
-        font-family: Tomorrow;
-        font-size: .55rem;
-        text-transform: uppercase;
-        color: var(--yellow-color);
-        clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
-    }
-}
-
-@media screen and (min-width: 640px) {
-    .btn {
-        /* height: 45px; */
-        border: 0;
-        border: 0;
-        outline: none;
-        background-color: var(--yellow-color);
-        position: relative;
-        font-weight: 600;
-        font-family: Tomorrow;
-        font-size: .75rem;
-        text-transform: uppercase;
-        color: var(--yellow-color);
-        clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
-    }
+.btn {
+    border: 0;
+    border: 0;
+    outline: none;
+    background-color: var(--yellow-color);
+    position: relative;
+    color: var(--yellow-color);
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
 }
 
 
-.btn__content {
+.btn_content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,35 +23,27 @@
     clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
 }
 
-@media screen and (min-width: 640px) {
-    .btn__label {
-        font-size: .45rem;
-        position: absolute;
-        bottom: -1px;
-        right: 8%;
-        padding: 0 5px;
-        background-color: var(--yellow-color);
-        color: #000;
-        z-index: 3;
-        border-left: 1px solid var(--blue-color);
-    }
+
+.btn_label {
+    font-size: .45rem;
+    position: absolute;
+    bottom: -1px;
+    right: 8%;
+    padding: 0 5px;
+    background-color: var(--yellow-color);
+    color: #000;
+    z-index: 3;
+    border-left: 1px solid var(--blue-color);
 }
 
-@media screen and (max-width: 640px) {
-    .btn__label {
+
+@media screen and (max-width: 1536px) {
+    .btn_label {
         font-size: .33rem;
-        position: absolute;
-        bottom: -1px;
-        right: 8%;
-        padding: 0 5px;
-        background-color: var(--yellow-color);
-        color: #000;
-        z-index: 3;
-        border-left: 1px solid var(--blue-color);
     }
 }
 
-.btn__glitch {
+.btn_glitch {
     display: none;
     position: absolute;
     top: 0;
@@ -86,7 +55,7 @@
 }
 
 @media(hover: hover) and (pointer: fine) {
-    .btn:hover .btn__glitch {
+    .btn:hover .btn_glitch {
         display: block;
         animation: glitch-animation 2s linear 0s infinite;
     }

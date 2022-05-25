@@ -30,24 +30,27 @@ function MainPage() {
                     <div className='py-12 sm:py-20 sm:flex sm:justify-between'>
                         <div className='sm:w-5/12'>
                             <h1 ref={refAbout}>About Me</h1>
-                            <p className='text-[14px] sm:text-[16px] text-textColor indent-4'>Hey 👋 I'm Jean, Trabalho a 3 anos como Fullstack, utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.
+                            <p className='text-[14px] 2xl:text-[16px] text-textColor indent-4'>Hey 👋 I'm Jean, Trabalho a 3 anos como Fullstack, utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.
                                 Após entender como a arquitetura, gerenciamento de estados e a componentização do react funciona, procurei aprender mais sobre performance,
                                 aprendi a gerenciar estados de forma mais controlada, e a utilizar o react memo para controlar renderizações desnecessárias,
                                 foi nesse momento que descobri gostar muito de performance e otimizações, busco sempre aplicar conceitos de clean code e abstração é uma palavra que gosto bastante.
                                 <br />Sou curioso, responsável e me considero bastante proativo.
-                                <br /><br />Valorizo o trabalho em equipe, receber feedback sobre algo que desenvolvi é algo importante pra mim, gosto de dar minha opinião também em algo que vejo como uma possivel melhoria, dessa forma todos compartilham seus aprendizados e a equipe melhora e se alinha técnicamente como um todo.
-                                <br /><br />🌱 I'm currently learning: TypeScript / Testing / React.js / Styled Components
-                                <br /><br />🏹 I Want to learn: GraphQL / Vue 3 / Flutter / remix / contextAPI
+                                <br /> <br />
+                                &emsp;Valorizo o trabalho em equipe, receber feedback sobre algo que desenvolvi é algo importante pra mim, gosto de dar minha opinião também em algo que vejo como uma possivel melhoria, dessa forma todos compartilham seus aprendizados e a equipe melhora e se alinha técnicamente como um todo.
+                                <br /><br />
+                                🌱 I'm currently learning: TypeScript / Testing / React.js / Styled Components
+                                <br /><br />
+                                🏹 I Want to learn: GraphQL / Vue 3 / Flutter / remix / contextAPI
                             </p>
                         </div>
                         <div className='mt-10 sm:w-5/12'>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className='text-[21px] sm:text-[25px] xl:text-[32px] font-semibold mb-2'>Professional Experience</p>
-                            <p className='text-[13px] sm:text-[16px]  mb-1'>Fullstack Developer at
+                            <p className='text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2'>Professional Experience</p>
+                            <p className='text-[13px] 2xl:text-[16px]  mb-1'>Fullstack Developer at
                                 <a href="https://www.isabelaflores.com/" className="no-underline font-semibold hover:text-blue" target="_blank" rel="noreferrer">  Isabela Flores</a> /
                                 <a href="https://www.floresonline.com.br" className="no-underline font-semibold hover:text-blue" target="_blank" rel="noreferrer"> Flores Online</a>
                                 {'\n'}(2019 - Atualmente)</p>
-                            <p className='text-[14px] sm:text-[16px] text-textColor'>
+                            <p className='text-[14px] 2xl:text-[16px] text-textColor indent-4'>
                                 Participei ativamente do desenvolvimento de 2 Apps (Gingo / Gingo Business)<br />do início a publicação nas stores (Android/iOS).<br />
                                 -App de delivery/Chat em tempo real<br />
                                 -Gerenciamento de pedidos/cardápio via Gingo Business<br />
@@ -59,8 +62,8 @@ function MainPage() {
                                 -SQLite / MongoDB<br />
                             </p>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className='text-[21px] sm:text-[25px] xl:text-[32px] font-semibold mb-2'>Education</p>
-                            <p className='text-[13px] sm:text-[16px]'>Bachelor of Software Engineering<br />at UNIFAE (2016 - 2019)</p>
+                            <p className='text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2'>Education</p>
+                            <p className='text-[13px] 2xl:text-[16px]'>Bachelor of Software Engineering<br />at UNIFAE (2016 - 2019)</p>
                         </div>
                     </div>
                     {/* <div className="bg-yellow flex flex-col justify-between content-between  h-32 absolute left-0  w-full" ref={refContact}>
@@ -72,14 +75,11 @@ function MainPage() {
                     <div className='py-7'>
                         <h1 ref={refProjects}>Portfolio</h1>
                         <p className='text-[14px] sm:text-[17px] text-textColor'>A section with the projects that i worked</p>
-                        <div className='grid gap-3 sm:gap-6 grid-cols-1 xl:grid-cols-2 mt-7'>
+                        <div className='grid gap-3 sm:gap-6 lg:gap-2 xl:gap-3 grid-cols-1 lg:grid-cols-2 mt-7'>
                             <CardProject
                                 name={'Gingo'}
                                 image={gingo}
-                                tags={[
-                                    { text: 'React Native', width: 'w-[110px]' },
-                                    { text: 'Node.js', width: 'w-[80px]' }
-                                ]}
+                                tags={['React Native', 'Node.js']}
                                 description={
                                     `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
                                 }
@@ -87,10 +87,7 @@ function MainPage() {
                             <CardProject
                                 name={'Gingo Business'}
                                 image={gBusiness}
-                                tags={[
-                                    { text: 'React Native', width: 'w-[110px]' },
-                                    { text: 'Node.js', width: 'w-[80px]' }
-                                ]}
+                                tags={['React Native', 'Node.js']}
                                 description={
                                     `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.`
                                 }
@@ -101,7 +98,7 @@ function MainPage() {
                     <div className='py-7 sm:flex justify-between'>
                         <div>
                             <h1 ref={refSkills}>Hard Skills</h1>
-                            <p className='text-[14px] sm:text-[17px] text-textColor'>Know a litlle about my skills</p>
+                            <p className='text-[14px] 2xl:text-[17px] text-textColor'>Know a litlle about my skills</p>
                         </div>
                         <div className='sm:w-6/12'>
                             <div className='flex  w-full  mt-5 mb-2 items-center'>
@@ -121,10 +118,10 @@ function MainPage() {
                             <SkillBar stack={'Java'} width='w-1/12' />
                             <SkillBar stack={'SQLite'} width='w-6/12' />
                             <SkillBar stack={'MongoDB'} width='w-7/12' />
-                            <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width='w-4/6' />
                             <SkillBar stack={'Redux'} width='w-4/6' />
                             <SkillBar stack={'API Rest'} width='w-5/6' />
                             <SkillBar stack={'Git'} width='w-5/6' />
+                            <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width='w-4/6' />
                         </div>
                     </div>
                     <div className="flex justify-between items-center py-7 absolute left-0 w-full" ref={refContact}>

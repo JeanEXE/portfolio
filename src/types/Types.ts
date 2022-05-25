@@ -1,6 +1,5 @@
 export type TagType = {
     text: string,
-    width?: string,
     small?: boolean,
     backgroundColor?: string
 }
@@ -8,14 +7,14 @@ export type TagType = {
 export type FeatureType = {
     title: string,
     image: string,
-    tags: TagType[],
+    tags: string[],
     description: string,
     mobile?: boolean
 }
 
 export type ProjectType = {
     logo: string,
-    tags: TagType[],
+    tags: string[],
     description: string,
     images: string[],
     challenge?: string,
@@ -26,7 +25,7 @@ export type ProjectType = {
 export type CardProjectType = {
     name: string,
     image: any,
-    tags: TagType[],
+    tags: string[],
     description: string
 }
 

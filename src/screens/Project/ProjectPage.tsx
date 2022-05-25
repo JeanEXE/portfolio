@@ -13,7 +13,7 @@ import Feature from './Feature';
 import useDimensions from '../../hooks/useDimensions';
 import gingoData from '../../data/Gingo.ts';
 import { useParams } from 'react-router-dom';
-import { ProjectType, TagType } from '../../types/Types';
+import { ProjectType } from '../../types/Types';
 
 
 type ObjLiteral = {
@@ -36,10 +36,10 @@ const ProjectPage = () => {
 
 
     const IndicatorCustom = ({ values, stateSelect, refSlide }: { values: any, stateSelect: number, refSlide: any }) => (
-        <div className='flex flex-wrap gap-1 sm:gap-2 my-4  max-w-[500px] justify-center self-center'>
+        <div className='flex flex-wrap gap-1 2xl:gap-2 my-4  max-w-[500px] justify-center self-center'>
             {values.map((element: any, index: number) => {
                 return (
-                    <div className={`indicator  p-[8px] sm:p-[10px] cursor-pointer ${stateSelect === index ? 'bg-blue' : 'bg-unselected'}`}
+                    <div className={`indicator  p-[8px] 2xl:p-[10px] cursor-pointer ${stateSelect === index ? 'bg-blue' : 'bg-unselected'}`}
                         key={index}
                         onClick={() => refSlide.current.goTo(index)}
                     />
@@ -76,13 +76,13 @@ const ProjectPage = () => {
         <Fragment>
             <div className='flex justify-between  pt-40'>
                 <div className=' w-1/2'>
-                    <img src={props.logo} className=' h-[180px] ' alt='' />
+                    <img src={props.logo} className=' h-[150px] 2xl:h-[180px] ' alt='' />
                     <div className='flex flex-wrap mt-3 mb-7  gap-4 '>
-                        {props.tags.map((element: TagType, index: number) => (
-                            <Tag key={index} text={element.text} width={element?.width} />
+                        {props.tags.map((name: string, index: number) => (
+                            <Tag key={index} text={name} />
                         ))}
                     </div>
-                    <p className=' text-textColor'>{props.description}</p>
+                    <p className='text-[14px] 2xl:text-[16px] text-textColor'>{props.description}</p>
                 </div>
                 <div className=' w-[500px] flex justify-center'>
                     <div className='w-full relative flex flex-col'>
@@ -91,7 +91,7 @@ const ProjectPage = () => {
                         >
                             {props.images.map((element, index) => (
                                 <div className="flex justify-center max-h-full " key={index} >
-                                    <img src={element} className='w-[350px]' alt='' />
+                                    <img src={element} className='w-[220px] 2xl:w-[350px]' alt='' />
                                 </div>
                             ))}
                         </Slide>
@@ -107,21 +107,21 @@ const ProjectPage = () => {
             {(props.challenge && props.learned) &&
                 <div className='py-20 flex gap-32 justify-between'>
                     <div className=' '>
-                        <img src={iconChall} className='h-9 mb-2' alt='' />
-                        <p className='font-semibold text-[40px] mb-4'>Challenges</p>
-                        <p className='text-[16px]  text-textColor'>{props.challenge}</p>
+                        <img src={iconChall} className='h-7 2xl:h-9 mb-2' alt='' />
+                        <p className='font-semibold text-[30px] 2xl:text-[40px] mb-4'>Challenges</p>
+                        <p className='text-[14px] 2xl:text-[16px]  text-textColor'>{props.challenge}</p>
                     </div>
                     <div className=' '>
-                        <img src={iconLearn} className='h-9 mb-2' alt='' />
-                        <p className='font-semibold text-[40px] mb-4'>Learnings</p>
-                        <p className='text-[16px]  text-textColor'>{props.learned}</p>
+                        <img src={iconLearn} className='h-7 2xl:h-9 mb-2' alt='' />
+                        <p className='font-semibold text-[30px] 2xl:text-[40px] mb-4'>Learnings</p>
+                        <p className='text-[14px] 2xl:text-[16px]  text-textColor'>{props.learned}</p>
                     </div>
                 </div>
             }
 
             {props.features &&
                 <Fragment>
-                    <p className='font-semibold text-[45px] mb-4'>Features</p>
+                    <p className='font-semibold text-[35px] 2xl:text-[45px] mb-4'>Features</p>
 
                     <div className='w-full relative  flex flex-col'>
                         <Slide
@@ -154,8 +154,8 @@ const ProjectPage = () => {
             <div className='flex  flex-col items-center pt-24 gap-6'>
                 <img src={props.logo} className=' h-[180px]' alt='' />
                 <div className='flex flex-wrap gap-4 '>
-                    {props.tags.map((element, index) => (
-                        <Tag key={index} text={element.text} width={element?.width} />
+                    {props.tags.map((name: string, index: number) => (
+                        <Tag key={index} text={name} />
                     ))}
                 </div>
 
@@ -236,7 +236,7 @@ const ProjectPage = () => {
         <div className=" flex-1 min-h-screen bg-black">
             <HeaderProject name={nameProject} />
             <div className='flex flex-col justify-center items-center pb-20'>
-                <div className='px-5 sm:px-10 md:px-10 lg:px-20 max-w-full xx:max-w-7xl animate-fade-in-up'>
+                <div className='px-5 sm:px-10 md:px-10 lg:px-20 max-w-full 2xl:max-w-7xl animate-fade-in-up'>
                     {width > 868 ? renderWeb() : renderMobile()}
                 </div>
             </div>

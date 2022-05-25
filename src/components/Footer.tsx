@@ -19,12 +19,12 @@ const Footer = () => {
         if (inViewport && animate === 'opacity-0') {
             setTimeout(() => {
                 setAnimate('animate-fade-in-up')
-            }, 100)
+            }, 300)
         }
     }, [inViewport, animate])
 
     const renderMobile = () => (
-        <div className={`${animate} py-12 px-5 flex flex-col gap-12 justify-center text-black text-center font-bold text-[16px]`}>
+        <div className={`${animate} py-10 px-5 flex flex-col gap-12 justify-center text-black text-center font-bold text-[16px]`}>
             <div>
                 <p className='flex items-center justify-center'>Coded by me, made by <img src={heart} className='w-4' alt='' />.</p>
                 <p>Especially to practice </p>
@@ -33,7 +33,7 @@ const Footer = () => {
                     <img src={tailwind} className=' w-32' alt='' />
                 </p>
             </div>
-            <div>
+            <div ref={myRef}>
                 Every work i do
                 <p>will always have </p>
                 <p>a lot of effort,</p>
@@ -43,13 +43,13 @@ const Footer = () => {
     )
 
     const renderWeb = () => (
-        <div className={`${animate} py-16 flex gap-16 xl:gap-80 justify-center items-center text-black font-bold text-[18px]`}>
+        <div className={`${animate} py-14 flex gap-16 xl:gap-80 justify-center items-center text-black font-bold text-[16px] 2xl:text-[18px]`}>
             <div>
                 <p className='flex'>Coded by me, made by <img src={heart} className='h-5 mt-[2px]' alt='' />.  Especially</p>
                 <p className='flex items-center h-10 justify-center'>to practice my <img src={react} className='h-12 mb-[3px]' alt='' /> skills </p>
                 <p className='flex items-center h-8 justify-center'>and learn <img src={tailwind} className='w-36 h-20' alt='' /></p>
             </div>
-            <div>
+            <div ref={myRef}>
                 Every work i do will always have a lot of
                 <p className='flex justify-center items-center'>effort, proactivity and <img src={coffe} className='w-5' alt='' /></p>
             </div>
@@ -63,17 +63,17 @@ const Footer = () => {
                 {width > 868 ? renderWeb() : renderMobile()}
                 <Separator />
             </div>
-            <div className=' w-full flex h-20 justify-center items-center' ref={myRef}>
+            <div className=' w-full flex h-20 justify-center items-center'>
                 <button
                     onClick={() => window.scroll({ top: 0, left: 0, behavior: 'smooth' })}
                     className='mt-6 mb-5 flex align-center justify-center  animate-bounce'
                 >
                     <img src={arrow} className='w-6 h-6 mr-3' alt='' />
-                    <p className='text-[17px] text-blue hover:font-semibold'>Back to top</p>
+                    <p className='text-[15px] 2xl:text-[17px] text-blue hover:font-semibold'>Back to top</p>
                 </button>
             </div>
             <div className='bg-blackSec w-full flex h-16 justify-center items-center'>
-                <p>© 2022 Jean Reis</p>
+                <p className='text-[14px] 2xl:text-[16px]'>© 2022 Jean Reis</p>
             </div>
         </div >
     );

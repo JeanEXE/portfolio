@@ -16,7 +16,7 @@ const Profile = () => {
                 <p className='text-[11vw] sm:text-[65px] tracking-[5px] hero glitch layers' data-text="Developer"><span>Developer</span></p>
                 <div className='flex flex-wrap mt-3 justify-center gap-4 '>
                     <Tag text='React Native' />
-                    <Tag text='Node.js' width='w-[90px] sm:w-[130px]' />
+                    <Tag text='Node.js' />
                 </div>
             </div>
         </div>
@@ -24,14 +24,14 @@ const Profile = () => {
 
     const renderWeb = () => (
         <div className='flex'>
-            <img className='mr-10 h-72 w-72' src={profilePic} alt='' />
+            <img className='mr-10 h-60 2xl:h-72 ' src={profilePic} alt='' />
             <div className='font-semibold'>
-                <p className='text-[26px]'>Jean Reis <span className='text-[22px]'>- Brazil, SP</span></p>
-                <p className='text-[70px] leading-none tracking-[10px] hero glitch layers' data-text="Fullstack"><span>Fullstack</span></p>
-                <p className='text-[70px] leading-none tracking-[10px] hero glitch layers' data-text="Developer"><span>Developer</span></p>
+                <p className='text-[24px] 2xl:text-[26px]'>Jean Reis <span className='text-[20px] 2xl:text-[22px]'>- Brazil, SP</span></p>
+                <p className='text-[60px] 2xl:text-[70px] leading-none tracking-[10px] hero glitch layers' data-text="Fullstack"><span>Fullstack</span></p>
+                <p className='text-[60px] 2xl:text-[70px] leading-none tracking-[10px] hero glitch layers' data-text="Developer"><span>Developer</span></p>
                 <div className='flex flex-wrap mt-8 gap-5'>
                     <Tag text='React Native' />
-                    <Tag text='Node.js' width='w-[130px] lg:w-[140px]' />
+                    <Tag text='Node.js' />
                 </div>
             </div>
         </div>

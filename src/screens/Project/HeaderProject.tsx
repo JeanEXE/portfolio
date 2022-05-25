@@ -30,22 +30,22 @@ const HeaderProject = ({ name }: { name: string }) => {
 
     const renderWeb = () => (
         <div className='flex  animate-slide-left'>
-            <div className='w-[300px] bg-yellow h-20'>
-                <div className='flex h-[80px]   items-center  ml-5'>
+            <div className='w-[230px] 2xl:w-[300px] bg-yellow h-[60px] 2xl:h-[80px]'>
+                <div className='flex h-[60px] 2xl:h-[80px]  items-center  ml-5'>
                     <Link to="/">
                         <Myname />
                     </Link>
                 </div>
             </div>
 
-            <div className='relative  bg-[#202020] border-r-transparent  border-yellow border-r-[80px] border-t-[80px]' />
+            <div className='relative  bg-[#202020] border-r-transparent  border-yellow border-r-[60px] border-t-[60px] 2xl:border-r-[80px] 2xl:border-t-[80px]' />
 
-            <div className='w-[500px] bg-[#202020] h-[80px]'>
+            <div className='w-[350px] 2xl:w-[500px] bg-[#202020] h-[60px] 2xl:h-[80px] '>
                 <div className='flex h-full   items-center  ml-5 '>
-                    <p className='font-semibold text-[21px]'>Project_{name}</p>
+                    <p className='font-semibold text-[19px] 2xl:text-[21px]'>Project_{name}</p>
                 </div>
             </div>
-            <div className='relative  border-r-transparent  border-[#202020] border-r-[80px] border-t-[80px]' />
+            <div className='relative  border-r-transparent  border-[#202020] border-r-[60px] border-t-[60px] 2xl:border-r-[80px] 2xl:border-t-[80px]' />
         </div>
     )
 

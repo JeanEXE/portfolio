@@ -30,17 +30,19 @@ function MainPage() {
                     <div className='py-12 sm:py-20 sm:flex sm:justify-between'>
                         <div className='sm:w-5/12'>
                             <h1 ref={refAbout}>About Me</h1>
-                            <p className='text-[14px] 2xl:text-[16px] text-textColor indent-4'>Hey 👋 I'm Jean, Trabalho a 3 anos como Fullstack, utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.
-                                Após entender como a arquitetura, gerenciamento de estados e a componentização do react funciona, procurei aprender mais sobre performance,
-                                aprendi a gerenciar estados de forma mais controlada, e a utilizar o react memo para controlar renderizações desnecessárias,
-                                foi nesse momento que descobri gostar muito de performance e otimizações, busco sempre aplicar conceitos de clean code e abstração é uma palavra que gosto bastante.
-                                <br />Sou curioso, responsável e me considero bastante proativo.
-                                <br /> <br />
-                                &emsp;Valorizo o trabalho em equipe, receber feedback sobre algo que desenvolvi é algo importante pra mim, gosto de dar minha opinião também em algo que vejo como uma possivel melhoria, dessa forma todos compartilham seus aprendizados e a equipe melhora e se alinha técnicamente como um todo.
+                            <p className='text-[14px] 2xl:text-[16px] text-textColor indent-4'>Olá 👋 sou o Jean, trabalho desde 2019 como desenvolvedor fullstack,
+                                utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.
+                                Gosto bastante de trabalhar com performance e otimizações, busco sempre aplicar conceitos de clean code e abstração.
+                                Sou curioso, responsável e me considero bastante proativo.
+                                <br />
+                                &emsp;Receber feedbacks é sempre bem vindo. Valorizo o trabalho em equipe,
+                                me preocupo em ajudar iniciantes pois já passei por isso e entendo como é difícil o início.
+                                Gosto de contribuir com ideias e minha opinião em algo que vejo como uma possivel melhoria, dessa forma consigo compartilhar meu conhecimento
+                                e também aprender coisas novas com a equipe.
                                 <br /><br />
-                                🌱 I'm currently learning: TypeScript / Testing / React.js / Styled Components
+                                🌱 I'm currently learning: TypeScript / E2E Testing / React.js
                                 <br /><br />
-                                🏹 I Want to learn: GraphQL / Vue 3 / Flutter / remix / contextAPI
+                                🏹 I Want to learn:  GraphQL / Styled Components / Flutter / Remix
                             </p>
                         </div>
                         <div className='mt-10 sm:w-5/12'>

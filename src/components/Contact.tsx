@@ -38,7 +38,7 @@ const Contact = () => {
                     </a>
                     <div className='flex items-center'>
                         <img src={gmail} className='w-6 h-6 mr-4' alt='' />
-                        <p className='h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-light'>jeansreiss@gmail.com</p>
+                        <p className='h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-light'>jeanreis.dev@gmail.com</p>
                     </div>
                     <div className='flex items-center'>
                         <img src={whatsapp} className='w-6 h-6 mr-4' alt='' />

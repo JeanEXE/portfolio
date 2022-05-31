@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import { useInViewport } from 'react-in-viewport'
+import { useLocation } from 'react-router-dom'
+import { insertEvent } from '../helpers/Analytics'
 import arrow from '../assets/svg/icon-arrow.svg'
 import coffe from '../assets/svg/icon-coffe.svg'
 import heart from '../assets/svg/icon-heart.svg'
@@ -13,7 +15,12 @@ const Footer = () => {
     const { width } = useDimensions()
     const [animate, setAnimate] = useState('opacity-0')
     const myRef = useRef()
+    const refEndPage = useRef()
     const { inViewport } = useInViewport(myRef)
+    const { pathname } = useLocation()
+    const endPage = useInViewport(refEndPage)
+    const canSaveEvent = useRef(true)
+
 
     useEffect(() => {
         if (inViewport && animate === 'opacity-0') {
@@ -22,6 +29,19 @@ const Footer = () => {
             }, 300)
         }
     }, [inViewport, animate])
+
+    useEffect(() => {
+        if (endPage.inViewport && canSaveEvent.current) {
+            canSaveEvent.current = false
+
+            let stringPath = '/MainPage'
+            if (pathname !== '/') {
+                stringPath = pathname
+            }
+
+            insertEvent(`scrollou fim: ${stringPath}`)
+        }
+    }, [endPage, pathname])
 
     const renderMobile = () => (
         <div className={`${animate} py-10 px-5 flex flex-col gap-12 justify-center text-black text-center font-bold text-[16px]`}>
@@ -72,7 +92,7 @@ const Footer = () => {
                     <p className='text-[15px] 2xl:text-[17px] text-blue hover:font-semibold'>Back to top</p>
                 </button>
             </div>
-            <div className='bg-blackSec w-full flex h-16 justify-center items-center'>
+            <div className='bg-blackSec w-full flex h-16 justify-center items-center' ref={refEndPage}>
                 <p className='text-[14px] 2xl:text-[16px]'>© 2022 Jean Reis</p>
             </div>
         </div >

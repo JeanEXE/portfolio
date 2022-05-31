@@ -8,7 +8,8 @@ import Contact from '../components/Contact';
 import Profile from '../components/Profile';
 import gingo from '../assets/img/gingo.png'
 import gBusiness from '../assets/img/g_business.png'
-import CardProject from '../components/CardProject';
+import CardProject from '../components/CardProject'
+import { insertEvent } from '../helpers/Analytics'
 
 function MainPage() {
     const refAbout = useRef()
@@ -49,8 +50,19 @@ function MainPage() {
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
                             <p className='text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2'>Professional Experience</p>
                             <p className='text-[13px] 2xl:text-[16px]  mb-1'>Fullstack Developer at
-                                <a href="https://www.isabelaflores.com/" className="no-underline font-semibold hover:text-blue" target="_blank" rel="noreferrer">  Isabela Flores</a> /
-                                <a href="https://www.floresonline.com.br" className="no-underline font-semibold hover:text-blue" target="_blank" rel="noreferrer"> Flores Online</a>
+                                <a
+                                    href="https://www.isabelaflores.com/"
+                                    className="no-underline font-semibold hover:text-blue"
+                                    target="_blank" rel="noreferrer"
+                                    onClick={() => insertEvent('clicou link: IsaFlores')}
+                                >  Isabela Flores</a> /
+                                <a
+                                    href="https://www.floresonline.com.br"
+                                    className="no-underline font-semibold hover:text-blue"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    onClick={() => insertEvent('clicou link: FloresOn')}
+                                > Flores Online</a>
                                 {'\n'}(2019 - Atualmente)</p>
                             <p className='text-[14px] 2xl:text-[16px] text-textColor indent-4'>
                                 Participei ativamente do desenvolvimento de 2 Apps (Gingo / Gingo Business)<br />do início a publicação nas stores (Android/iOS).<br />

@@ -7,8 +7,10 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "env-cmd": "^10.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-ga4": "^1.4.1",
     "react-in-viewport": "^1.0.0-alpha.26",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
@@ -16,8 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "env-cmd -f dev.env react-scripts start",
+    "build": "env-cmd -f prod.env react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -5,6 +5,11 @@ import ScrollToTop from './helpers/ScrollToTop';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Router from './Router';
+import ReactGA from "react-ga4"
+
+console.log('>>>>  ', process.env.REACT_APP_DALE_KEY)
+
+ReactGA.initialize(process.env.REACT_APP_FIREBASE_KEY)
 
 const root = ReactDOMClient.createRoot(
   document.getElementById("root")

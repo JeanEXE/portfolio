@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Router from './Router';
 import ReactGA from "react-ga4"
 
-console.log('>>>>  ', process.env.REACT_APP_DALE_KEY)
+console.log('>>>>  ')
 
 ReactGA.initialize(process.env.REACT_APP_FIREBASE_KEY)
 

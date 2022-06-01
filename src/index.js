@@ -7,11 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Router from './Router';
 import ReactGA from "react-ga4"
 
-console.log('>>>>  DALEE')
-console.log('2>>>>  ', process.env.REACT_APP_VERCEL_ENV)
-
-
-ReactGA.initialize('G-C3PZQ9DDVB')
+ReactGA.initialize(process.env.REACT_APP_FIREBASE_KEY)
 
 const root = ReactDOMClient.createRoot(
   document.getElementById("root")

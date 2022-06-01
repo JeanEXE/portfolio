@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import Router from './Router';
 import ReactGA from "react-ga4"
 
-console.log('>>>>  ')
+console.log('>>>>  DALEE')
 console.log('2>>>>  ', process.env.REACT_APP_VERCEL_ENV)
 
 

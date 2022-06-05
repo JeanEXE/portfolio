@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useRef } from 'react';
 import Header from '../components/Header';
 import SkillBar from '../components/SkillBar';
+import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
 import AnimatedBadge from '../components/AnimatedBadge';
 import Contact from '../components/Contact';
@@ -17,6 +18,8 @@ function MainPage() {
     const refSkills = useRef()
     const refContact = useRef()
 
+    const { t } = useTranslation()
+
     return (
         <div className=" flex-1 min-h-screen bg-black">
             <Header
@@ -30,7 +33,9 @@ function MainPage() {
                     <Profile />
                     <div className='py-12 sm:py-20 sm:flex sm:justify-between'>
                         <div className='sm:w-5/12'>
-                            <h1 ref={refAbout}>About Me</h1>
+                            <h1 ref={refAbout}>
+                                {t('sobre')}
+                            </h1>
                             <p className='text-[14px] 2xl:text-[16px] text-textColor indent-4'>Olá 👋 sou o Jean, trabalho desde 2019 como desenvolvedor fullstack,
                                 utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native.
                                 Gosto bastante de trabalhar com performance e otimizações, busco sempre aplicar conceitos de clean code e abstração.
@@ -48,7 +53,7 @@ function MainPage() {
                         </div>
                         <div className='mt-10 sm:w-5/12'>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className='text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2'>Professional Experience</p>
+                            <p className='text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2'>{t('experiencia')}</p>
                             <p className='text-[13px] 2xl:text-[16px]  mb-1'>Fullstack Developer at
                                 <a
                                     href="https://www.isabelaflores.com/"

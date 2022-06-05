@@ -3,6 +3,7 @@ import * as ReactDOMClient from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from './helpers/ScrollToTop';
 import './index.css';
+import './helpers/i18n'
 import reportWebVitals from './reportWebVitals';
 import Router from './Router';
 import ReactGA from "react-ga4"

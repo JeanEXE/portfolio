@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import './Switch.css';
+import './Switch.css'
 import pt from '../../assets/img/portugues.jpg'
 import en from '../../assets/img/ingles.jpg'
 
 const Switch = () => {
-    const [isToggled, setIsToggled] = useState(false);
+    const [isToggled, setIsToggled] = useState(false)
     const { i18n } = useTranslation()
 
     const onToggle = () => {
@@ -23,17 +23,21 @@ const Switch = () => {
                 <span className='absolute  right-[7px] bottom-[5px] text-[12px]'>en</span>
             } */}
             <img
-                className={`${isToggled ? 'animate-fade-in' : 'hidden'} rounded-sm absolute h-[11px] bottom-[4px] left-[5px] sm:h-[13px] sm:bottom-[4px] sm:left-[9px] z-10`}
+                className={`${
+                    isToggled ? 'animate-fade-in' : 'hidden'
+                } rounded-sm absolute h-[11px] bottom-[4px] left-[5px] sm:h-[13px] sm:bottom-[4px] sm:left-[9px] z-10`}
                 src={pt}
-                alt=''
+                alt=""
             />
             <img
-                className={`${!isToggled ? 'animate-fade-in' : 'hidden'} rounded-sm absolute h-[11px] bottom-[4px] right-[5px] sm:h-[13px] sm:bottom-[4px] sm:right-[9px] z-10`}
+                className={`${
+                    !isToggled ? 'animate-fade-in' : 'hidden'
+                } rounded-sm absolute h-[11px] bottom-[4px] right-[5px] sm:h-[13px] sm:bottom-[4px] sm:right-[9px] z-10`}
                 src={en}
-                alt=''
+                alt=""
             />
         </label>
-    );
-};
+    )
+}
 
 export default Switch

@@ -1,12 +1,16 @@
-import * as React from 'react';
+import * as React from 'react'
 
-const Separator = ({ color = "#0B0B0C", inverted }: { color?: string, inverted?: boolean }) => {
+const Separator = ({ color = '#0B0B0C', inverted }: { color?: string; inverted?: boolean }) => {
     return (
         <svg
-            className={`${inverted ? 'rotate-180' : ''} w-full relative ${inverted ? 'top-[-1px]' : 'bottom-[-1px]'}`}
+            className={`${inverted && 'rotate-180'} w-full relative ${inverted ? 'top-[-1px]' : 'bottom-[-1px]'}`}
             xmlns="http://www.w3.org/2000/svg"
-            width="1920px" height="37px" >
-            <path fillRule="evenodd" fill={color}
+            width="1920px"
+            height="37px"
+        >
+            <path
+                fillRule="evenodd"
+                fill={color}
                 d="M1920.000,13.018 L1920.000,37.011 L0.001,37.011 L0.001,13.045 L158.501,13.016 L161.323,15.828 L156.611,20.516 L166.026,20.516 
                                 L161.323,15.828 L164.151,13.016 L234.068,13.016 L238.084,8.999 L245.996,1.109 L251.272,6.368 L278.008,6.251 L282.294,6.251 L293.125,17.048
                                 L321.902,17.048 L328.095,10.874 L391.637,10.907 L396.574,15.825 L403.975,8.445 L406.448,10.907 L547.767,10.874 L558.686,0.003 L579.264,20.516 
@@ -33,7 +37,7 @@ const Separator = ({ color = "#0B0B0C", inverted }: { color?: string, inverted?:
                                 L158.479,12.993 ZM407.477,4.954 L403.975,8.445 L400.463,4.954 L407.477,4.954 Z"
             />
         </svg>
-    );
+    )
 }
 
-export default Separator;
+export default Separator

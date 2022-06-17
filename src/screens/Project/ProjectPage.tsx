@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { useState, useRef, Fragment } from 'react'
 import Footer from '../../components/Footer'
+import { useTranslation } from 'react-i18next'
 import HeaderProject from './HeaderProject'
 import Tag from '../../components/Tag/Tag'
 import iconChall from '../../assets/svg/icon-chall.svg'
@@ -20,6 +21,7 @@ type ObjLiteral = {
 
 const ProjectPage = () => {
     const { width } = useDimensions()
+    const { t } = useTranslation()
     const { nameProject } = useParams()
 
     const [imgSelect, setImgSelect] = useState<number>(0)
@@ -104,12 +106,12 @@ const ProjectPage = () => {
                 <div className="py-20 flex gap-32 justify-between">
                     <div className=" ">
                         <img src={iconChall} className="h-7 2xl:h-9 mb-2" alt="" />
-                        <p className="font-semibold text-[30px] 2xl:text-[40px] mb-4">Challenges</p>
+                        <p className="font-semibold text-[30px] 2xl:text-[40px] mb-4">{t('challenge')}</p>
                         <p className="text-[14px] 2xl:text-[16px]  text-textColor">{props.challenge}</p>
                     </div>
                     <div className=" ">
                         <img src={iconLearn} className="h-7 2xl:h-9 mb-2" alt="" />
-                        <p className="font-semibold text-[30px] 2xl:text-[40px] mb-4">Learnings</p>
+                        <p className="font-semibold text-[30px] 2xl:text-[40px] mb-4">{t('learn')}</p>
                         <p className="text-[14px] 2xl:text-[16px]  text-textColor">{props.learned}</p>
                     </div>
                 </div>
@@ -117,7 +119,7 @@ const ProjectPage = () => {
 
             {props.features && (
                 <Fragment>
-                    <p className="font-semibold text-[35px] 2xl:text-[45px] mb-4">Features</p>
+                    <p className="font-semibold text-[35px] 2xl:text-[45px] mb-4">{t('features')}</p>
 
                     <div className="w-full relative  flex flex-col">
                         <Slide {...slideFeatureProps}>
@@ -169,14 +171,14 @@ const ProjectPage = () => {
                     <div>
                         <div className="flex mb-3 items-center">
                             <img src={iconChall} className="h-7 mr-3" alt="" />
-                            <p className="font-semibold text-[28px]">Challenges</p>
+                            <p className="font-semibold text-[28px]">{t('challenge')}</p>
                         </div>
                         <p className="text-[14px]  text-textColor">{props.challenge}</p>
                     </div>
                     <div>
                         <div className="flex mb-3 items-center">
                             <img src={iconLearn} className="h-7 mr-3" alt="" />
-                            <p className="font-semibold text-[28px]">Learnings</p>
+                            <p className="font-semibold text-[28px]">{t('learn')}</p>
                         </div>
 
                         <p className="text-[14px]  text-textColor">{props.learned}</p>
@@ -186,7 +188,7 @@ const ProjectPage = () => {
 
             {props.features && (
                 <Fragment>
-                    <p className="font-semibold text-[28px] mt-16">Features</p>
+                    <p className="font-semibold text-[28px] mt-16">{t('features')}</p>
                     <div className="w-full relative flex flex-col">
                         <IndicatorCustom values={props.features} stateSelect={featureSelect} refSlide={slideFeatureRef} />
                         <Slide {...slideFeatureProps} canSwipe={true}>

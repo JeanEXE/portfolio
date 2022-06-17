@@ -11,46 +11,23 @@ const ARR_FEATURES: FeatureType[] = [
         title: 'Push Notification',
         image: 'https://i.imgur.com/ohXtP7h.gif',
         tags: ['Firebase', 'APNS', 'APNS', 'Socket.io', 'APNS', 'APNS'],
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum
-t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum`
+        description: i18n.t('prj1.feature1.description')
     },
     {
         title: 'Chat: Vídeo',
         image: 'https://i.imgur.com/ohXtP7h.gif',
         tags: ['Firebase', 'APNS', 'APNS', 'Socket.io', 'APNS', 'APNS'],
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum
-t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum`
+        description: i18n.t('prj1.feature2.description')
     }
 ]
-
-const DESAFIO = `Lorem ipsum dolor
- sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum`
-
-const APRENDIZADO = `Lorem                          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum`
 
 const DATA: ProjectType = {
     logo: gingo,
     tags: ['React Native', 'Node.js'],
     features: ARR_FEATURES,
-    description: i18n.t('descricao'),
-    challenge: DESAFIO,
-    learned: APRENDIZADO,
+    description: i18n.t('prj1.description'),
+    challenge: i18n.t('prj1.challenge'),
+    learned: i18n.t('prj1.learned'),
     images: ARR_IMAGES
 }
 

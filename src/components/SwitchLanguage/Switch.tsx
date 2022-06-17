@@ -1,16 +1,21 @@
 import * as React from 'react'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'react-i18next'
+import MainContext from '../../context/MainContext'
 import './Switch.css'
 import pt from '../../assets/img/portugues.jpg'
 import en from '../../assets/img/ingles.jpg'
 
 const Switch = () => {
-    const [isToggled, setIsToggled] = useState(false)
+    const { settings, saveSettings } = useContext(MainContext)
+
+    const [isToggled, setIsToggled] = useState(settings.language !== 'en')
     const { i18n } = useTranslation()
 
     const onToggle = () => {
-        i18n.changeLanguage(isToggled ? 'en' : 'pt')
+        const nextLanguage = isToggled ? 'en' : 'pt'
+        saveSettings({ language: nextLanguage })
+        i18n.changeLanguage(nextLanguage)
         setIsToggled(!isToggled)
     }
 

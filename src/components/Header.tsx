@@ -21,19 +21,19 @@ const Header = ({ ref1, ref2, ref3, ref4 }: { ref1: any; ref2: any; ref3: any; r
                 <div className="flex overflow-x-auto py-4 px-5 sm:justify-center gap-5 sm:gap-10">
                     <button className="btnContainer btnText" onClick={() => executeScroll(ref1)}>
                         <span className="btnGlitch" />
-                        <span className="text-[14px] 2xl:text-[16px]">{t('sobre')}_</span>
+                        <span className="text-[14px] 2xl:text-[16px]">{t('header.about')}_</span>
                     </button>
                     <button className="btnContainer btnText" onClick={() => executeScroll(ref4)}>
                         <span className="btnGlitch" />
-                        <span className="text-[14px] 2xl:text-[16px]">{t('portfolio')}_</span>
+                        <span className="text-[14px] 2xl:text-[16px]">{t('header.portfolio')}_</span>
                     </button>
                     <button className="btnContainer btnText" onClick={() => executeScroll(ref2)}>
                         <span className="btnGlitch" />
-                        <span className="text-[14px] 2xl:text-[16px]">Hard skills_</span>
+                        <span className="text-[14px] 2xl:text-[16px]">{t('header.skills')}_</span>
                     </button>
                     <button className="btnContainer btnText mr-2" onClick={() => executeScroll(ref3)}>
                         <span className="btnGlitch" />
-                        <span className="text-[14px] 2xl:text-[16px]">{t('contato')}_</span>
+                        <span className="text-[14px] 2xl:text-[16px]">{t('header.contact')}_</span>
                     </button>
                     <div className="absolute right-2 mt-1 top-[15px] md:relative md:mt-0 md:top-1 md:ml-4 md:right-0">
                         <Switch />

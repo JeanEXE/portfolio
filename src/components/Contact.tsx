@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { useEffect, useState, useRef } from 'react'
 import { useInViewport } from 'react-in-viewport'
+import { useTranslation } from 'react-i18next'
 import { insertEvent } from '../helpers/Analytics'
 import linkedin from '../assets/svg/icon-linkedin.svg'
 import gmail from '../assets/svg/icon-gmail.svg'
@@ -12,6 +13,7 @@ const Contact = () => {
     const [widthAnim, setWidthAnim] = useState('w-0')
     const myRef = useRef()
     const { inViewport } = useInViewport(myRef)
+    const { t } = useTranslation()
 
     useEffect(() => {
         if (inViewport && widthAnim === 'w-0') {
@@ -25,8 +27,8 @@ const Contact = () => {
         <div className={`flex-col  transition-width duration-1000 ease-in-out ${widthAnim}`}>
             <div className="whitespace-nowrap overflow-hidden gap-5">
                 <div className=" flex w-full items-center justify-center">
-                    <p className="pr-4 sm:pr-20 min-w-fit overflow-hidden font-bold whitespace-nowrap text-[23px] sm:text-[30px] 2xl:text-[43px]">
-                        Contact Me!
+                    <p className="pr-4 sm:pr-10 mb-1 sm:mb-2 min-w-fit overflow-hidden font-bold whitespace-nowrap text-[23px] sm:text-[30px] 2xl:text-[43px]">
+                        {t('contact')}
                     </p>
                     <div className="bg-yellow w-full h-4" />
                 </div>

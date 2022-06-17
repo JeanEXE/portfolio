@@ -28,7 +28,7 @@ function MainPage() {
                     <Profile />
                     <div className="py-12 sm:py-20 sm:flex sm:justify-between">
                         <div className="sm:w-5/12">
-                            <h1 ref={refAbout}>{t('sobre')}</h1>
+                            <h1 ref={refAbout}>{t('header.about')}</h1>
                             <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">
                                 Olá 👋 sou o Jean, trabalho desde 2019 como desenvolvedor fullstack, utilizando como principal linguagem no
                                 backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native. Gosto bastante de
@@ -49,7 +49,7 @@ function MainPage() {
                         </div>
                         <div className="mt-10 sm:w-5/12">
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">{t('experiencia')}</p>
+                            <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">{t('experience')}</p>
                             <p className="text-[13px] 2xl:text-[16px]  mb-1">
                                 Fullstack Developer at
                                 <a
@@ -113,7 +113,7 @@ function MainPage() {
                     </div>
                     <div className='h-36' /> */}
                     <div className="py-7">
-                        <h1 ref={refProjects}>Portfolio</h1>
+                        <h1 ref={refProjects}>{t('header.portfolio')}</h1>
                         <p className="text-[14px] sm:text-[17px] text-textColor">A section with the projects that i worked</p>
                         <div className="grid gap-3 sm:gap-6 lg:gap-2 xl:gap-3 grid-cols-1 lg:grid-cols-2 mt-7">
                             <CardProject
@@ -133,7 +133,7 @@ function MainPage() {
 
                     <div className="py-7 sm:flex justify-between">
                         <div>
-                            <h1 ref={refSkills}>Hard Skills</h1>
+                            <h1 ref={refSkills}>{t('header.skills')}</h1>
                             <p className="text-[14px] 2xl:text-[17px] text-textColor">Know a litlle about my skills</p>
                         </div>
                         <div className="sm:w-6/12">

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import { useInViewport } from 'react-in-viewport'
+import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 import { insertEvent } from '../helpers/Analytics'
 import arrow from '../assets/svg/icon-arrow.svg'
@@ -16,6 +17,7 @@ const Footer = () => {
     const [animate, setAnimate] = useState('opacity-0')
     const myRef = useRef()
     const refEndPage = useRef()
+    const { t } = useTranslation()
     const { inViewport } = useInViewport(myRef)
     const { pathname } = useLocation()
     const endPage = useInViewport(refEndPage)
@@ -46,23 +48,27 @@ const Footer = () => {
         <div className={`${animate} py-10 px-5 flex flex-col gap-12 justify-center text-black text-center font-bold text-[16px]`}>
             <div>
                 <p className="flex items-center justify-center">
-                    Coded by me, made by <img src={heart} className="w-4" alt="" />.
+                    {t('footer.left.text1')} <img src={heart} className="w-4" alt="" />.
                 </p>
-                <p>Especially to practice </p>
+                <p>
+                    {t('footer.left.text2')} {t('footer.left.text3')}
+                </p>
                 <p className="flex items-center h-8 justify-center">
-                    my <img src={react} className="h-10 mb-[2px]" alt="" /> skills
+                    {t('footer.left.text4')} <img src={react} className="h-10 mb-[2px]" alt="" /> {t('footer.left.text5')}
                 </p>
                 <p className="flex items-center h-7 justify-center">
-                    and learn
+                    {t('footer.left.text6')}
                     <img src={tailwind} className=" w-32" alt="" />
                 </p>
             </div>
             <div ref={myRef}>
-                Every work i do
-                <p>will always have </p>
-                <p>a lot of effort,</p>
+                {t('footer.right.text1')}
+                <p>{t('footer.right.text2')}</p>
+                <p>
+                    {t('footer.right.text3')} {t('footer.right.text4')},
+                </p>
                 <p className="flex justify-center">
-                    proactivity and <img src={coffe} className="w-5" alt="" />
+                    {t('footer.right.text5')} <img src={coffe} className="w-5" alt="" />
                 </p>
             </div>
         </div>
@@ -74,19 +80,20 @@ const Footer = () => {
         >
             <div>
                 <p className="flex">
-                    Coded by me, made by <img src={heart} className="h-5 mt-[2px]" alt="" />. Especially
+                    {t('footer.left.text1')} <img src={heart} className="h-5 mt-[2px]" alt="" />. {t('footer.left.text2')}
                 </p>
                 <p className="flex items-center h-10 justify-center">
-                    to practice my <img src={react} className="h-12 mb-[3px]" alt="" /> skills{' '}
+                    {t('footer.left.text3')} {t('footer.left.text4')} <img src={react} className="h-12 mb-[3px]" alt="" />
+                    {t('footer.left.text5')}
                 </p>
                 <p className="flex items-center h-8 justify-center">
-                    and learn <img src={tailwind} className="w-36 h-20" alt="" />
+                    {t('footer.left.text6')} <img src={tailwind} className="w-36 h-20" alt="" />
                 </p>
             </div>
             <div ref={myRef}>
-                Every work i do will always have a lot of
+                {`${t('footer.right.text1')} ${t('footer.right.text2')} ${t('footer.right.text3')}`}
                 <p className="flex justify-center items-center">
-                    effort, proactivity and <img src={coffe} className="w-5" alt="" />
+                    {`${t('footer.right.text4')}, ${t('footer.right.text5')}`} <img src={coffe} className="w-5" alt="" />
                 </p>
             </div>
         </div>

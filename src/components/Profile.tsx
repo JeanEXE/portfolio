@@ -14,7 +14,7 @@ const Profile = () => {
             <img className="h-44 rounded-full sm:h-60" src={profilePic} alt="" />
             <div className="flex flex-col items-center mt-3 font-semibold">
                 <p className="text-[16px] sm:text-[22px] mb-3">
-                    Jean Reis <span className="text-[13px] sm:text-[18px]">- {t('cidade')}</span>
+                    Jean Reis <span className="text-[13px] sm:text-[18px]">- {t('city')}</span>
                 </p>
                 <p className="text-[11vw] sm:text-[65px] tracking-[5px] hero glitch layers leading-none" data-text="Fullstack">
                     <span>Fullstack</span>
@@ -35,7 +35,7 @@ const Profile = () => {
             <img className="mr-10 h-60 2xl:h-72 " src={profilePic} alt="" />
             <div className="font-semibold">
                 <p className="text-[24px] 2xl:text-[26px]">
-                    Jean Reis <span className="text-[20px] 2xl:text-[22px]">- {t('cidade')}</span>
+                    Jean Reis <span className="text-[20px] 2xl:text-[22px]">- {t('city')}</span>
                 </p>
                 <p className="text-[60px] 2xl:text-[70px] leading-none tracking-[10px] hero glitch layers" data-text="Fullstack">
                     <span>Fullstack</span>

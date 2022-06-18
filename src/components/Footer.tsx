@@ -112,7 +112,7 @@ const Footer = () => {
                     className="mt-6 mb-5 flex align-center justify-center  animate-bounce"
                 >
                     <img src={arrow} className="w-6 h-6 mr-3" alt="" />
-                    <p className="text-[15px] 2xl:text-[17px] text-blue hover:font-semibold">Back to top</p>
+                    <p className="text-[15px] 2xl:text-[17px] text-blue hover:font-semibold">{t('back-top')}</p>
                 </button>
             </div>
             <div className="bg-blackSec w-full flex h-16 justify-center items-center" ref={refEndPage}>

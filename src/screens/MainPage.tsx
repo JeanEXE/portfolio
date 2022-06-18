@@ -29,29 +29,13 @@ function MainPage() {
                     <div className="py-12 sm:py-20 sm:flex sm:justify-between">
                         <div className="sm:w-5/12">
                             <h1 ref={refAbout}>{t('header.about')}</h1>
-                            <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">
-                                Olá 👋 sou o Jean, trabalho desde 2019 como desenvolvedor fullstack, utilizando como principal linguagem no
-                                backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native. Gosto bastante de
-                                trabalhar com performance e otimizações, busco sempre aplicar conceitos de clean code e abstração. Sou
-                                curioso, responsável e me considero bastante proativo.
-                                <br />
-                                &emsp;Receber feedbacks é sempre bem vindo. Valorizo o trabalho em equipe, me preocupo em ajudar iniciantes
-                                pois já passei por isso e entendo como é difícil o início. Gosto de contribuir com ideias e minha opinião em
-                                algo que vejo como uma possivel melhoria, dessa forma consigo compartilhar meu conhecimento e também
-                                aprender coisas novas com a equipe.
-                                <br />
-                                <br />
-                                🌱 I&apos;m currently learning: TypeScript / E2E Testing / React.js
-                                <br />
-                                <br />
-                                🏹 I Want to learn: GraphQL / Styled Components / Flutter / Remix
-                            </p>
+                            <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{t('about')}</p>
                         </div>
                         <div className="mt-10 sm:w-5/12">
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
                             <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">{t('experience')}</p>
                             <p className="text-[13px] 2xl:text-[16px]  mb-1">
-                                Fullstack Developer at
+                                {t('work1.title')}
                                 <a
                                     href="https://www.isabelaflores.com/"
                                     className="no-underline font-semibold hover:text-blue"
@@ -59,9 +43,8 @@ function MainPage() {
                                     rel="noreferrer"
                                     onClick={() => insertEvent('clicou link: IsaFlores')}
                                 >
-                                    {' '}
-                                    Isabela Flores
-                                </a>{' '}
+                                    {' Isabela Flores '}
+                                </a>
                                 /
                                 <a
                                     href="https://www.floresonline.com.br"
@@ -70,40 +53,14 @@ function MainPage() {
                                     rel="noreferrer"
                                     onClick={() => insertEvent('clicou link: FloresOn')}
                                 >
-                                    {' '}
-                                    Flores Online
+                                    {' Flores Online'}
                                 </a>
-                                {'\n'}(2019 - Atualmente)
+                                {'\n'}(2019 - {t('currently')})
                             </p>
-                            <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">
-                                Participei ativamente do desenvolvimento de 2 Apps (Gingo / Gingo Business)
-                                <br />
-                                do início a publicação nas stores (Android/iOS).
-                                <br />
-                                -App de delivery/Chat em tempo real
-                                <br />
-                                -Gerenciamento de pedidos/cardápio via Gingo Business
-                                <br />
-                                -Notificações Firebase/APNS
-                                <br />
-                                -CI/CD utilizando codepush
-                                <br />
-                                -Redux
-                                <br />
-                                -Hooks
-                                <br />
-                                -Chat real time utilizando Socket.io
-                                <br />
-                                -SQLite / MongoDB
-                                <br />
-                            </p>
+                            <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{t('work1.description')}</p>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">Education</p>
-                            <p className="text-[13px] 2xl:text-[16px]">
-                                Bachelor of Software Engineering
-                                <br />
-                                at UNIFAE (2016 - 2019)
-                            </p>
+                            <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">{t('education')}</p>
+                            <p className="text-[13px] 2xl:text-[16px]">{t('education.description')} UNIFAE (2016 - 2019)</p>
                         </div>
                     </div>
                     {/* <div className="bg-yellow flex flex-col justify-between content-between  h-32 absolute left-0  w-full" ref={refContact}>
@@ -114,7 +71,7 @@ function MainPage() {
                     <div className='h-36' /> */}
                     <div className="py-7">
                         <h1 ref={refProjects}>{t('header.portfolio')}</h1>
-                        <p className="text-[14px] sm:text-[17px] text-textColor">A section with the projects that i worked</p>
+                        <p className="text-[14px] sm:text-[17px] text-textColor">{t('portfolio.description')}.</p>
                         <div className="grid gap-3 sm:gap-6 lg:gap-2 xl:gap-3 grid-cols-1 lg:grid-cols-2 mt-7">
                             <CardProject
                                 name={'Gingo'}
@@ -134,15 +91,15 @@ function MainPage() {
                     <div className="py-7 sm:flex justify-between">
                         <div>
                             <h1 ref={refSkills}>{t('header.skills')}</h1>
-                            <p className="text-[14px] 2xl:text-[17px] text-textColor">Know a litlle about my skills</p>
+                            <p className="text-[14px] 2xl:text-[17px] text-textColor">{t('skills.description')}.</p>
                         </div>
                         <div className="sm:w-6/12">
                             <div className="flex  w-full  mt-5 mb-2 items-center">
                                 <p className="w-28 sm:w-2/4" />
                                 <div className=" flex justify-between w-full h-[1.1rem] sm:w-3/4">
-                                    <p className="text-[10px] sm:text-[11px]">Basic</p>
-                                    <p className="text-[10px] sm:text-[11px]">Intermediate</p>
-                                    <p className="text-[10px] sm:text-[11px]">Advanced</p>
+                                    <p className="text-[10px] sm:text-[11px]">{t('basic')}</p>
+                                    <p className="text-[10px] sm:text-[11px]">{t('intermediate')}</p>
+                                    <p className="text-[10px] sm:text-[11px]">{t('advanced')}</p>
                                 </div>
                             </div>
                             <SkillBar stack={'React Native'} width="w-full" />

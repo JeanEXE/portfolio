@@ -2,10 +2,13 @@ import * as React from 'react'
 import { Link } from 'react-router-dom'
 import arrow from '../assets/svg/icon-arrow.svg'
 import { CardProjectType } from '../types/Types'
+import { useTranslation } from 'react-i18next'
 import Tag from './Tag/Tag'
 import { insertEvent } from '../helpers/Analytics'
 
 const CardProject = ({ name, image, tags, description }: CardProjectType) => {
+    const { t } = useTranslation()
+
     return (
         <div className="flex flex-col sm:flex-row border-2  sm:pr-8 rounded-md gap-2 sm:gap-4 overflow-hidden relative bg-blackSec">
             <img className="bg-gray-300  object-contain h-44 sm:h-full w-full sm:w-60 lg:w-48  grayscale-[35%]" src={image} alt="" />
@@ -22,7 +25,7 @@ const CardProject = ({ name, image, tags, description }: CardProjectType) => {
             <button className="absolute right-6 bottom-3">
                 <Link to={`/project/${name}`} onClick={() => insertEvent(`abriu projeto: ${name}`)}>
                     <p className="text-blue text-[17px] font-semibold flex items-center">
-                        Full Project <img src={arrow} className={`h-4 bottom-1 rotate-90`} alt="" />
+                        {t('full-project')} <img src={arrow} className={`h-4 bottom-1 rotate-90`} alt="" />
                     </p>
                 </Link>
             </button>

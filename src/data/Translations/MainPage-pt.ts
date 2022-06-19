@@ -9,9 +9,9 @@ const TRANSLATION = {
 
     Receber feedbacks é sempre bem vindo. Valorizo o trabalho em equipe, me preocupo em ajudar iniciantes pois já passei por isso e entendo como é difícil o início. Gosto de contribuir com ideias e minha opinião em algo que vejo como uma possivel melhoria, dessa forma consigo compartilhar meu conhecimento e também aprender coisas novas com a equipe.
 
-    🌱 Estou aprendendo: TypeScript / E2E Testing / React.js
+🌱 Estou aprendendo: TypeScript / E2E Testing / React.js
 
-    🏹 Quero aprender: GraphQL / Styled Components / Flutter
+🏹 Quero aprender: GraphQL / Styled Components / Flutter
     `,
     city: 'SP, Brasil',
     experience: 'Experiência Profissional',

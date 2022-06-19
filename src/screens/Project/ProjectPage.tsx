@@ -86,7 +86,7 @@ const ProjectPage = () => {
                             <Tag key={index} text={name} />
                         ))}
                     </div>
-                    <p className="text-[14px] 2xl:text-[16px] text-textColor">{props.description}</p>
+                    <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{props.description}</p>
                 </div>
                 <div className=" w-[500px] flex justify-center">
                     <div className="w-full relative flex flex-col">
@@ -103,16 +103,16 @@ const ProjectPage = () => {
             </div>
 
             {props.challenge && props.learned && (
-                <div className="py-20 flex gap-32 justify-between">
-                    <div className=" ">
+                <div className="py-20 flex gap-24">
+                    <div className="w-2/4">
                         <img src={iconChall} className="h-7 2xl:h-9 mb-2" alt="" />
                         <p className="font-semibold text-[30px] 2xl:text-[40px] mb-4">{t('challenge')}</p>
-                        <p className="text-[14px] 2xl:text-[16px]  text-textColor">{props.challenge}</p>
+                        <p className="text-[14px] 2xl:text-[16px]  text-textColor indent-4">{props.challenge}</p>
                     </div>
-                    <div className=" ">
+                    <div className="w-2/4">
                         <img src={iconLearn} className="h-7 2xl:h-9 mb-2" alt="" />
                         <p className="font-semibold text-[30px] 2xl:text-[40px] mb-4">{t('learn')}</p>
-                        <p className="text-[14px] 2xl:text-[16px]  text-textColor">{props.learned}</p>
+                        <p className="text-[14px] 2xl:text-[16px]  text-textColor indent-4">{props.learned}</p>
                     </div>
                 </div>
             )}
@@ -150,7 +150,7 @@ const ProjectPage = () => {
                     ))}
                 </div>
 
-                <p className=" text-center  max-w-md  text-textColor">{props.description}</p>
+                <p className="max-w-md text-textColor indent-4">{props.description}</p>
 
                 <div className=" max-w-md w-full  flex  justify-center ">
                     <div className="w-full relative flex flex-col">
@@ -173,7 +173,7 @@ const ProjectPage = () => {
                             <img src={iconChall} className="h-7 mr-3" alt="" />
                             <p className="font-semibold text-[28px]">{t('challenge')}</p>
                         </div>
-                        <p className="text-[14px]  text-textColor">{props.challenge}</p>
+                        <p className="text-[14px]  text-textColor indent-4">{props.challenge}</p>
                     </div>
                     <div>
                         <div className="flex mb-3 items-center">
@@ -181,7 +181,7 @@ const ProjectPage = () => {
                             <p className="font-semibold text-[28px]">{t('learn')}</p>
                         </div>
 
-                        <p className="text-[14px]  text-textColor">{props.learned}</p>
+                        <p className="text-[14px]  text-textColor indent-4">{props.learned}</p>
                     </div>
                 </div>
             )}

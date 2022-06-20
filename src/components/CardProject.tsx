@@ -23,7 +23,7 @@ const CardProject = ({ name, image, tags, description }: CardProjectType) => {
                 <p className="indent-4 line-clamp-5 sm:line-clamp-3 text-[14px]">{description}</p>
             </div>
             <button className="absolute right-6 bottom-3">
-                <Link to={`/project/${name}`} onClick={() => insertEvent(`abriu projeto: ${name}`)}>
+                <Link to={`/${name}`} onClick={() => insertEvent(`abriu projeto: ${name}`)}>
                     <p className="text-blue text-[17px] font-semibold flex items-center">
                         {t('full-project')} <img src={arrow} className={`h-4 bottom-1 rotate-90`} alt="" />
                     </p>

@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import Myname from '../../components/MyName'
+import Myname from '../MyName'
 import useDimensions from '../../hooks/useDimensions'
 import { useTranslation } from 'react-i18next'
 

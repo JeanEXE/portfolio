@@ -77,7 +77,7 @@ function MainPage() {
                                 name={'Gingo'}
                                 image={gingo}
                                 tags={['React Native', 'Node.js']}
-                                description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
+                                description={t('prj1.description')}
                             />
                             <CardProject
                                 name={'Gingo Business'}

@@ -1,10 +1,10 @@
 import * as i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import mainPageEn from '../data/Translations/MainPage-en'
-import mainPagePt from '../data/Translations/MainPage-pt'
-import projectPageEn from '../data/Translations/ProjectPage-en'
-import projectPagePt from '../data/Translations/ProjectPage-pt'
-import gingoEn from '../data/Translations/Gingo-en'
+import mainPageEn from '../Translations/MainPage-en'
+import mainPagePt from '../Translations/MainPage-pt'
+import projectPageEn from '../Translations/ProjectPage-en'
+import projectPagePt from '../Translations/ProjectPage-pt'
+import gingoEn from '../Translations/Gingo-en'
 
 const resources = {
     en: {

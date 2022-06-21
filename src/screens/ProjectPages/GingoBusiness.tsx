@@ -23,23 +23,7 @@ const GingoBusiness = () => {
         logo: gingo,
         tags: ['React Native', 'Node.js'],
         images: [ging, ging2, ging, ging2, ging, ging2, ging, ging2, ging, ging2, ging, ging2, ging, ging2, ging],
-        description: t('prj1.description'),
-        challenge: t('prj1.challenge'),
-        learned: t('prj1.learned'),
-        features: [
-            {
-                title: 'Push Notification',
-                image: 'https://i.imgur.com/ohXtP7h.gif',
-                tags: ['Firebase', 'APNS', 'APNS', 'Socket.io', 'APNS', 'APNS'],
-                description: t('prj1.feature1.description')
-            },
-            {
-                title: 'Chat: Vídeo',
-                image: 'https://i.imgur.com/ohXtP7h.gif',
-                tags: ['Firebase', 'APNS', 'APNS', 'Socket.io', 'APNS', 'APNS'],
-                description: t('prj1.feature2.description')
-            }
-        ]
+        description: t('prj1.description')
     }).current
 
     const renderWeb = () => (

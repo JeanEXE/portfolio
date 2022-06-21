@@ -30,14 +30,32 @@ const Gingo = () => {
             {
                 title: 'Push Notification',
                 image: 'https://i.imgur.com/ohXtP7h.gif',
-                tags: ['Firebase', 'APNS', 'APNS', 'Socket.io', 'APNS', 'APNS'],
+                tags: ['Firebase', 'APNS', 'Swift', 'Javascript'],
                 description: t('prj1.feature1.description')
+            },
+            {
+                title: 'Chat: Imagem',
+                image: 'https://i.imgur.com/ohXtP7h.gif',
+                tags: ['React Native', 'Socket.io', 'Amazon S3', 'SQLite'],
+                description: t('prj1.feature2.description')
+            },
+            {
+                title: 'Chat: Áudio',
+                image: 'https://i.imgur.com/ohXtP7h.gif',
+                tags: ['React Native', 'Socket.io', 'Amazon S3', 'SQLite'],
+                description: t('prj1.feature3.description')
             },
             {
                 title: 'Chat: Vídeo',
                 image: 'https://i.imgur.com/ohXtP7h.gif',
-                tags: ['Firebase', 'APNS', 'APNS', 'Socket.io', 'APNS', 'APNS'],
-                description: t('prj1.feature2.description')
+                tags: ['React Native', 'Socket.io', 'Amazon S3', 'SQLite'],
+                description: t('prj1.feature4.description')
+            },
+            {
+                title: 'Chat: Arquivos',
+                image: 'https://i.imgur.com/ohXtP7h.gif',
+                tags: ['React Native', 'Socket.io', 'Amazon S3', 'SQLite'],
+                description: t('prj1.feature5.description')
             }
         ]
     }).current

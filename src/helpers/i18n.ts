@@ -5,6 +5,7 @@ import mainPagePt from '../Translations/MainPage-pt'
 import projectPageEn from '../Translations/ProjectPage-en'
 import projectPagePt from '../Translations/ProjectPage-pt'
 import gingoEn from '../Translations/Gingo-en'
+import gingoPt from '../Translations/Gingo-pt'
 
 const resources = {
     en: {
@@ -17,7 +18,8 @@ const resources = {
     pt: {
         translation: {
             ...mainPagePt,
-            ...projectPagePt
+            ...projectPagePt,
+            ...gingoPt
         }
     }
 }

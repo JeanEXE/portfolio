@@ -15,7 +15,7 @@ const Feature = ({ title, image, tags, description, mobile }: FeatureType) => {
                             <Tag key={index} text={name} backgroundColor="bg-blackSec" small />
                         ))}
                     </div>
-                    <p className="text-[14px] text-left text-textColor">{description}</p>
+                    <p className="text-[14px] text-left text-textColor indent-4">{description}</p>
                 </div>
             </div>
         )
@@ -32,7 +32,7 @@ const Feature = ({ title, image, tags, description, mobile }: FeatureType) => {
                         <Tag key={index} text={name} backgroundColor="bg-blackSec" small />
                     ))}
                 </div>
-                <p className="text-[14px] 2xl:text-[16px] text-left text-textColor">{description}</p>
+                <p className="text-[14px] 2xl:text-[16px] text-left text-textColor indent-4">{description}</p>
             </div>
         </div>
     )

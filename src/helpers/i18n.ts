@@ -6,20 +6,24 @@ import projectPageEn from '../Translations/ProjectPage-en'
 import projectPagePt from '../Translations/ProjectPage-pt'
 import gingoEn from '../Translations/Gingo-en'
 import gingoPt from '../Translations/Gingo-pt'
+import gingoBusinessEn from '../Translations/GingoBusiness-en'
+import gingoBusinessPt from '../Translations/GingoBusiness-en'
 
 const resources = {
     en: {
         translation: {
             ...mainPageEn,
             ...projectPageEn,
-            ...gingoEn
+            ...gingoEn,
+            ...gingoBusinessEn
         }
     },
     pt: {
         translation: {
             ...mainPagePt,
             ...projectPagePt,
-            ...gingoPt
+            ...gingoPt,
+            ...gingoBusinessPt
         }
     }
 }

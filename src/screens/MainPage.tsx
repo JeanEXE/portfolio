@@ -83,7 +83,7 @@ function MainPage() {
                                 name={'Gingo Business'}
                                 image={gBusiness}
                                 tags={['React Native', 'Node.js']}
-                                description={`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.`}
+                                description={t('prj2.description')}
                             />
                         </div>
                     </div>

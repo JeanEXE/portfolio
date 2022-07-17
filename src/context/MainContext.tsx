@@ -1,10 +1,11 @@
 import * as React from 'react'
 import { useState, createContext } from 'react'
+import i18n from 'i18next'
 
 const MainContext = createContext(null)
 
 const DEFAULT_VALUES = {
-    language: 'en'
+    language: i18n.language
 }
 
 export const SettingsProvider = ({ children, settingsValues }: { children: any; settingsValues: any }) => {

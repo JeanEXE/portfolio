@@ -45,7 +45,7 @@ const Gingo = () => {
     const props: ProjectType = useRef<ProjectType>({
         name: 'Gingo',
         logo: gingo,
-        tags: ['React Native', 'Node.js'],
+        tags: ['React Native', 'Node.js', 'MongoDB', 'SQLite'],
         images: [
             ging1,
             ging2,
@@ -130,7 +130,7 @@ const Gingo = () => {
         <Fragment>
             <div className="flex  flex-col items-center pt-24 gap-6">
                 <img src={props.logo} className=" h-[180px]" alt="" />
-                <div className="flex flex-wrap gap-4 ">
+                <div className="flex flex-wrap gap-4 justify-center">
                     {props.tags.map((name: string, index: number) => (
                         <Tag key={index} text={name} />
                     ))}

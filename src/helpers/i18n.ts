@@ -8,6 +8,7 @@ import gingoEn from '../Translations/Gingo-en'
 import gingoPt from '../Translations/Gingo-pt'
 import gingoBusinessEn from '../Translations/GingoBusiness-en'
 import gingoBusinessPt from '../Translations/GingoBusiness-en'
+import isaFloresPt from '../Translations/IsabelaFlores-pt'
 
 const resources = {
     en: {
@@ -23,7 +24,8 @@ const resources = {
             ...mainPagePt,
             ...projectPagePt,
             ...gingoPt,
-            ...gingoBusinessPt
+            ...gingoBusinessPt,
+            ...isaFloresPt
         }
     }
 }

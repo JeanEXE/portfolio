@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import AnimatedBadge from '../components/AnimatedBadge'
 import Contact from '../components/Contact'
 import Profile from '../components/Profile'
+import isaLogo from '../assets/IsabelaFlores/isaLogo.png'
 import gingo from '../assets/img/gingo.png'
 import gBusiness from '../assets/img/g_business.png'
 import CardProject from '../components/CardProject'
@@ -74,15 +75,21 @@ function MainPage() {
                         <p className="text-[14px] sm:text-[17px] text-textColor">{t('portfolio.description')}.</p>
                         <div className="grid gap-3 sm:gap-6 lg:gap-2 xl:gap-3 grid-cols-1 lg:grid-cols-2 mt-7">
                             <CardProject
+                                name={'Isabela Flores'}
+                                image={isaLogo}
+                                tags={['React Native', 'TypeScript']}
+                                description={t('prj3.description')}
+                            />
+                            <CardProject
                                 name={'Gingo'}
                                 image={gingo}
-                                tags={['React Native', 'Node.js']}
+                                tags={['React Native', 'Node.js', 'MongoDB', 'SQLite']}
                                 description={t('prj1.description')}
                             />
                             <CardProject
                                 name={'Gingo Business'}
                                 image={gBusiness}
-                                tags={['React Native', 'Node.js']}
+                                tags={['React Native', 'Node.js', 'MongoDB', 'SQLite']}
                                 description={t('prj2.description')}
                             />
                         </div>

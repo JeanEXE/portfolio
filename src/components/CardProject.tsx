@@ -10,8 +10,8 @@ const CardProject = ({ name, image, tags, description }: CardProjectType) => {
     const { t } = useTranslation()
 
     return (
-        <div className="flex flex-col sm:flex-row border-2  sm:pr-8 rounded-md gap-2 sm:gap-4 overflow-hidden relative bg-blackSec">
-            <img className="bg-gray-300  object-contain h-44 sm:h-full w-full sm:w-60 lg:w-48  grayscale-[35%]" src={image} alt="" />
+        <div className="flex flex-col sm:flex-row border  sm:pr-8 rounded-md gap-2 sm:gap-4 overflow-hidden relative bg-black">
+            <img className="bg-unselected object-contain h-44 sm:h-full w-full sm:w-60 lg:w-48  grayscale-[35%]" src={image} alt="" />
 
             <div className="flex flex-col gap-2 pt-1 pb-3 px-6 sm:px-0 mb-10">
                 <p className="font-medium text-[24px] 2xl:text-[28px]">{name}</p>

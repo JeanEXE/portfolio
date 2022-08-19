@@ -28,16 +28,17 @@ const TRANSLATION = {
     'skills.description': 'Know a litlle about my skills',
     //works
     'work1.title': 'Fullstack Developer at',
-    'work1.description': `Participei ativamente do desenvolvimento de 2 Apps (Gingo / Gingo Business) 
+    'work1.description': `Participei ativamente do desenvolvimento de 3 Apps (Isabela Flores / Gingo / Gingo Business) 
 do início a publicação nas stores (Android/iOS).
--App de delivery/Chat em tempo real
--Gerenciamento de pedidos/cardápio via Gingo Business
+-Redux / Redux-Persist
+-Hooks
+-Typescript
+-Node.js (express / Socket.io)
+-SQLite / MongoDB
 -Notificações Firebase/APNS
 -CI/CD utilizando codepush
--Redux
--Hooks
--Chat real time utilizando Socket.io
--SQLite / MongoDB
+-Testes Automatizados (E2E)
+-Criptografia AES/RSA
     `,
     //footer
     'footer.left.text1': 'Coded by me, made by',

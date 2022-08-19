@@ -5,9 +5,9 @@ const TRANSLATION = {
     'header.skills': 'Hard Skills',
     'header.contact': 'Contact',
     //body
-    about: `Hi 👋 sou o Jean, trabalho desde 2019 como desenvolvedor fullstack, utilizando como principal linguagem no backend o Node.JS, mas minha maior stack está no frontend (Mobile) com React-Native. Gosto bastante de trabalhar com performance e otimizações, busco sempre aplicar conceitos de clean code e abstração. Sou curioso, responsável e me considero bastante proativo.
+    about: `Hi 👋 I'm Jean. I've been working since 2019 as a fullstack developer using Node.JS as the main language on the backend, but my biggest stack is on the frontend (Mobile) with React-Native. I really like working with performance and optimizations, I always try to apply clean code and abstraction concepts. I am curious, responsible and consider myself quite proactive.
 
-    Receber feedbacks é sempre bem vindo. Valorizo o trabalho em equipe, me preocupo em ajudar iniciantes pois já passei por isso e entendo como é difícil o início. Gosto de contribuir com ideias e minha opinião em algo que vejo como uma possivel melhoria, dessa forma consigo compartilhar meu conhecimento e também aprender coisas novas com a equipe.
+    Receiving feedback is always welcome. I value teamwork, I care about helping beginners because I've been through it and I understand how difficult the beginning is. I like to contribute with ideas and my opinion on something that I see as a possible improvement, this way I can share my knowledge and also learn new things with the team.
 
 🌱 I'm currently learning: TypeScript / E2E Testing / React.js
 
@@ -28,17 +28,17 @@ const TRANSLATION = {
     'skills.description': 'Know a litlle about my skills',
     //works
     'work1.title': 'Fullstack Developer at',
-    'work1.description': `Participei ativamente do desenvolvimento de 3 Apps (Isabela Flores / Gingo / Gingo Business) 
-do início a publicação nas stores (Android/iOS).
+    'work1.description': `I actively participated in the development of 3 Apps (Isabela Flores / Gingo / Gingo Business)
+from start to publication in stores (Android/iOS).
 -Redux / Redux-Persist
 -Hooks
 -Typescript
 -Node.js (express / Socket.io)
 -SQLite / MongoDB
--Notificações Firebase/APNS
--CI/CD utilizando codepush
--Testes Automatizados (E2E)
--Criptografia AES/RSA
+-Notifications Firebase/APNS
+-CI/CD using codepush
+-End-to-end testing (E2E)
+-Cryptography AES/RSA
     `,
     //footer
     'footer.left.text1': 'Coded by me, made by',

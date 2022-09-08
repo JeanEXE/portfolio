@@ -14,9 +14,11 @@ const Tag = ({ text, small, backgroundColor = 'bg-black' }: TagType) => {
     }
 
     return (
-        <div className={`btn cursor-default px-[5px] py-[7px] 2xl:px-4 2xl:py-2 w-fit min-w-[100px]  h-fit`}>
+        <div className={`btn cursor-default px-[5px] py-[5px] sm:py-[7px] 2xl:px-4 2xl:py-2 w-fit min-w-[100px]  h-fit`}>
             {text}
-            <span className={`btn_content ${backgroundColor} font-semibold uppercase text-[10px] 2xl:text-[12px]`}>{text}</span>
+            <span className={`btn_content ${backgroundColor} font-semibold uppercase text-[9px] sm:text-[10px] 2xl:text-[12px]`}>
+                {text}
+            </span>
             <span className="btn_glitch" />
             <span className="btn_label">R{Math.floor(Math.random() * 99)}</span>
         </div>

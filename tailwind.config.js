@@ -37,6 +37,14 @@ module.exports = {
 						transform: 'translateY(0px)'
 					},
 				},
+				fadeIn: {
+					'0%': {
+						opacity: '0'
+					},
+					'100%': {
+						opacity: '1'
+					},
+				},
 				slideLeft: {
 					'0%': {
 						transform: 'translateX(-80vw)'
@@ -50,6 +58,7 @@ module.exports = {
 				'spin-slow': 'spin 18s linear infinite',
 				'scrollzada': 'rightToLeft 10s infinite linear',
 				'fade-in-up': 'fadeInUp 0.5s ease-in',
+				'fade-in': 'fadeIn 0.5s  ease-in',
 				'slide-left': 'slideLeft 0.6s ease-in'
 			},
 			transitionProperty: {

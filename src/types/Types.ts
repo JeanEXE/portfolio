@@ -13,6 +13,7 @@ export type FeatureType = {
 }
 
 export type ProjectType = {
+    name: string
     logo: string
     tags: string[]
     description: string

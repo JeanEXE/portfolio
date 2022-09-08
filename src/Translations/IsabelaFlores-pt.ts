@@ -1,4 +1,4 @@
-const DESC_PROJETO = `Isabela Flores é um aplicativo de compra de flores e presentes através de parceiros, foi edesenvolvido em React Native e Typescript e está disponível para Android e iOS.
+const DESC_PROJETO = `Isabela Flores é um aplicativo de compra de flores e presentes através de parceiros, foi desenvolvido em React Native e Typescript e está disponível para Android e iOS.
 Trabalhei no projeto desde o início até a sua publicação nas stores e sou encarregado de manter o CI/CD utilizando AppCenter (codepush).
 Neste projeto atuei somente no frontent, desenvolvendo telas e suas funcionalidades.`
 

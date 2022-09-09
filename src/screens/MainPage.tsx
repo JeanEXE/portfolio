@@ -111,8 +111,8 @@ function MainPage() {
                             </div>
                             <SkillBar stack={'React Native'} width="w-full" />
                             <SkillBar stack={'JavaScript'} width="w-5/6" />
-                            <SkillBar stack={'Node.js'} width="w-9/12" />
-                            <SkillBar stack={'TypeScript'} width="w-3/12" />
+                            <SkillBar stack={'Node.js'} width="w-6/12" />
+                            <SkillBar stack={'TypeScript'} width="w-4/12" />
                             <SkillBar stack={'PHP'} width="w-1/6" />
                             <SkillBar stack={'Swift'} width="w-1/12" />
                             <SkillBar stack={'Java'} width="w-1/12" />

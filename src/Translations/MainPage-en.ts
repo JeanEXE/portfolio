@@ -5,13 +5,13 @@ const TRANSLATION = {
     'header.skills': 'Hard Skills',
     'header.contact': 'Contact',
     //body
-    about: `Hi 👋 I'm Jean. I've been working since 2019 as a fullstack developer using Node.JS as the main language on the backend, but my biggest stack is on the frontend (Mobile) with React-Native. I really like working with performance and optimizations, I always try to apply clean code and abstraction concepts. I am curious, responsible and consider myself quite proactive.
+    about: `Hi 👋 I'm Jean. I've been working since 2018 as a fullstack developer using Node.JS as the main language on the backend, but my biggest stack is on the frontend (Mobile) with React-Native. I really like working with performance and optimizations, I always try to apply clean code and abstraction concepts. I am curious, responsible and consider myself quite proactive.
 
     Receiving feedback is always welcome. I value teamwork, I care about helping beginners because I've been through it and I understand how difficult the beginning is. I like to contribute with ideas and my opinion on something that I see as a possible improvement, this way I can share my knowledge and also learn new things with the team.
 
-🌱 I'm currently learning: TypeScript / E2E Testing / React.js
+🌱 I'm currently learning: TypeScript / E2E Testing / React.js / Styled Components
 
-🏹 I Want to learn: GraphQL / Styled Components / Flutter
+🏹 I Want to learn: GraphQL / Flutter
     `,
     city: 'Brazil, SP',
     experience: 'Professional Experience',
@@ -28,7 +28,7 @@ const TRANSLATION = {
     'skills.description': 'Know a litlle about my skills',
     //works
     'work1.title': 'Fullstack Developer at',
-    'work1.description': `I actively participated in the development of 3 Apps (Isabela Flores / Gingo / Gingo Business)
+    'work1.description': `I actively participated in the development of 4 Apps (Flores Online / Isabela Flores / Gingo / Gingo Business)
 from start to publication in stores (Android/iOS).
 -Redux / Redux-Persist
 -Hooks

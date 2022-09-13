@@ -10,6 +10,8 @@ import gingoBusinessEn from '../Translations/GingoBusiness-en'
 import gingoBusinessPt from '../Translations/GingoBusiness-pt'
 import isaFloresPt from '../Translations/IsabelaFlores-pt'
 import isaFloresEn from '../Translations/IsabelaFlores-en'
+import folPt from '../Translations/FloresOnline-pt'
+import folEn from '../Translations/FloresOnline-en'
 
 const resources = {
     en: {
@@ -18,7 +20,8 @@ const resources = {
             ...projectPageEn,
             ...gingoEn,
             ...gingoBusinessEn,
-            ...isaFloresEn
+            ...isaFloresEn,
+            ...folEn
         }
     },
     pt: {
@@ -27,7 +30,8 @@ const resources = {
             ...projectPagePt,
             ...gingoPt,
             ...gingoBusinessPt,
-            ...isaFloresPt
+            ...isaFloresPt,
+            ...folPt
         }
     }
 }

@@ -8,6 +8,7 @@ import AnimatedBadge from '../components/AnimatedBadge'
 import Contact from '../components/Contact'
 import Profile from '../components/Profile'
 import isaLogo from '../assets/IsabelaFlores/isaLogo.png'
+import floresLogo from '../assets/FloresOnline/floresLogo.png'
 import gingo from '../assets/img/gingo.png'
 import gBusiness from '../assets/img/g_business.png'
 import CardProject from '../components/CardProject'
@@ -74,6 +75,12 @@ function MainPage() {
                         <h1 ref={refProjects}>{t('header.portfolio')}</h1>
                         <p className="text-[14px] sm:text-[17px] text-textColor">{t('portfolio.description')}.</p>
                         <div className="grid gap-3 sm:gap-6 lg:gap-2 xl:gap-3 grid-cols-1 lg:grid-cols-2 mt-7">
+                            <CardProject
+                                name={'Flores Online'}
+                                image={floresLogo}
+                                tags={['React Native', 'TypeScript']}
+                                description={t('prj4.description')}
+                            />
                             <CardProject
                                 name={'Isabela Flores'}
                                 image={isaLogo}

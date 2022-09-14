@@ -57,7 +57,7 @@ function MainPage() {
                                 >
                                     {' Flores Online'}
                                 </a>
-                                {'\n'}(2019 - {t('currently')})
+                                {'\n'}(2018 - {t('currently')})
                             </p>
                             <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{t('work1.description')}</p>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
@@ -125,7 +125,7 @@ function MainPage() {
                             <SkillBar stack={'Java'} width="w-1/12" />
                             <SkillBar stack={'SQLite'} width="w-6/12" />
                             <SkillBar stack={'MongoDB'} width="w-7/12" />
-                            <SkillBar stack={'Redux'} width="w-4/6" />
+                            <SkillBar stack={'Redux'} width="w-5/6" />
                             <SkillBar stack={'API Rest'} width="w-5/6" />
                             <SkillBar stack={'Git'} width="w-5/6" />
                             <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width="w-4/6" />

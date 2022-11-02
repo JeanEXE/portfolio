@@ -13,7 +13,7 @@ import ImageSlider from '../../components/ProjectPages/ImageSlides'
 import floresLogo from '../../assets/FloresOnline/floresLogo.png'
 import fol1 from '../../assets/FloresOnline/fol1.jpeg'
 import fol2 from '../../assets/FloresOnline/fol2.jpeg'
-import fol3 from '../../assets/FloresOnline/fol3.jpeg'
+import fol3 from '../../assets/FloresOnline/fol3.jpg'
 import fol4 from '../../assets/FloresOnline/fol4.jpeg'
 import fol5 from '../../assets/FloresOnline/fol5.jpeg'
 import fol6 from '../../assets/FloresOnline/fol6.jpeg'
@@ -24,13 +24,14 @@ import fol11 from '../../assets/FloresOnline/fol11.jpeg'
 import fol12 from '../../assets/FloresOnline/fol12.jpeg'
 import fol13 from '../../assets/FloresOnline/fol13.jpeg'
 import fol14 from '../../assets/FloresOnline/fol14.jpeg'
-import fol15 from '../../assets/FloresOnline/fol15.jpeg'
-import fol16 from '../../assets/FloresOnline/fol16.jpeg'
+import fol15 from '../../assets/FloresOnline/fol15.jpg'
+import fol16 from '../../assets/FloresOnline/fol16.jpg'
 import fol17 from '../../assets/FloresOnline/fol17.jpeg'
-import fol18 from '../../assets/FloresOnline/fol18.jpeg'
 import fol19 from '../../assets/FloresOnline/fol19.jpeg'
 import fol20 from '../../assets/FloresOnline/fol20.jpeg'
 import fol21 from '../../assets/FloresOnline/fol21.jpeg'
+import fol22 from '../../assets/FloresOnline/fol22.jpg'
+import fol23 from '../../assets/FloresOnline/fol23.jpg'
 
 const IsabelaFlores = () => {
     const { width } = useDimensions()
@@ -57,10 +58,11 @@ const IsabelaFlores = () => {
             fol15,
             fol16,
             fol17,
-            fol18,
             fol19,
             fol20,
-            fol21
+            fol21,
+            fol22,
+            fol23
         ],
         description: t('prj4.description'),
         challenge: t('prj4.challenge'),

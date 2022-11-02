@@ -23,4 +23,4 @@ Portfolio website 👉 https://www.jeanreis.dev
 
 * The deployment was done using Vercel. 🎉
 
-* Feedbacks are welcome, thanks. 🌹
+* Feedback is welcome, thanks. 🌹

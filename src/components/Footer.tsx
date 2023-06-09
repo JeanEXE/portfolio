@@ -116,7 +116,7 @@ const Footer = () => {
                 </button>
             </div>
             <div className="bg-blackSec w-full flex h-16 justify-center items-center" ref={refEndPage}>
-                <p className="text-[14px] 2xl:text-[16px]">© 2022 Jean Reis - Analytics by Firebase :)</p>
+                <p className="text-[14px] 2xl:text-[16px]">© 2023 Jean Reis - Analytics by Firebase :)</p>
             </div>
         </div>
     )

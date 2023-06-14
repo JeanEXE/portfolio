@@ -1,6 +1,6 @@
 import * as React from 'react'
 import '../styles/CyberpunkGlitch.css'
-import profilePic from '../assets/img/profile.png'
+import profilePic from '../assets/img/profile.jpg'
 import useDimensions from '../hooks/useDimensions'
 import Tag from './Tag/Tag'
 import { useTranslation } from 'react-i18next'

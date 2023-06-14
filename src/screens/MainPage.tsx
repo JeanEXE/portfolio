@@ -12,7 +12,7 @@ import floresLogo from '../assets/FloresOnline/floresLogo.png'
 import gingo from '../assets/img/gingo.png'
 import gBusiness from '../assets/img/g_business.png'
 import CardProject from '../components/CardProject'
-import { insertEvent } from '../helpers/Analytics'
+import ExperienceSlides from '../components/ProjectPages/ExperienceSlides'
 
 function MainPage() {
     const refAbout = useRef()
@@ -32,37 +32,12 @@ function MainPage() {
                         <div className="sm:w-5/12">
                             <h1 ref={refAbout}>{t('header.about')}</h1>
                             <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{t('about')}</p>
-                        </div>
-                        <div className="mt-10 sm:w-5/12">
-                            <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">{t('experience')}</p>
-                            <p className="text-[13px] 2xl:text-[16px]  mb-1">
-                                {t('work1.title')}
-                                <a
-                                    href="https://www.isabelaflores.com/"
-                                    className="no-underline font-semibold hover:text-blue"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    onClick={() => insertEvent('clicou link: IsaFlores')}
-                                >
-                                    {' Isabela Flores '}
-                                </a>
-                                /
-                                <a
-                                    href="https://www.floresonline.com.br"
-                                    className="no-underline font-semibold hover:text-blue"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    onClick={() => insertEvent('clicou link: FloresOn')}
-                                >
-                                    {' Flores Online'}
-                                </a>
-                                {'\n'}(2018 - {t('currently')})
-                            </p>
-                            <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{t('work1.description')}</p>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
                             <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">{t('education')}</p>
                             <p className="text-[13px] 2xl:text-[16px]">{t('education.description')} UNIFAE (2016 - 2019)</p>
+                        </div>
+                        <div className="mt-10 sm:w-6/12">
+                            <ExperienceSlides />
                         </div>
                     </div>
                     {/* <div className="bg-yellow flex flex-col justify-between content-between  h-32 absolute left-0  w-full" ref={refContact}>
@@ -119,7 +94,7 @@ function MainPage() {
                             <SkillBar stack={'React Native'} width="w-full" />
                             <SkillBar stack={'JavaScript'} width="w-5/6" />
                             <SkillBar stack={'Node.js'} width="w-6/12" />
-                            <SkillBar stack={'TypeScript'} width="w-4/12" />
+                            <SkillBar stack={'TypeScript'} width="w-6/12" />
                             <SkillBar stack={'PHP'} width="w-1/6" />
                             <SkillBar stack={'Swift'} width="w-1/12" />
                             <SkillBar stack={'Java'} width="w-1/12" />

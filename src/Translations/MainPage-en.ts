@@ -9,7 +9,7 @@ const TRANSLATION = {
 
     Receiving feedback is always welcome. I value teamwork, I care about helping beginners because I've been through it and I understand how difficult the beginning is. I like to contribute with ideas and my opinion on something that I see as a possible improvement, this way I can share my knowledge and also learn new things with the team.
 
-🌱 I'm currently learning: TypeScript / E2E Testing / React.js / Styled Components
+🌱 I'm currently learning: TypeScript / E2E Testing / React.js
 
 🏹 I Want to learn: GraphQL / Flutter
     `,
@@ -27,9 +27,11 @@ const TRANSLATION = {
     'portfolio.description': 'A section with the projects that i worked',
     'skills.description': 'Know a litlle about my skills',
     //works
-    'work1.title': 'Fullstack Developer at',
+    'work1.title': 'Fullstack Developer at Flores Online / Isabela Flores',
     'work1.description': `I actively participated in the development of 4 Apps (Flores Online / Isabela Flores / Gingo / Gingo Business)
 from start to publication in stores (Android/iOS).
+
+-React Native
 -Redux / Redux-Persist
 -Hooks
 -Typescript
@@ -39,6 +41,15 @@ from start to publication in stores (Android/iOS).
 -CI/CD using codepush
 -End-to-end testing (E2E)
 -Cryptography AES/RSA
+    `,
+    'work2.title': 'Mid Frontend Developer at Compass.UOL',
+    'work2.description': `I actively participate in the development of new features and improvements in the application of a large wholesale company here in Brazil called "Assai Atacadista".
+
+-React Native
+-Typescript
+-Redux / Redux-Persist
+-Hooks
+-Management in stores (Apple Store / Play Store)
     `,
     //footer
     'footer.left.text1': 'Coded by me, made by',

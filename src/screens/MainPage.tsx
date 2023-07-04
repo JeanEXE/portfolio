@@ -106,11 +106,11 @@ function MainPage() {
                             <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width="w-4/6" />
                         </div>
                     </div>
-                    <div className="flex justify-between items-center py-7 absolute left-0 w-full" ref={refContact}>
+                    <div className="flex justify-between items-center py-8 absolute left-0 w-full" ref={refContact}>
                         <AnimatedBadge />
                         <Contact />
                     </div>
-                    <div className="h-72 sm:h-80" />
+                    <div className="h-60 sm:h-72" />
                     <Footer />
                 </div>
             </div>

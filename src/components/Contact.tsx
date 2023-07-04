@@ -6,8 +6,8 @@ import { insertEvent } from '../helpers/Analytics'
 import linkedin from '../assets/svg/icon-linkedin.svg'
 import gmail from '../assets/svg/icon-gmail.svg'
 import github from '../assets/svg/icon-github.svg'
-import whatsapp from '../assets/svg/icon-whatsapp.svg'
-import telegram from '../assets/svg/icon-telegram.svg'
+// import whatsapp from '../assets/svg/icon-whatsapp.svg'
+// import telegram from '../assets/svg/icon-telegram.svg'
 
 const Contact = () => {
     const [widthAnim, setWidthAnim] = useState('w-0')
@@ -53,12 +53,11 @@ const Contact = () => {
                         <img src={github} className="w-6 h-6 mr-4" alt="" />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">GitHub</p>
                     </a>
-                    <a
+                    {/* <a
                         className="flex items-center"
                         target="_blank"
                         href="https://t.me/jean_exe"
                         rel="noreferrer"
-                        ref={myRef}
                         onClick={() => insertEvent('clicou link: telegram')}
                     >
                         <img src={telegram} className="w-6 h-6 mr-4" alt="" />
@@ -73,8 +72,8 @@ const Contact = () => {
                     >
                         <img src={whatsapp} className="w-6 h-6 mr-4" alt="" />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">Whatsapp</p>
-                    </a>
-                    <div className="flex items-center">
+                    </a> */}
+                    <div className="flex items-center" ref={myRef}>
                         <img src={gmail} className="w-6 h-6 mr-4" alt="" />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-light">jeanreis.dev@gmail.com</p>
                     </div>

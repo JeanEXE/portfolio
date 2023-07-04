@@ -37,7 +37,10 @@ const ExperienceSlides = () => {
         <Fragment>
             <div className="w-full relative flex flex-col">
                 <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">{t('experience')}</p>
+                <div className="flex items-center mb-2">
+                    <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mr-6">{t('experience')}</p>
+                    <IndicatorCustom values={jobs} stateSelect={selected} refSlide={slideRef} />
+                </div>
                 <Slide {...slideProps}>
                     {jobs.map((element: any, index: number) => (
                         <div className="max-h-full px-4 sm:px-12 bg-blackSec py-10 polygon-card-mobile sm:polygon-card" key={index}>
@@ -46,7 +49,6 @@ const ExperienceSlides = () => {
                         </div>
                     ))}
                 </Slide>
-                <IndicatorCustom values={jobs} stateSelect={selected} refSlide={slideRef} />
             </div>
         </Fragment>
     )

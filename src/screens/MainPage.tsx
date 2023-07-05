@@ -91,19 +91,16 @@ function MainPage() {
                                     <p className="text-[10px] sm:text-[11px]">{t('advanced')}</p>
                                 </div>
                             </div>
+                            <SkillBar stack={'JavaScript'} width="w-full" />
                             <SkillBar stack={'React Native'} width="w-full" />
-                            <SkillBar stack={'JavaScript'} width="w-5/6" />
-                            <SkillBar stack={'Node.js'} width="w-6/12" />
                             <SkillBar stack={'TypeScript'} width="w-6/12" />
+                            <SkillBar stack={'Node.js'} width="w-6/12" />
                             <SkillBar stack={'PHP'} width="w-1/6" />
                             <SkillBar stack={'Swift'} width="w-1/12" />
                             <SkillBar stack={'Java'} width="w-1/12" />
                             <SkillBar stack={'SQLite'} width="w-6/12" />
-                            <SkillBar stack={'MongoDB'} width="w-7/12" />
-                            <SkillBar stack={'Redux'} width="w-5/6" />
-                            <SkillBar stack={'API Rest'} width="w-5/6" />
-                            <SkillBar stack={'Git'} width="w-5/6" />
-                            <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width="w-4/6" />
+                            <SkillBar stack={'MongoDB'} width="w-6/12" />
+                            {/* <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width="w-4/6" /> */}
                         </div>
                     </div>
                     <div className="flex justify-between items-center py-8 absolute left-0 w-full" ref={refContact}>

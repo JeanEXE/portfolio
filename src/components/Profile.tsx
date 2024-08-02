@@ -25,6 +25,7 @@ const Profile = () => {
                 <div className="flex flex-wrap mt-3 justify-center gap-4 ">
                     <Tag text="React Native" />
                     <Tag text="Node.js" />
+                    <Tag text="React.js" />
                 </div>
             </div>
         </div>
@@ -46,6 +47,7 @@ const Profile = () => {
                 <div className="flex flex-wrap mt-8 gap-5">
                     <Tag text="React Native" />
                     <Tag text="Node.js" />
+                    <Tag text="React.js" />
                 </div>
             </div>
         </div>

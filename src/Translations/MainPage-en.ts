@@ -5,13 +5,10 @@ const TRANSLATION = {
     'header.skills': 'Hard Skills',
     'header.contact': 'Contact',
     //body
-    about: `Hi 👋 I'm Jean. I've been working since 2018 as a fullstack developer using Node.JS as the main language on the backend, but my biggest stack is on the frontend (Mobile) with React-Native. I really like working with performance and optimizations, I always try to apply clean code and abstraction concepts. I am curious, responsible and consider myself quite proactive.
+    about: `Hi 👋 I'm Jean, I've been working as a mobile developer since 2019. I worked as a Fullstack developer for a while using Node.JS on the backend, but my biggest stack is on the frontend with React-Native. I really enjoy dealing with performance and optimizations, and I always try to apply concepts of clean code and abstraction. I'm curious, responsible, and consider myself to be quite proactive.
 
-    Receiving feedback is always welcome. I value teamwork, I care about helping beginners because I've been through it and I understand how difficult the beginning is. I like to contribute with ideas and my opinion on something that I see as a possible improvement, this way I can share my knowledge and also learn new things with the team.
+    Feedback is always welcome. I value teamwork and I'm concerned about helping beginners because I've been there and I understand how difficult it is to start. I like to contribute ideas and my opinion on something that I see as a possible improvement, that way I can share my knowledge and also learn new things with the team.
 
-🌱 I'm currently learning: TypeScript / E2E Testing / React.js
-
-🏹 I Want to learn: GraphQL / Flutter
     `,
     city: 'Brazil, SP',
     experience: 'Professional Experience',
@@ -24,32 +21,19 @@ const TRANSLATION = {
     'back-top': 'Back to top',
     'full-project': 'Full Project',
     'education.description': 'Bachelor of Software Engineering at',
-    'portfolio.description': 'A section with the projects that i worked',
+    'portfolio.description': `A session with some projects I've worked on`,
     'skills.description': 'Know a litlle about my skills',
     //works
     'work1.title': 'Fullstack Developer at Flores Online / Isabela Flores',
-    'work1.description': `I actively participated in the development of 4 Apps (Flores Online / Isabela Flores / Gingo / Gingo Business)
-from start to publication in stores (Android/iOS).
+    'work1.description': `Working as a Fullstack (Node.js/React Native), I actively participated in the development of 4 Apps from the beginning to publication in the stores (Android/iOS).
 
--React Native
--Redux / Redux-Persist
--Hooks
--Typescript
--Node.js (express / Socket.io)
--SQLite / MongoDB
--Notifications Firebase/APNS
--CI/CD using codepush
--End-to-end testing (E2E)
--Cryptography AES/RSA
-    `,
-    'work2.title': 'Mid Frontend Developer at Compass.UOL',
-    'work2.description': `I actively participate in the development of new features and improvements in the application of a large wholesale company here in Brazil called "Assai Atacadista".
+More details on my LinkedIn.`,
+    'work2.title': 'Frontend Developer at Compass.UOL',
+    'work2.description': `I worked on the refactoring of a mobile project in React Native/TypeScript, from the definition of technologies to be used, design pattern, documentation, code reviews, branch/version control and I am responsible for publishing in the stores.
 
--React Native
--Typescript
--Redux / Redux-Persist
--Hooks
--Management in stores (Apple Store / Play Store)
+I am currently maintaining/implementing new features.
+
+More details on my LinkedIn.
     `,
     //footer
     'footer.left.text1': 'Coded by me, made by',

@@ -93,11 +93,11 @@ function MainPage() {
                             </div>
                             <SkillBar stack={'JavaScript'} width="w-full" />
                             <SkillBar stack={'React Native'} width="w-full" />
-                            <SkillBar stack={'TypeScript'} width="w-6/12" />
+                            <SkillBar stack={'TypeScript'} width="w-8/12" />
                             <SkillBar stack={'Node.js'} width="w-6/12" />
                             <SkillBar stack={'PHP'} width="w-1/6" />
-                            <SkillBar stack={'Swift'} width="w-1/12" />
-                            <SkillBar stack={'Java'} width="w-1/12" />
+                            <SkillBar stack={'Swift'} width="w-2/12" />
+                            <SkillBar stack={'Java'} width="w-2/12" />
                             <SkillBar stack={'SQLite'} width="w-6/12" />
                             <SkillBar stack={'MongoDB'} width="w-6/12" />
                             {/* <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width="w-4/6" /> */}

@@ -25,10 +25,10 @@ function MainPage() {
     return (
         <div className=" flex-1 min-h-screen bg-black">
             <Header
-                ref1={refAbout}
-                ref2={refSkills}
-                ref3={refContact}
-                ref4={refProjects}
+                refAbout={refAbout}
+                refSkills={refSkills}
+                refContact={refContact}
+                refProjects={refProjects}
             />
             <div className="flex flex-col justify-center items-center">
                 <div className="pt-2 sm:pt-5 px-5 md:px-10 lg:px-20 max-w-full  lg:max-w-7xl animate-fade-in-up">

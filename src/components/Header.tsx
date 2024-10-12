@@ -5,13 +5,15 @@ import Myname from './MyName'
 import Switch from './SwitchLanguage/Switch'
 import { useTranslation } from 'react-i18next'
 
-const Header = ({ ref1, ref2, ref3, ref4 }: { ref1: any; ref2: any; ref3: any; ref4: any }) => {
-    const executeScroll = (ref: any) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+type IHeaderItem = {
+    [K in 'refAbout' | 'refProjects' | 'refSkills' | 'refContact']: React.MutableRefObject<undefined>
+}
+
+const Header = ({ refAbout, refProjects, refSkills, refContact }: IHeaderItem) => {
+    const executeScroll = (ref: React.RefObject<HTMLElement>) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
     const { t } = useTranslation()
 
-    //sticky top-0 z-50
-    // em baixo  'absolute top-[140px] right-4 md:right-auto md:ml-96 md:top-[120px]'
     return (
         <header className="bg-yellow  pt-3 mb-5 sm:mb-10 flex flex-col items-center">
             <div className="flex flex-col justify-between md:flex-row md:items-center sm:px-10 lg:px-20 lg:max-w-7xl w-full ">
@@ -21,28 +23,28 @@ const Header = ({ ref1, ref2, ref3, ref4 }: { ref1: any; ref2: any; ref3: any; r
                 <div className="flex overflow-x-auto py-4 px-5 sm:justify-center gap-5 sm:gap-10">
                     <button
                         className="btnContainer btnText"
-                        onClick={() => executeScroll(ref1)}
+                        onClick={() => executeScroll(refAbout)}
                     >
                         <span className="btnGlitch" />
                         <span className="text-[14px] 2xl:text-[16px]">{t('header.about')}_</span>
                     </button>
                     <button
                         className="btnContainer btnText"
-                        onClick={() => executeScroll(ref4)}
+                        onClick={() => executeScroll(refContact)}
                     >
                         <span className="btnGlitch" />
                         <span className="text-[14px] 2xl:text-[16px]">{t('header.portfolio')}_</span>
                     </button>
                     <button
                         className="btnContainer btnText"
-                        onClick={() => executeScroll(ref2)}
+                        onClick={() => executeScroll(refProjects)}
                     >
                         <span className="btnGlitch" />
                         <span className="text-[14px] 2xl:text-[16px]">{t('header.skills')}_</span>
                     </button>
                     <button
                         className="btnContainer btnText mr-2"
-                        onClick={() => executeScroll(ref3)}
+                        onClick={() => executeScroll(refSkills)}
                     >
                         <span className="btnGlitch" />
                         <span className="text-[14px] 2xl:text-[16px]">{t('header.contact')}_</span>

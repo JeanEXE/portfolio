@@ -2,25 +2,31 @@ import * as React from 'react'
 import { useState, useRef, Fragment } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Slide } from 'react-slideshow-image'
-import { ArrowCustom, IndicatorCustom } from './CustomSliderComponents'
+import { CustomArrow, CustomIndicator } from './CustomSliderComponents'
+
+interface IJob {
+    title: string
+    time: string
+    description: string
+}
 
 const ExperienceSlides = () => {
     const [selected, setSelected] = useState<number>(0)
-    const slideRef: any = useRef()
+    const slideRef = useRef<{ goTo: (index: number) => void }>(null)
 
     const { t } = useTranslation()
 
-    const slideProps: any = useRef({
+    const slideProps = useRef({
         transitionDuration: 150,
         autoplay: false,
-        prevArrow: ArrowCustom(),
-        nextArrow: ArrowCustom(false),
+        prevArrow: CustomArrow(),
+        nextArrow: CustomArrow(false),
         canSwipe: true,
         ref: slideRef,
-        onChange: (previous: number, next: number) => setSelected(next)
+        onChange: (_: number, next: number) => setSelected(next)
     }).current
 
-    const jobs = [
+    const jobs: IJob[] = [
         {
             title: t('work2.title'),
             time: ` 2022 - ${t('currently')}`,
@@ -39,14 +45,14 @@ const ExperienceSlides = () => {
                 <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
                 <div className="flex items-center mb-2">
                     <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mr-6">{t('experience')}</p>
-                    <IndicatorCustom
-                        values={jobs}
+                    <CustomIndicator
+                        quantity={jobs.length}
                         stateSelect={selected}
                         refSlide={slideRef}
                     />
                 </div>
                 <Slide {...slideProps}>
-                    {jobs.map((element: any, index: number) => (
+                    {jobs.map((element: IJob, index: number) => (
                         <div
                             className="max-h-full px-4 sm:px-12 bg-blackSec py-10 polygon-card-mobile sm:polygon-card"
                             key={index}

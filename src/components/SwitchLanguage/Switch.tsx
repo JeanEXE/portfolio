@@ -27,10 +27,6 @@ const Switch = () => {
                 onChange={onToggle}
             />
             <span className="switch" />
-            {/* {isToggled ?
-                <span className='absolute  left-[6px] bottom-[5px] text-[12px] '>pt</span> :
-                <span className='absolute  right-[7px] bottom-[5px] text-[12px]'>en</span>
-            } */}
             <img
                 className={`${
                     isToggled ? 'animate-fade-in' : 'hidden'

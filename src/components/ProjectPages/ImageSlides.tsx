@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useState, useRef } from 'react'
 import { Slide } from 'react-slideshow-image'
-import { ArrowCustom, IndicatorCustom } from './CustomSliderComponents'
+import { CustomArrow, CustomIndicator } from './CustomSliderComponents'
 
 const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }) => {
     const [imgSelect, setImgSelect] = useState<number>(0)
@@ -10,11 +10,11 @@ const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }
     const slideImgProps: any = useRef({
         transitionDuration: 150,
         autoplay: false,
-        prevArrow: ArrowCustom(),
-        nextArrow: ArrowCustom(false),
+        prevArrow: CustomArrow(),
+        nextArrow: CustomArrow(false),
         canSwipe: false,
         ref: slideImgRef,
-        onChange: (previous: number, next: number) => setImgSelect(next)
+        onChange: (_: number, next: number) => setImgSelect(next)
     }).current
 
     const renderWeb = () => (
@@ -34,8 +34,8 @@ const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }
                         </div>
                     ))}
                 </Slide>
-                <IndicatorCustom
-                    values={images}
+                <CustomIndicator
+                    quantity={images.length}
                     stateSelect={imgSelect}
                     refSlide={slideImgRef}
                 />
@@ -46,8 +46,8 @@ const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }
     const renderMobile = () => (
         <div className=" max-w-md w-full  flex  justify-center ">
             <div className="w-full relative flex flex-col">
-                <IndicatorCustom
-                    values={images}
+                <CustomIndicator
+                    quantity={images.length}
                     stateSelect={imgSelect}
                     refSlide={slideImgRef}
                 />

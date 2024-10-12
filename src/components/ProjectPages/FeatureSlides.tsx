@@ -3,7 +3,7 @@ import { useState, useRef, Fragment } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Slide } from 'react-slideshow-image'
 import { FeatureType } from '../../types/Types'
-import { ArrowCustom, IndicatorCustom } from './CustomSliderComponents'
+import { CustomArrow, CustomIndicator } from './CustomSliderComponents'
 import Feature from './Feature'
 
 const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobile?: boolean }) => {
@@ -15,8 +15,8 @@ const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobi
     const slideFeatureProps: any = useRef({
         transitionDuration: 150,
         autoplay: false,
-        prevArrow: ArrowCustom(),
-        nextArrow: ArrowCustom(false),
+        prevArrow: CustomArrow(),
+        nextArrow: CustomArrow(false),
         canSwipe: false,
         ref: slideFeatureRef,
         onChange: (previous: number, next: number) => setFeatureSelect(next)
@@ -38,8 +38,8 @@ const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobi
                         />
                     ))}
                 </Slide>
-                <IndicatorCustom
-                    values={features}
+                <CustomIndicator
+                    quantity={features.length}
                     stateSelect={featureSelect}
                     refSlide={slideFeatureRef}
                 />
@@ -52,8 +52,8 @@ const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobi
             <p className="font-semibold text-[28px] mt-16">{t('features')}</p>
             <p className="text-[14px] 2xl:text-[17px] text-textColor mb-4">{t('features.description')}.</p>
             <div className="w-full relative flex flex-col">
-                <IndicatorCustom
-                    values={features}
+                <CustomIndicator
+                    quantity={features.length}
                     stateSelect={featureSelect}
                     refSlide={slideFeatureRef}
                 />

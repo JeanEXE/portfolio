@@ -22,12 +22,23 @@ const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }
             <div className="w-full relative flex flex-col">
                 <Slide {...slideImgProps}>
                     {images.map((element, index) => (
-                        <div className="flex justify-center max-h-full " key={index}>
-                            <img src={element} className="w-[220px] 2xl:w-[350px]" alt="" />
+                        <div
+                            className="flex justify-center max-h-full "
+                            key={index}
+                        >
+                            <img
+                                src={element}
+                                className="w-[220px] 2xl:w-[350px]"
+                                alt=""
+                            />
                         </div>
                     ))}
                 </Slide>
-                <IndicatorCustom values={images} stateSelect={imgSelect} refSlide={slideImgRef} />
+                <IndicatorCustom
+                    values={images}
+                    stateSelect={imgSelect}
+                    refSlide={slideImgRef}
+                />
             </div>
         </div>
     )
@@ -35,11 +46,25 @@ const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }
     const renderMobile = () => (
         <div className=" max-w-md w-full  flex  justify-center ">
             <div className="w-full relative flex flex-col">
-                <IndicatorCustom values={images} stateSelect={imgSelect} refSlide={slideImgRef} />
-                <Slide {...slideImgProps} canSwipe={true}>
+                <IndicatorCustom
+                    values={images}
+                    stateSelect={imgSelect}
+                    refSlide={slideImgRef}
+                />
+                <Slide
+                    {...slideImgProps}
+                    canSwipe={true}
+                >
                     {images.map((element, index) => (
-                        <div className="flex justify-center max-h-full" key={index}>
-                            <img src={element} className="w-[65vw] max-w-[280px]" alt="" />
+                        <div
+                            className="flex justify-center max-h-full"
+                            key={index}
+                        >
+                            <img
+                                src={element}
+                                className="w-[65vw] max-w-[280px]"
+                                alt=""
+                            />
                         </div>
                     ))}
                 </Slide>

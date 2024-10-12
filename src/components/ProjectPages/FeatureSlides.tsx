@@ -38,7 +38,11 @@ const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobi
                         />
                     ))}
                 </Slide>
-                <IndicatorCustom values={features} stateSelect={featureSelect} refSlide={slideFeatureRef} />
+                <IndicatorCustom
+                    values={features}
+                    stateSelect={featureSelect}
+                    refSlide={slideFeatureRef}
+                />
             </div>
         </Fragment>
     )
@@ -48,8 +52,15 @@ const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobi
             <p className="font-semibold text-[28px] mt-16">{t('features')}</p>
             <p className="text-[14px] 2xl:text-[17px] text-textColor mb-4">{t('features.description')}.</p>
             <div className="w-full relative flex flex-col">
-                <IndicatorCustom values={features} stateSelect={featureSelect} refSlide={slideFeatureRef} />
-                <Slide {...slideFeatureProps} canSwipe={true}>
+                <IndicatorCustom
+                    values={features}
+                    stateSelect={featureSelect}
+                    refSlide={slideFeatureRef}
+                />
+                <Slide
+                    {...slideFeatureProps}
+                    canSwipe={true}
+                >
                     {features.map((element, index) => (
                         <Feature
                             key={index}

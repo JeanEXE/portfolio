@@ -40,7 +40,11 @@ const Contact = () => {
                         rel="noreferrer"
                         onClick={() => insertEvent('clicou link: linkedin')}
                     >
-                        <img src={linkedin} className="w-6 h-6 mr-4" alt="" />
+                        <img
+                            src={linkedin}
+                            className="w-6 h-6 mr-4"
+                            alt=""
+                        />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">Linkedin</p>
                     </a>
                     <a
@@ -50,7 +54,11 @@ const Contact = () => {
                         rel="noreferrer"
                         onClick={() => insertEvent('clicou link: github')}
                     >
-                        <img src={github} className="w-6 h-6 mr-4" alt="" />
+                        <img
+                            src={github}
+                            className="w-6 h-6 mr-4"
+                            alt=""
+                        />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">GitHub</p>
                     </a>
                     {/* <a
@@ -73,8 +81,15 @@ const Contact = () => {
                         <img src={whatsapp} className="w-6 h-6 mr-4" alt="" />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">Whatsapp</p>
                     </a> */}
-                    <div className="flex items-center" ref={myRef}>
-                        <img src={gmail} className="w-6 h-6 mr-4" alt="" />
+                    <div
+                        className="flex items-center"
+                        ref={myRef}
+                    >
+                        <img
+                            src={gmail}
+                            className="w-6 h-6 mr-4"
+                            alt=""
+                        />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-light">jeanreis.dev@gmail.com</p>
                     </div>
                 </div>

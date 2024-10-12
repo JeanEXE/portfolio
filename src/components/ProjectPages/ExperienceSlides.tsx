@@ -39,11 +39,18 @@ const ExperienceSlides = () => {
                 <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
                 <div className="flex items-center mb-2">
                     <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mr-6">{t('experience')}</p>
-                    <IndicatorCustom values={jobs} stateSelect={selected} refSlide={slideRef} />
+                    <IndicatorCustom
+                        values={jobs}
+                        stateSelect={selected}
+                        refSlide={slideRef}
+                    />
                 </div>
                 <Slide {...slideProps}>
                     {jobs.map((element: any, index: number) => (
-                        <div className="max-h-full px-4 sm:px-12 bg-blackSec py-10 polygon-card-mobile sm:polygon-card" key={index}>
+                        <div
+                            className="max-h-full px-4 sm:px-12 bg-blackSec py-10 polygon-card-mobile sm:polygon-card"
+                            key={index}
+                        >
                             <p className="text-[13px] 2xl:text-[16px]  mb-1">{`${element.title}\n(${element.time})`}</p>
                             <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{element.description}</p>
                         </div>

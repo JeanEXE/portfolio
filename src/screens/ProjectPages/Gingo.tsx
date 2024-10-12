@@ -110,10 +110,17 @@ const Gingo = () => {
         <Fragment>
             <div className="flex justify-between pt-40">
                 <div className=" w-1/2">
-                    <img src={props.logo} className=" h-[150px] 2xl:h-[180px] " alt="" />
+                    <img
+                        src={props.logo}
+                        className=" h-[150px] 2xl:h-[180px] "
+                        alt=""
+                    />
                     <div className="flex flex-wrap mt-3 mb-7  gap-4 ">
                         {props.tags.map((name: string, index: number) => (
-                            <Tag key={index} text={name} />
+                            <Tag
+                                key={index}
+                                text={name}
+                            />
                         ))}
                     </div>
                     <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{props.description}</p>
@@ -121,7 +128,12 @@ const Gingo = () => {
                 <ImageSlider images={props.images} />
             </div>
 
-            {props.challenge && props.learned && <ChallengeLearned challenge={props.challenge} learned={props.learned} />}
+            {props.challenge && props.learned && (
+                <ChallengeLearned
+                    challenge={props.challenge}
+                    learned={props.learned}
+                />
+            )}
             {props.features && <FeatureSlide features={props.features} />}
         </Fragment>
     )
@@ -129,19 +141,40 @@ const Gingo = () => {
     const renderMobile = () => (
         <Fragment>
             <div className="flex  flex-col items-center pt-24 gap-6">
-                <img src={props.logo} className=" h-[180px]" alt="" />
+                <img
+                    src={props.logo}
+                    className=" h-[180px]"
+                    alt=""
+                />
                 <div className="flex flex-wrap gap-4 justify-center">
                     {props.tags.map((name: string, index: number) => (
-                        <Tag key={index} text={name} />
+                        <Tag
+                            key={index}
+                            text={name}
+                        />
                     ))}
                 </div>
 
                 <p className="max-w-md text-textColor indent-4">{props.description}</p>
-                <ImageSlider images={props.images} isMobile />
+                <ImageSlider
+                    images={props.images}
+                    isMobile
+                />
             </div>
 
-            {props.challenge && props.learned && <ChallengeLearned challenge={props.challenge} learned={props.learned} isMobile />}
-            {props.features && <FeatureSlide features={props.features} isMobile />}
+            {props.challenge && props.learned && (
+                <ChallengeLearned
+                    challenge={props.challenge}
+                    learned={props.learned}
+                    isMobile
+                />
+            )}
+            {props.features && (
+                <FeatureSlide
+                    features={props.features}
+                    isMobile
+                />
+            )}
         </Fragment>
     )
 

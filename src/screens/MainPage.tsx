@@ -24,7 +24,12 @@ function MainPage() {
 
     return (
         <div className=" flex-1 min-h-screen bg-black">
-            <Header ref1={refAbout} ref2={refSkills} ref3={refContact} ref4={refProjects} />
+            <Header
+                ref1={refAbout}
+                ref2={refSkills}
+                ref3={refContact}
+                ref4={refProjects}
+            />
             <div className="flex flex-col justify-center items-center">
                 <div className="pt-2 sm:pt-5 px-5 md:px-10 lg:px-20 max-w-full  lg:max-w-7xl animate-fade-in-up">
                     <Profile />
@@ -91,19 +96,49 @@ function MainPage() {
                                     <p className="text-[10px] sm:text-[11px]">{t('advanced')}</p>
                                 </div>
                             </div>
-                            <SkillBar stack={'JavaScript'} width="w-full" />
-                            <SkillBar stack={'React Native'} width="w-full" />
-                            <SkillBar stack={'TypeScript'} width="w-8/12" />
-                            <SkillBar stack={'Node.js'} width="w-6/12" />
-                            <SkillBar stack={'PHP'} width="w-1/6" />
-                            <SkillBar stack={'Swift'} width="w-2/12" />
-                            <SkillBar stack={'Java'} width="w-2/12" />
-                            <SkillBar stack={'SQLite'} width="w-6/12" />
-                            <SkillBar stack={'MongoDB'} width="w-6/12" />
+                            <SkillBar
+                                stack={'JavaScript'}
+                                width="w-full"
+                            />
+                            <SkillBar
+                                stack={'React Native'}
+                                width="w-full"
+                            />
+                            <SkillBar
+                                stack={'TypeScript'}
+                                width="w-8/12"
+                            />
+                            <SkillBar
+                                stack={'Node.js'}
+                                width="w-6/12"
+                            />
+                            <SkillBar
+                                stack={'PHP'}
+                                width="w-1/6"
+                            />
+                            <SkillBar
+                                stack={'Swift'}
+                                width="w-2/12"
+                            />
+                            <SkillBar
+                                stack={'Java'}
+                                width="w-2/12"
+                            />
+                            <SkillBar
+                                stack={'SQLite'}
+                                width="w-6/12"
+                            />
+                            <SkillBar
+                                stack={'MongoDB'}
+                                width="w-6/12"
+                            />
                             {/* <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width="w-4/6" /> */}
                         </div>
                     </div>
-                    <div className="flex justify-between items-center py-8 absolute left-0 w-full" ref={refContact}>
+                    <div
+                        className="flex justify-between items-center py-8 absolute left-0 w-full"
+                        ref={refContact}
+                    >
                         <AnimatedBadge />
                         <Contact />
                     </div>

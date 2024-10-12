@@ -21,7 +21,11 @@ const Switch = () => {
 
     return (
         <label className="toggle-switch cursor-pointer">
-            <input type="checkbox" checked={isToggled} onChange={onToggle} />
+            <input
+                type="checkbox"
+                checked={isToggled}
+                onChange={onToggle}
+            />
             <span className="switch" />
             {/* {isToggled ?
                 <span className='absolute  left-[6px] bottom-[5px] text-[12px] '>pt</span> :

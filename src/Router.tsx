@@ -18,15 +18,15 @@ export default function Router() {
                 element={<Gingo />}
             />
             <Route
-                path="Gingo%20Business"
+                path="Gingo_Business"
                 element={<GingoBusiness />}
             />
             <Route
-                path="Isabela%20Flores"
+                path="Isabela_Flores"
                 element={<IsabelaFlores />}
             />
             <Route
-                path="Flores%20Online"
+                path="Flores_Online"
                 element={<FloresOnline />}
             />
         </Routes>

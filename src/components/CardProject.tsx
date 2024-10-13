@@ -33,7 +33,7 @@ const CardProject = ({ name, image, tags, description }: CardProjectType) => {
             </div>
             <button className="absolute right-6 bottom-3">
                 <Link
-                    to={`/${name}`}
+                    to={`/${name.trim().replace(' ', '_')}`}
                     onClick={() => insertEvent(`abriu projeto: ${name}`)}
                 >
                     <p className="text-blue text-[17px] font-semibold flex items-center">

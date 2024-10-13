@@ -1,24 +1,24 @@
-import * as React from 'react'
-import { useEffect, useState, useRef } from 'react'
-import { useInViewport } from 'react-in-viewport'
-import { useTranslation } from 'react-i18next'
-import { insertEvent } from '../helpers/Analytics'
-import linkedin from '../assets/svg/icon-linkedin.svg'
-import gmail from '../assets/svg/icon-gmail.svg'
-import github from '../assets/svg/icon-github.svg'
+import * as React from "react"
+import { useEffect, useState, useRef } from "react"
+import { useInViewport } from "react-in-viewport"
+import { useTranslation } from "react-i18next"
+import { insertEvent } from "../helpers/Analytics"
+import linkedin from "../assets/svg/icon-linkedin.svg"
+import gmail from "../assets/svg/icon-gmail.svg"
+import github from "../assets/svg/icon-github.svg"
 // import whatsapp from '../assets/svg/icon-whatsapp.svg'
 // import telegram from '../assets/svg/icon-telegram.svg'
 
 const Contact = () => {
-    const [widthAnim, setWidthAnim] = useState('w-0')
+    const [widthAnim, setWidthAnim] = useState("w-0")
     const myRef = useRef()
     const { inViewport } = useInViewport(myRef)
     const { t } = useTranslation()
 
     useEffect(() => {
-        if (inViewport && widthAnim === 'w-0') {
+        if (inViewport && widthAnim === "w-0") {
             setTimeout(() => {
-                setWidthAnim('w-11/12 sm:w-7/12')
+                setWidthAnim("w-11/12 sm:w-7/12")
             }, 400)
         }
     }, [inViewport, widthAnim])
@@ -28,7 +28,7 @@ const Contact = () => {
             <div className="whitespace-nowrap overflow-hidden gap-5">
                 <div className=" flex w-full items-center justify-center">
                     <p className="pr-4 sm:pr-10 mb-1 sm:mb-2 min-w-fit overflow-hidden font-bold whitespace-nowrap text-[23px] sm:text-[30px] 2xl:text-[43px]">
-                        {t('contact')}
+                        {t("contact")}
                     </p>
                     <div className="bg-yellow w-full h-4" />
                 </div>
@@ -38,7 +38,7 @@ const Contact = () => {
                         target="_blank"
                         href="https://linkedin.com/in/jean-reis-91505a1b2/"
                         rel="noreferrer"
-                        onClick={() => insertEvent('clicou link: linkedin')}
+                        onClick={() => insertEvent("clicou link: linkedin")}
                     >
                         <img
                             src={linkedin}
@@ -52,7 +52,7 @@ const Contact = () => {
                         target="_blank"
                         href="https://github.com/JeanEXE"
                         rel="noreferrer"
-                        onClick={() => insertEvent('clicou link: github')}
+                        onClick={() => insertEvent("clicou link: github")}
                     >
                         <img
                             src={github}

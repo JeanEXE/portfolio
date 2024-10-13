@@ -35,4 +35,4 @@ export type SkillBarType = {
     width: string
 }
 
-export type TLanguage = 'en' | 'pt'
+export type TLanguage = "en" | "pt"

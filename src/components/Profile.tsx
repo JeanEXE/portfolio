@@ -1,9 +1,9 @@
-import * as React from 'react'
-import '../styles/CyberpunkGlitch.css'
-import profilePic from '../assets/img/profile.jpg'
-import useDimensions from '../hooks/useDimensions'
-import Tag from './Tag/Tag'
-import { useTranslation } from 'react-i18next'
+import * as React from "react"
+import "../styles/CyberpunkGlitch.css"
+import profilePic from "../assets/img/profile.jpg"
+import useDimensions from "../hooks/useDimensions"
+import Tag from "./Tag/Tag"
+import { useTranslation } from "react-i18next"
 
 const Profile = () => {
     const { width } = useDimensions()
@@ -18,7 +18,7 @@ const Profile = () => {
             />
             <div className="flex flex-col items-center mt-3 font-semibold">
                 <p className="text-[16px] sm:text-[22px] mb-3">
-                    Jean Reis <span className="text-[13px] sm:text-[18px]">- {t('city')}</span>
+                    Jean Reis <span className="text-[13px] sm:text-[18px]">- {t("city")}</span>
                 </p>
                 <p
                     className="text-[11vw] sm:text-[65px] tracking-[5px] hero glitch layers leading-none"
@@ -50,7 +50,7 @@ const Profile = () => {
             />
             <div className="font-semibold">
                 <p className="text-[24px] 2xl:text-[26px]">
-                    Jean Reis <span className="text-[20px] 2xl:text-[22px]">- {t('city')}</span>
+                    Jean Reis <span className="text-[20px] 2xl:text-[22px]">- {t("city")}</span>
                 </p>
                 <p
                     className="text-[60px] 2xl:text-[70px] leading-none tracking-[10px] hero glitch layers"

@@ -1,10 +1,10 @@
-import * as React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import MainPage from './screens/MainPage'
-import Gingo from './screens/ProjectPages/Gingo'
-import GingoBusiness from './screens/ProjectPages/GingoBusiness'
-import IsabelaFlores from './screens/ProjectPages/IsabelaFlores'
-import FloresOnline from './screens/ProjectPages/FloresOnline'
+import * as React from "react"
+import { Routes, Route } from "react-router-dom"
+import MainPage from "./screens/MainPage"
+import Gingo from "./screens/ProjectPages/Gingo"
+import GingoBusiness from "./screens/ProjectPages/GingoBusiness"
+import IsabelaFlores from "./screens/ProjectPages/IsabelaFlores"
+import FloresOnline from "./screens/ProjectPages/FloresOnline"
 
 export default function Router() {
     return (

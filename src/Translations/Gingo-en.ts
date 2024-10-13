@@ -17,18 +17,18 @@ const APRENDIZADO = `With this project I learned to use express and socket on th
 `
 
 const TRANSLATION = {
-    'prj1.description': DESC_PROJETO,
-    'prj1.challenge': DESAFIO,
-    'prj1.learned': APRENDIZADO,
-    'prj1.feature1.description': `I participated in the development of the entire push mechanism, from the development on the node server where the sending is made to the receiving part of the application, on Android Firebase was used and on iOS, APNS was used.
+    "prj1.description": DESC_PROJETO,
+    "prj1.challenge": DESAFIO,
+    "prj1.learned": APRENDIZADO,
+    "prj1.feature1.description": `I participated in the development of the entire push mechanism, from the development on the node server where the sending is made to the receiving part of the application, on Android Firebase was used and on iOS, APNS was used.
     The Receiving System in the iOS application was a very challenging part to do, as there was a need to perform functions of the application while it is closed, such as decrypting the message that arrived via notification.
     It was at that moment that I needed to learn to develop in Swift, creating functions to insert/delete data in SQLite, REST requests, encryption/decryption, etc...
 On android these functions were developed in javascript.
 `,
-    'prj1.feature2.description': `I developed the image preview component in React Native, and the entire upload/download process using Socket.io, Amazon s3 and SQLite.`,
-    'prj1.feature3.description': `I developed the audio recording and playback component in React Native using "react-native-audio-recorder-player", and the entire upload/download process using Socket.io, Amazon s3 and SQLite.`,
-    'prj1.feature4.description': `I developed the video viewing component in React Native using "react-native-create-thumbnail" and "react-native-file-viewer", and the entire upload/download process using Socket.io, Amazon s3 and SQLite.`,
-    'prj1.feature5.description': `I developed the file upload component in React Native using "react-native-file-viewer", and the entire upload/download process using Socket.io, Amazon s3 and SQLite.`
+    "prj1.feature2.description": `I developed the image preview component in React Native, and the entire upload/download process using Socket.io, Amazon s3 and SQLite.`,
+    "prj1.feature3.description": `I developed the audio recording and playback component in React Native using "react-native-audio-recorder-player", and the entire upload/download process using Socket.io, Amazon s3 and SQLite.`,
+    "prj1.feature4.description": `I developed the video viewing component in React Native using "react-native-create-thumbnail" and "react-native-file-viewer", and the entire upload/download process using Socket.io, Amazon s3 and SQLite.`,
+    "prj1.feature5.description": `I developed the file upload component in React Native using "react-native-file-viewer", and the entire upload/download process using Socket.io, Amazon s3 and SQLite.`
 }
 
 export default TRANSLATION

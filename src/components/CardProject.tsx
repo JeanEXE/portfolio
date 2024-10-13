@@ -1,10 +1,10 @@
-import * as React from 'react'
-import { Link } from 'react-router-dom'
-import arrow from '../assets/svg/icon-arrow.svg'
-import { CardProjectType } from '../types/Types'
-import { useTranslation } from 'react-i18next'
-import Tag from './Tag/Tag'
-import { insertEvent } from '../helpers/Analytics'
+import * as React from "react"
+import { Link } from "react-router-dom"
+import arrow from "../assets/svg/icon-arrow.svg"
+import { CardProjectType } from "../types/Types"
+import { useTranslation } from "react-i18next"
+import Tag from "./Tag/Tag"
+import { insertEvent } from "../helpers/Analytics"
 
 const CardProject = ({ name, image, tags, description }: CardProjectType) => {
     const { t } = useTranslation()
@@ -33,11 +33,11 @@ const CardProject = ({ name, image, tags, description }: CardProjectType) => {
             </div>
             <button className="absolute right-6 bottom-3">
                 <Link
-                    to={`/${name.trim().replace(' ', '_')}`}
+                    to={`/${name.trim().replace(" ", "_")}`}
                     onClick={() => insertEvent(`abriu projeto: ${name}`)}
                 >
                     <p className="text-blue text-[17px] font-semibold flex items-center">
-                        {t('full-project')}{' '}
+                        {t("full-project")}{" "}
                         <img
                             src={arrow}
                             className={`h-4 bottom-1 rotate-90`}

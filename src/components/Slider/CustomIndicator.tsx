@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from "react"
 
 interface ICustomIndicator {
     quantity: number
@@ -18,7 +18,7 @@ export const CustomIndicator = React.memo(({ quantity, stateSelect, refSlide }: 
         <div className="flex flex-wrap gap-1 2xl:gap-2 my-4 max-w-[500px] justify-center self-center">
             {Array.from({ length: quantity }).map((_, index) => (
                 <button
-                    className={`indicator p-[8px] 2xl:p-[10px] cursor-pointer ${stateSelect === index ? 'bg-blue' : 'bg-unselected'}`}
+                    className={`indicator p-[8px] 2xl:p-[10px] cursor-pointer ${stateSelect === index ? "bg-blue" : "bg-unselected"}`}
                     key={index}
                     onClick={() => handleClick(index)}
                 />
@@ -27,4 +27,4 @@ export const CustomIndicator = React.memo(({ quantity, stateSelect, refSlide }: 
     )
 })
 
-CustomIndicator.displayName = 'CustomIndicator'
+CustomIndicator.displayName = "CustomIndicator"

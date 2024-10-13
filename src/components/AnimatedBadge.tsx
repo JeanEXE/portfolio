@@ -1,6 +1,6 @@
-import * as React from 'react'
-import circle from '../assets/img/circle.png'
-import circleName from '../assets/img/circle_name.png'
+import * as React from "react"
+import circle from "../assets/img/circle.png"
+import circleName from "../assets/img/circle_name.png"
 
 const AnimatedBadge = () => {
     return (

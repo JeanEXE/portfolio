@@ -1,8 +1,8 @@
-import ReactGA from 'react-ga4'
+import ReactGA from "react-ga4"
 
 export const insertEvent = (action: string) => {
     ReactGA.event({
-        category: 'User',
+        category: "User",
         action: action
     })
 }

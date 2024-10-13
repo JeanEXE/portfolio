@@ -1,5 +1,5 @@
-import * as React from 'react'
-import '../styles/GlitchAnimation.css'
+import * as React from "react"
+import "../styles/GlitchAnimation.css"
 
 const Myname = () => {
     return (

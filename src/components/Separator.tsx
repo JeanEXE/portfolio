@@ -1,9 +1,9 @@
-import * as React from 'react'
+import * as React from "react"
 
-const Separator = ({ color = '#0B0B0C', inverted }: { color?: string; inverted?: boolean }) => {
+const Separator = ({ color = "#0B0B0C", inverted }: { color?: string; inverted?: boolean }) => {
     return (
         <svg
-            className={`${inverted && 'rotate-180'} w-full relative ${inverted ? 'top-[-1px]' : 'bottom-[-1px]'}`}
+            className={`${inverted && "rotate-180"} w-full relative ${inverted ? "top-[-1px]" : "bottom-[-1px]"}`}
             xmlns="http://www.w3.org/2000/svg"
             width="1920px"
             height="37px"

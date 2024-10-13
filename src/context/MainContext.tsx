@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { useState, createContext, ReactNode } from 'react'
-import { TLanguage } from '../types/Types'
-import i18n from 'i18next'
+import * as React from "react"
+import { useState, createContext, ReactNode } from "react"
+import { TLanguage } from "../types/Types"
+import i18n from "i18next"
 
 interface ISettingsValues {
     language: TLanguage

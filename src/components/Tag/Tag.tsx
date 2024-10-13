@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { TagType } from '../../types/Types'
-import './Tag.css'
+import * as React from "react"
+import { TagType } from "../../types/Types"
+import "./Tag.css"
 
-const Tag = ({ text, small, backgroundColor = 'bg-black' }: TagType) => {
+const Tag = ({ text, small, backgroundColor = "bg-black" }: TagType) => {
     if (small) {
         return (
             <div className={`btn cursor-default p-[1px] w-fit min-w-[70px] h-fit`}>

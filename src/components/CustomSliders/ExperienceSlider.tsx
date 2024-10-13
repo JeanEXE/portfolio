@@ -1,8 +1,8 @@
-import * as React from 'react'
-import { useState, useRef, Fragment } from 'react'
-import { useTranslation } from 'react-i18next'
-import { CustomIndicator } from '../Slider/CustomIndicator'
-import Slider, { ISliderRef } from '../Slider/Slider'
+import * as React from "react"
+import { useState, useRef, Fragment } from "react"
+import { useTranslation } from "react-i18next"
+import { CustomIndicator } from "../Slider/CustomIndicator"
+import Slider, { ISliderRef } from "../Slider/Slider"
 
 interface IJob {
     title: string
@@ -18,14 +18,14 @@ const ExperienceSlider = () => {
 
     const jobs: IJob[] = [
         {
-            title: t('work2.title'),
-            time: ` 2022 - ${t('currently')}`,
-            description: t('work2.description')
+            title: t("work2.title"),
+            time: ` 2022 - ${t("currently")}`,
+            description: t("work2.description")
         },
         {
-            title: t('work1.title'),
+            title: t("work1.title"),
             time: ` 2018 - 2022`,
-            description: t('work1.description')
+            description: t("work1.description")
         }
     ]
 
@@ -34,7 +34,7 @@ const ExperienceSlider = () => {
             <div className="w-full relative flex flex-col">
                 <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
                 <div className="flex items-center mb-2">
-                    <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mr-6">{t('experience')}</p>
+                    <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mr-6">{t("experience")}</p>
                     <CustomIndicator
                         quantity={jobs.length}
                         stateSelect={slideSelected}

@@ -1,18 +1,18 @@
-import * as React from 'react'
-import { useRef } from 'react'
-import Header from '../components/Header'
-import SkillBar from '../components/SkillBar'
-import { useTranslation } from 'react-i18next'
-import Footer from '../components/Footer'
-import AnimatedBadge from '../components/AnimatedBadge'
-import Contact from '../components/Contact'
-import Profile from '../components/Profile'
-import isaLogo from '../assets/IsabelaFlores/isaLogo.png'
-import floresLogo from '../assets/FloresOnline/floresLogo.png'
-import gingo from '../assets/img/gingo.png'
-import gBusiness from '../assets/img/g_business.png'
-import CardProject from '../components/CardProject'
-import ExperienceSlider from '../components/CustomSliders/ExperienceSlider'
+import * as React from "react"
+import { useRef } from "react"
+import Header from "../components/Header"
+import SkillBar from "../components/SkillBar"
+import { useTranslation } from "react-i18next"
+import Footer from "../components/Footer"
+import AnimatedBadge from "../components/AnimatedBadge"
+import Contact from "../components/Contact"
+import Profile from "../components/Profile"
+import isaLogo from "../assets/IsabelaFlores/isaLogo.png"
+import floresLogo from "../assets/FloresOnline/floresLogo.png"
+import gingo from "../assets/img/gingo.png"
+import gBusiness from "../assets/img/g_business.png"
+import CardProject from "../components/CardProject"
+import ExperienceSlider from "../components/CustomSliders/ExperienceSlider"
 
 function MainPage() {
     const refAbout = useRef()
@@ -35,11 +35,11 @@ function MainPage() {
                     <Profile />
                     <div className="py-12 sm:py-20 sm:flex sm:justify-between">
                         <div className="sm:w-5/12">
-                            <h1 ref={refAbout}>{t('header.about')}</h1>
-                            <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{t('about')}</p>
+                            <h1 ref={refAbout}>{t("header.about")}</h1>
+                            <p className="text-[14px] 2xl:text-[16px] text-textColor indent-4">{t("about")}</p>
                             <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
-                            <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">{t('education')}</p>
-                            <p className="text-[13px] 2xl:text-[16px]">{t('education.description')} UNIFAE (2016 - 2019)</p>
+                            <p className="text-[21px] sm:text-[25px] 2xl:text-[32px] font-semibold mb-2">{t("education")}</p>
+                            <p className="text-[13px] 2xl:text-[16px]">{t("education.description")} UNIFAE (2016 - 2019)</p>
                         </div>
                         <div className="mt-10 sm:w-6/12">
                             <ExperienceSlider />
@@ -52,85 +52,85 @@ function MainPage() {
                     </div>
                     <div className='h-36' /> */}
                     <div className="py-7">
-                        <h1 ref={refProjects}>{t('header.portfolio')}</h1>
-                        <p className="text-[14px] sm:text-[17px] text-textColor">{t('portfolio.description')}.</p>
+                        <h1 ref={refProjects}>{t("header.portfolio")}</h1>
+                        <p className="text-[14px] sm:text-[17px] text-textColor">{t("portfolio.description")}.</p>
                         <div className="grid gap-3 sm:gap-6 lg:gap-2 xl:gap-3 grid-cols-1 lg:grid-cols-2 mt-7">
                             <CardProject
-                                name={'Flores Online'}
+                                name={"Flores Online"}
                                 image={floresLogo}
-                                tags={['React Native', 'TypeScript']}
-                                description={t('prj4.description')}
+                                tags={["React Native", "TypeScript"]}
+                                description={t("prj4.description")}
                             />
                             <CardProject
-                                name={'Isabela Flores'}
+                                name={"Isabela Flores"}
                                 image={isaLogo}
-                                tags={['React Native', 'TypeScript']}
-                                description={t('prj3.description')}
+                                tags={["React Native", "TypeScript"]}
+                                description={t("prj3.description")}
                             />
                             <CardProject
-                                name={'Gingo'}
+                                name={"Gingo"}
                                 image={gingo}
-                                tags={['React Native', 'Node.js', 'MongoDB', 'SQLite']}
-                                description={t('prj1.description')}
+                                tags={["React Native", "Node.js", "MongoDB", "SQLite"]}
+                                description={t("prj1.description")}
                             />
                             <CardProject
-                                name={'Gingo Business'}
+                                name={"Gingo Business"}
                                 image={gBusiness}
-                                tags={['React Native', 'Node.js', 'MongoDB', 'SQLite']}
-                                description={t('prj2.description')}
+                                tags={["React Native", "Node.js", "MongoDB", "SQLite"]}
+                                description={t("prj2.description")}
                             />
                         </div>
                     </div>
 
                     <div className="py-7 sm:flex justify-between">
                         <div>
-                            <h1 ref={refSkills}>{t('header.skills')}</h1>
-                            <p className="text-[14px] 2xl:text-[17px] text-textColor">{t('skills.description')}.</p>
+                            <h1 ref={refSkills}>{t("header.skills")}</h1>
+                            <p className="text-[14px] 2xl:text-[17px] text-textColor">{t("skills.description")}.</p>
                         </div>
                         <div className="sm:w-6/12">
                             <div className="flex  w-full  mt-5 mb-2 items-center">
                                 <p className="w-28 sm:w-2/4" />
                                 <div className=" flex justify-between w-full h-[1.1rem] sm:w-3/4">
-                                    <p className="text-[10px] sm:text-[11px]">{t('basic')}</p>
-                                    <p className="text-[10px] sm:text-[11px]">{t('intermediate')}</p>
-                                    <p className="text-[10px] sm:text-[11px]">{t('advanced')}</p>
+                                    <p className="text-[10px] sm:text-[11px]">{t("basic")}</p>
+                                    <p className="text-[10px] sm:text-[11px]">{t("intermediate")}</p>
+                                    <p className="text-[10px] sm:text-[11px]">{t("advanced")}</p>
                                 </div>
                             </div>
                             <SkillBar
-                                stack={'JavaScript'}
+                                stack={"JavaScript"}
                                 width="w-full"
                             />
                             <SkillBar
-                                stack={'React Native'}
+                                stack={"React Native"}
                                 width="w-full"
                             />
                             <SkillBar
-                                stack={'TypeScript'}
+                                stack={"TypeScript"}
                                 width="w-8/12"
                             />
                             <SkillBar
-                                stack={'Node.js'}
+                                stack={"React.js"}
+                                width="w-8/12"
+                            />
+                            <SkillBar
+                                stack={"Node.js"}
                                 width="w-6/12"
                             />
                             <SkillBar
-                                stack={'PHP'}
-                                width="w-1/6"
+                                stack={"MongoDB/SQL"}
+                                width="w-6/12"
                             />
                             <SkillBar
-                                stack={'Swift'}
+                                stack={"PHP"}
                                 width="w-2/12"
                             />
                             <SkillBar
-                                stack={'Java'}
+                                stack={"Swift"}
                                 width="w-2/12"
                             />
                             <SkillBar
-                                stack={'SQLite'}
-                                width="w-6/12"
-                            />
-                            <SkillBar
-                                stack={'MongoDB'}
-                                width="w-6/12"
+                                stack={"Java"}
+                                width="w-2/12"
                             />
                             {/* <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width="w-4/6" /> */}
                         </div>

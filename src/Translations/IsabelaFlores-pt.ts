@@ -1,6 +1,5 @@
-const DESC_PROJETO = `Isabela Flores é um aplicativo de compra de flores e presentes através de parceiros, foi desenvolvido em React Native e Typescript e está disponível para Android e iOS.
-Trabalhei no projeto desde o início até a sua publicação nas stores e sou encarregado de manter o CI/CD utilizando AppCenter (codepush).
-Neste projeto atuei somente no frontent, desenvolvendo telas e suas funcionalidades.`
+const DESC_PROJETO = `Isabela Flores é um aplicativo de marketplace para compra de flores e presentes através de parceiros. Os usuários podem realizar compras pelo app, selecionar uma data e horário específicos para a entrega, além de avaliar seus pedidos diretamente no aplicativo. O app também disponibiliza uma página onde os parceiros podem exibir e vender seus próprios produtos. Foi desenvolvido em React Native e TypeScript e está disponível tanto para Android quanto para iOS.
+    Fui responsavel por definições técnicas atuando no frontend desde o início do projeto até a sua publicação nas lojas, e de manter o CI/CD utilizando AppCenter (codepush).`
 
 const DESAFIO = `Meu maior desafio foi no desenvolvimento da tela de filtragem de produtos e o carrinho pois são telas que possúem muitas regras de negócio.`
 
@@ -9,9 +8,9 @@ Aprendi também a fazer testes automatizados  End to End utilizando Detox.
 Aprendi a utilizar o redux-persist.`
 
 const TRANSLATION = {
-    'prj3.description': DESC_PROJETO,
-    'prj3.challenge': DESAFIO,
-    'prj3.learned': APRENDIZADO
+    "prj3.description": DESC_PROJETO,
+    "prj3.challenge": DESAFIO,
+    "prj3.learned": APRENDIZADO
 }
 
 export default TRANSLATION

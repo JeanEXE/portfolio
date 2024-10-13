@@ -1,51 +1,51 @@
-import * as React from 'react'
-import { useRef, Fragment } from 'react'
-import Footer from '../../components/Footer'
-import { useTranslation } from 'react-i18next'
-import HeaderProject from '../../components/ProjectPages/HeaderProject'
-import Tag from '../../components/Tag/Tag'
-import 'react-slideshow-image/dist/styles.css'
-import useDimensions from '../../hooks/useDimensions'
-import { ProjectType } from '../../types/Types'
-import FeatureSlide from '../../components/CustomSliders/FeatureSlider'
-import ChallengeLearned from '../../components/ProjectPages/ChallengeLearned'
-import ImageSlider from '../../components/CustomSliders/ImageSlider'
-import gingo from '../../assets/img/gingo.png'
-import ging1 from '../../assets/Gingo/gingo1.jfif'
-import ging2 from '../../assets/Gingo/gingo2.jfif'
-import ging3 from '../../assets/Gingo/gingo3.jfif'
-import ging4 from '../../assets/Gingo/gingo4.jfif'
-import ging5 from '../../assets/Gingo/gingo5.jfif'
-import ging6 from '../../assets/Gingo/gingo6.jfif'
-import ging7 from '../../assets/Gingo/gingo7.jfif'
-import ging8 from '../../assets/Gingo/gingo8.jfif'
-import ging9 from '../../assets/Gingo/gingo9.jfif'
-import ging10 from '../../assets/Gingo/gingo10.jfif'
-import ging11 from '../../assets/Gingo/gingo11.jfif'
-import ging12 from '../../assets/Gingo/gingo12.jfif'
-import ging13 from '../../assets/Gingo/gingo13.jfif'
-import ging14 from '../../assets/Gingo/gingo14.jfif'
-import ging15 from '../../assets/Gingo/gingo15.jfif'
-import ging16 from '../../assets/Gingo/gingo16.jfif'
-import ging17 from '../../assets/Gingo/gingo17.jfif'
-import ging18 from '../../assets/Gingo/gingo18.jfif'
-import ging19 from '../../assets/Gingo/gingo19.jfif'
-import ging20 from '../../assets/Gingo/gingo20.jfif'
-import ging21 from '../../assets/Gingo/gingo21.jfif'
-import feature1 from '../../assets/Gingo/Gifs/feature-push.gif'
-import feature2 from '../../assets/Gingo/Gifs/feature-image.gif'
-import feature3 from '../../assets/Gingo/Gifs/feature-audio.gif'
-import feature4 from '../../assets/Gingo/Gifs/feature-video.gif'
-import feature5 from '../../assets/Gingo/Gifs/feature-file.gif'
+import * as React from "react"
+import { useRef, Fragment } from "react"
+import Footer from "../../components/Footer"
+import { useTranslation } from "react-i18next"
+import HeaderProject from "../../components/ProjectPages/HeaderProject"
+import Tag from "../../components/Tag/Tag"
+import "react-slideshow-image/dist/styles.css"
+import useDimensions from "../../hooks/useDimensions"
+import { ProjectType } from "../../types/Types"
+import FeatureSlide from "../../components/CustomSliders/FeatureSlider"
+import ChallengeLearned from "../../components/ProjectPages/ChallengeLearned"
+import ImageSlider from "../../components/CustomSliders/ImageSlider"
+import gingo from "../../assets/img/gingo.png"
+import ging1 from "../../assets/Gingo/gingo1.jfif"
+import ging2 from "../../assets/Gingo/gingo2.jfif"
+import ging3 from "../../assets/Gingo/gingo3.jfif"
+import ging4 from "../../assets/Gingo/gingo4.jfif"
+import ging5 from "../../assets/Gingo/gingo5.jfif"
+import ging6 from "../../assets/Gingo/gingo6.jfif"
+import ging7 from "../../assets/Gingo/gingo7.jfif"
+import ging8 from "../../assets/Gingo/gingo8.jfif"
+import ging9 from "../../assets/Gingo/gingo9.jfif"
+import ging10 from "../../assets/Gingo/gingo10.jfif"
+import ging11 from "../../assets/Gingo/gingo11.jfif"
+import ging12 from "../../assets/Gingo/gingo12.jfif"
+import ging13 from "../../assets/Gingo/gingo13.jfif"
+import ging14 from "../../assets/Gingo/gingo14.jfif"
+import ging15 from "../../assets/Gingo/gingo15.jfif"
+import ging16 from "../../assets/Gingo/gingo16.jfif"
+import ging17 from "../../assets/Gingo/gingo17.jfif"
+import ging18 from "../../assets/Gingo/gingo18.jfif"
+import ging19 from "../../assets/Gingo/gingo19.jfif"
+import ging20 from "../../assets/Gingo/gingo20.jfif"
+import ging21 from "../../assets/Gingo/gingo21.jfif"
+import feature1 from "../../assets/Gingo/Gifs/feature-push.gif"
+import feature2 from "../../assets/Gingo/Gifs/feature-image.gif"
+import feature3 from "../../assets/Gingo/Gifs/feature-audio.gif"
+import feature4 from "../../assets/Gingo/Gifs/feature-video.gif"
+import feature5 from "../../assets/Gingo/Gifs/feature-file.gif"
 
 const Gingo = () => {
     const { width } = useDimensions()
     const { t } = useTranslation()
 
     const props: ProjectType = useRef<ProjectType>({
-        name: 'Gingo',
+        name: "Gingo",
         logo: gingo,
-        tags: ['React Native', 'Node.js', 'MongoDB', 'SQLite'],
+        tags: ["React Native", "Node.js", "MongoDB", "SQLite"],
         images: [
             ging1,
             ging2,
@@ -69,39 +69,39 @@ const Gingo = () => {
             ging20,
             ging21
         ],
-        description: t('prj1.description'),
-        challenge: t('prj1.challenge'),
-        learned: t('prj1.learned'),
+        description: t("prj1.description"),
+        challenge: t("prj1.challenge"),
+        learned: t("prj1.learned"),
         features: [
             {
-                title: 'Push Notification',
+                title: "Push Notification",
                 image: feature1,
-                tags: ['Firebase', 'APNS', 'Swift', 'Javascript'],
-                description: t('prj1.feature1.description')
+                tags: ["Firebase", "APNS", "Swift", "Javascript"],
+                description: t("prj1.feature1.description")
             },
             {
-                title: 'Chat: Imagem',
+                title: "Chat: Imagem",
                 image: feature2,
-                tags: ['React Native', 'Socket.io', 'Amazon S3', 'SQLite'],
-                description: t('prj1.feature2.description')
+                tags: ["React Native", "Socket.io", "Amazon S3", "SQLite"],
+                description: t("prj1.feature2.description")
             },
             {
-                title: 'Chat: Áudio',
+                title: "Chat: Áudio",
                 image: feature3,
-                tags: ['React Native', 'Socket.io', 'Amazon S3', 'SQLite'],
-                description: t('prj1.feature3.description')
+                tags: ["React Native", "Socket.io", "Amazon S3", "SQLite"],
+                description: t("prj1.feature3.description")
             },
             {
-                title: 'Chat: Vídeo',
+                title: "Chat: Vídeo",
                 image: feature4,
-                tags: ['React Native', 'Socket.io', 'Amazon S3', 'SQLite'],
-                description: t('prj1.feature4.description')
+                tags: ["React Native", "Socket.io", "Amazon S3", "SQLite"],
+                description: t("prj1.feature4.description")
             },
             {
-                title: 'Chat: Arquivos',
+                title: "Chat: Arquivos",
                 image: feature5,
-                tags: ['React Native', 'Socket.io', 'Amazon S3', 'SQLite'],
-                description: t('prj1.feature5.description')
+                tags: ["React Native", "Socket.io", "Amazon S3", "SQLite"],
+                description: t("prj1.feature5.description")
             }
         ]
     }).current

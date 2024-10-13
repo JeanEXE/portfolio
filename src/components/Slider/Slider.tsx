@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { Slide } from 'react-slideshow-image'
-import { CustomArrow } from './CustomArrow'
+import * as React from "react"
+import { Slide } from "react-slideshow-image"
+import { CustomArrow } from "./CustomArrow"
 
 interface ISlider {
     callbackOnSelect: (value: number) => void

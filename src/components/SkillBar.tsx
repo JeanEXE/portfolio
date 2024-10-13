@@ -1,16 +1,16 @@
-import * as React from 'react'
-import { useEffect, useState, useRef } from 'react'
-import { useInViewport } from 'react-in-viewport'
-import { SkillBarType } from '../types/Types'
+import * as React from "react"
+import { useEffect, useState, useRef } from "react"
+import { useInViewport } from "react-in-viewport"
+import { SkillBarType } from "../types/Types"
 
 const SkillBar = ({ stack, width }: SkillBarType) => {
-    const [widthAnim, setWidthAnim] = useState('w-0')
+    const [widthAnim, setWidthAnim] = useState("w-0")
 
     const myRef = useRef()
     const { inViewport } = useInViewport(myRef)
 
     useEffect(() => {
-        if (inViewport && widthAnim === 'w-0') {
+        if (inViewport && widthAnim === "w-0") {
             setTimeout(() => {
                 setWidthAnim(width)
             }, 400)

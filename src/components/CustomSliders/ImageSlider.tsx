@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { useState, useRef } from 'react'
-import { CustomIndicator } from '../Slider/CustomIndicator'
-import Slider, { ISliderRef } from '../Slider/Slider'
+import * as React from "react"
+import { useState, useRef } from "react"
+import { CustomIndicator } from "../Slider/CustomIndicator"
+import Slider, { ISliderRef } from "../Slider/Slider"
 
 const ImageSlider = ({ images, isMobile }: { images: string[]; isMobile?: boolean }) => {
     const [imgSelected, setImgSelected] = useState<number>(0)

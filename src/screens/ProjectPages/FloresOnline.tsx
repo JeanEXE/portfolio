@@ -7,9 +7,9 @@ import Tag from '../../components/Tag/Tag'
 import 'react-slideshow-image/dist/styles.css'
 import useDimensions from '../../hooks/useDimensions'
 import { ProjectType } from '../../types/Types'
-import FeatureSlide from '../../components/ProjectPages/FeatureSlides'
+import FeatureSlider from '../../components/CustomSliders/FeatureSlider'
 import ChallengeLearned from '../../components/ProjectPages/ChallengeLearned'
-import ImageSlider from '../../components/ProjectPages/ImageSlides'
+import ImageSlider from '../../components/CustomSliders/ImageSlider'
 import floresLogo from '../../assets/FloresOnline/floresLogo.png'
 import fol1 from '../../assets/FloresOnline/fol1.jpeg'
 import fol2 from '../../assets/FloresOnline/fol2.jpeg'
@@ -97,7 +97,7 @@ const IsabelaFlores = () => {
                     learned={props.learned}
                 />
             )}
-            {props.features && <FeatureSlide features={props.features} />}
+            {props.features && <FeatureSlider features={props.features} />}
         </Fragment>
     )
 
@@ -133,7 +133,7 @@ const IsabelaFlores = () => {
                 />
             )}
             {props.features && (
-                <FeatureSlide
+                <FeatureSlider
                     features={props.features}
                     isMobile
                 />

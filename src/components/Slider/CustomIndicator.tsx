@@ -1,19 +1,10 @@
 import * as React from 'react'
-import arrow from '../../assets/svg/icon-arrow.svg'
 
 interface ICustomIndicator {
     quantity: number
     stateSelect: number
     refSlide: React.RefObject<{ goTo: (index: number) => void }>
 }
-
-export const CustomArrow = (left = true) => (
-    <img
-        src={arrow}
-        alt="Arrow"
-        className={`h-5 sm:h-7 absolute cursor-pointer -right-5 sm:right-2 rotate-90 ${left && '-left-5 sm:left-2 -rotate-90'}`}
-    />
-)
 
 export const CustomIndicator = React.memo(({ quantity, stateSelect, refSlide }: ICustomIndicator) => {
     const handleClick = React.useCallback(

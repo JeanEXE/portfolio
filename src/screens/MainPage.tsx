@@ -12,7 +12,7 @@ import floresLogo from '../assets/FloresOnline/floresLogo.png'
 import gingo from '../assets/img/gingo.png'
 import gBusiness from '../assets/img/g_business.png'
 import CardProject from '../components/CardProject'
-import ExperienceSlides from '../components/ProjectPages/ExperienceSlides'
+import ExperienceSlider from '../components/CustomSliders/ExperienceSlider'
 
 function MainPage() {
     const refAbout = useRef()
@@ -42,7 +42,7 @@ function MainPage() {
                             <p className="text-[13px] 2xl:text-[16px]">{t('education.description')} UNIFAE (2016 - 2019)</p>
                         </div>
                         <div className="mt-10 sm:w-6/12">
-                            <ExperienceSlides />
+                            <ExperienceSlider />
                         </div>
                     </div>
                     {/* <div className="bg-yellow flex flex-col justify-between content-between  h-32 absolute left-0  w-full" ref={refContact}>

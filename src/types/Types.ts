@@ -25,7 +25,7 @@ export type ProjectType = {
 
 export type CardProjectType = {
     name: string
-    image: any
+    image: string
     tags: string[]
     description: string
 }
@@ -34,3 +34,5 @@ export type SkillBarType = {
     stack: string
     width: string
 }
+
+export type TLanguage = 'en' | 'pt'

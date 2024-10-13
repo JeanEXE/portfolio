@@ -1,26 +1,19 @@
 import * as React from 'react'
 import { useState, useRef } from 'react'
-import { Slide } from 'react-slideshow-image'
-import { CustomArrow, CustomIndicator } from './CustomSliderComponents'
+import { CustomIndicator } from '../Slider/CustomIndicator'
+import Slider, { ISliderRef } from '../Slider/Slider'
 
-const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }) => {
-    const [imgSelect, setImgSelect] = useState<number>(0)
-    const slideImgRef: any = useRef()
-
-    const slideImgProps: any = useRef({
-        transitionDuration: 150,
-        autoplay: false,
-        prevArrow: CustomArrow(),
-        nextArrow: CustomArrow(false),
-        canSwipe: false,
-        ref: slideImgRef,
-        onChange: (_: number, next: number) => setImgSelect(next)
-    }).current
+const ImageSlider = ({ images, isMobile }: { images: string[]; isMobile?: boolean }) => {
+    const [imgSelected, setImgSelected] = useState<number>(0)
+    const sliderRef = useRef<ISliderRef>(null)
 
     const renderWeb = () => (
         <div className=" w-[500px] flex justify-center">
             <div className="w-full relative flex flex-col">
-                <Slide {...slideImgProps}>
+                <Slider
+                    refSlider={sliderRef}
+                    callbackOnSelect={(value) => setImgSelected(value)}
+                >
                     {images.map((element, index) => (
                         <div
                             className="flex justify-center max-h-full "
@@ -33,11 +26,11 @@ const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }
                             />
                         </div>
                     ))}
-                </Slide>
+                </Slider>
                 <CustomIndicator
                     quantity={images.length}
-                    stateSelect={imgSelect}
-                    refSlide={slideImgRef}
+                    stateSelect={imgSelected}
+                    refSlide={sliderRef}
                 />
             </div>
         </div>
@@ -48,12 +41,13 @@ const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }
             <div className="w-full relative flex flex-col">
                 <CustomIndicator
                     quantity={images.length}
-                    stateSelect={imgSelect}
-                    refSlide={slideImgRef}
+                    stateSelect={imgSelected}
+                    refSlide={sliderRef}
                 />
-                <Slide
-                    {...slideImgProps}
-                    canSwipe={true}
+                <Slider
+                    refSlider={sliderRef}
+                    callbackOnSelect={(value) => setImgSelected(value)}
+                    canSwipe
                 >
                     {images.map((element, index) => (
                         <div
@@ -67,7 +61,7 @@ const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }
                             />
                         </div>
                     ))}
-                </Slide>
+                </Slider>
             </div>
         </div>
     )
@@ -76,4 +70,4 @@ const ImageSlides = ({ images, isMobile }: { images: any[]; isMobile?: boolean }
     return renderWeb()
 }
 
-export default ImageSlides
+export default ImageSlider

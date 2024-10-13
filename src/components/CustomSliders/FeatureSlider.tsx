@@ -1,34 +1,27 @@
 import * as React from 'react'
 import { useState, useRef, Fragment } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Slide } from 'react-slideshow-image'
 import { FeatureType } from '../../types/Types'
-import { CustomArrow, CustomIndicator } from './CustomSliderComponents'
-import Feature from './Feature'
+import Feature from '../ProjectPages/Feature'
+import { CustomIndicator } from '../Slider/CustomIndicator'
+import Slider, { ISliderRef } from '../Slider/Slider'
 
-const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobile?: boolean }) => {
+const FeatureSlider = ({ features, isMobile }: { features: FeatureType[]; isMobile?: boolean }) => {
     const [featureSelect, setFeatureSelect] = useState<number>(0)
-    const slideFeatureRef: any = useRef()
+    const sliderRef = useRef<ISliderRef>(null)
 
     const { t } = useTranslation()
-
-    const slideFeatureProps: any = useRef({
-        transitionDuration: 150,
-        autoplay: false,
-        prevArrow: CustomArrow(),
-        nextArrow: CustomArrow(false),
-        canSwipe: false,
-        ref: slideFeatureRef,
-        onChange: (previous: number, next: number) => setFeatureSelect(next)
-    }).current
 
     const renderWeb = () => (
         <Fragment>
             <p className="font-semibold text-[35px] 2xl:text-[45px] mb-2">{t('features')}</p>
             <p className="text-[14px] 2xl:text-[17px] text-textColor mb-4">{t('features.description')}.</p>
             <div className="w-full relative  flex flex-col">
-                <Slide {...slideFeatureProps}>
-                    {features.map((element: any, index: number) => (
+                <Slider
+                    refSlider={sliderRef}
+                    callbackOnSelect={(value) => setFeatureSelect(value)}
+                >
+                    {features.map((element: FeatureType, index: number) => (
                         <Feature
                             key={index}
                             title={element.title}
@@ -37,11 +30,11 @@ const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobi
                             description={element.description}
                         />
                     ))}
-                </Slide>
+                </Slider>
                 <CustomIndicator
                     quantity={features.length}
                     stateSelect={featureSelect}
-                    refSlide={slideFeatureRef}
+                    refSlide={sliderRef}
                 />
             </div>
         </Fragment>
@@ -55,11 +48,12 @@ const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobi
                 <CustomIndicator
                     quantity={features.length}
                     stateSelect={featureSelect}
-                    refSlide={slideFeatureRef}
+                    refSlide={sliderRef}
                 />
-                <Slide
-                    {...slideFeatureProps}
-                    canSwipe={true}
+                <Slider
+                    refSlider={sliderRef}
+                    callbackOnSelect={(value) => setFeatureSelect(value)}
+                    canSwipe
                 >
                     {features.map((element, index) => (
                         <Feature
@@ -71,7 +65,7 @@ const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobi
                             mobile
                         />
                     ))}
-                </Slide>
+                </Slider>
             </div>
         </Fragment>
     )
@@ -80,4 +74,4 @@ const FeatureSlides = ({ features, isMobile }: { features: FeatureType[]; isMobi
     return renderWeb()
 }
 
-export default FeatureSlides
+export default FeatureSlider

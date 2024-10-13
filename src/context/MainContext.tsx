@@ -1,17 +1,32 @@
 import * as React from 'react'
-import { useState, createContext } from 'react'
+import { useState, createContext, ReactNode } from 'react'
+import { TLanguage } from '../types/Types'
 import i18n from 'i18next'
 
-const MainContext = createContext(null)
-
-const DEFAULT_VALUES = {
-    language: i18n.language
+interface ISettingsValues {
+    language: TLanguage
 }
 
-export const SettingsProvider = ({ children, settingsValues }: { children: any; settingsValues: any }) => {
-    const [currentSettings, setCurrentSettings] = useState<any>(settingsValues || DEFAULT_VALUES)
+interface MainContextProps {
+    settings: ISettingsValues
+    saveSettings: (values: ISettingsValues) => void
+}
 
-    const saveSettings = (values: any) => {
+const DEFAULT_VALUES: ISettingsValues = {
+    language: i18n.language as TLanguage
+}
+
+const MainContext = createContext<MainContextProps | undefined>(undefined)
+
+interface SettingsProviderProps {
+    children: ReactNode
+    settingsValues?: ISettingsValues
+}
+
+export const SettingsProvider: React.FC<SettingsProviderProps> = ({ children, settingsValues }) => {
+    const [currentSettings, setCurrentSettings] = useState<ISettingsValues>(settingsValues || DEFAULT_VALUES)
+
+    const saveSettings = (values: ISettingsValues) => {
         setCurrentSettings(values)
     }
 

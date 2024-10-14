@@ -1,7 +1,8 @@
 import * as React from "react"
 import { useNavigate } from "react-router-dom"
 import arrow from "../assets/svg/icon-arrow.svg"
-import { ICardProject } from "../types/Types"
+import { FLORES_ONLINE, GINGO, GINGO_BUSINESS, ISABELA_FLORES } from "../mock"
+import { ICardProject, IProjectPage, TProject } from "../types/Types"
 import { useTranslation } from "react-i18next"
 import Tag from "./Tag/Tag"
 import { insertEvent } from "../helpers/Analytics"
@@ -11,9 +12,20 @@ const CardProject = ({ name, image, tags, description }: ICardProject) => {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        const nameFormated = name.trim().replace(" ", "_")
-        insertEvent(`abriu projeto: ${nameFormated}`)
-        navigate(`/${nameFormated}`)
+        const formatedName = name.trim().replace(" ", "_")
+        insertEvent(`abriu projeto: ${formatedName}`)
+        navigate("/Project", { state: getMockProject() })
+    }
+
+    const getMockProject = (): IProjectPage => {
+        const projects: Record<TProject, IProjectPage> = {
+            "Flores Online": FLORES_ONLINE,
+            "Isabela Flores": ISABELA_FLORES,
+            Gingo: GINGO,
+            "Gingo Business": GINGO_BUSINESS
+        }
+
+        return projects[name]
     }
 
     return (

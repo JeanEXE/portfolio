@@ -1,8 +1,4 @@
-import * as React from "react"
-import { useRef } from "react"
-import { useTranslation } from "react-i18next"
 import { IProjectPage } from "../../types/Types"
-import ProjectPage from "../../components/ProjectPage"
 import floresLogo from "../../assets/FloresOnline/floresLogo.png"
 import fol1 from "../../assets/FloresOnline/fol1.jpeg"
 import fol2 from "../../assets/FloresOnline/fol2.jpeg"
@@ -26,42 +22,36 @@ import fol21 from "../../assets/FloresOnline/fol21.jpeg"
 import fol22 from "../../assets/FloresOnline/fol22.jpg"
 import fol23 from "../../assets/FloresOnline/fol23.jpg"
 
-const IsabelaFlores = () => {
-    const { t } = useTranslation()
-
-    const props = useRef<IProjectPage>({
-        name: "Flores Online",
-        logo: floresLogo,
-        tags: ["React Native", "TypeScript"],
-        images: [
-            fol1,
-            fol2,
-            fol3,
-            fol4,
-            fol5,
-            fol6,
-            fol7,
-            fol9,
-            fol10,
-            fol11,
-            fol12,
-            fol13,
-            fol14,
-            fol15,
-            fol16,
-            fol17,
-            fol19,
-            fol20,
-            fol21,
-            fol22,
-            fol23
-        ],
-        description: t("prj4.description"),
-        challenge: t("prj4.challenge"),
-        learned: t("prj4.learned")
-    }).current
-
-    return <ProjectPage {...props} />
+const FLORES_ONLINE: IProjectPage = {
+    name: "Flores Online",
+    logo: floresLogo,
+    tags: ["React Native", "TypeScript"],
+    images: [
+        fol1,
+        fol2,
+        fol3,
+        fol4,
+        fol5,
+        fol6,
+        fol7,
+        fol9,
+        fol10,
+        fol11,
+        fol12,
+        fol13,
+        fol14,
+        fol15,
+        fol16,
+        fol17,
+        fol19,
+        fol20,
+        fol21,
+        fol22,
+        fol23
+    ],
+    description: "prj4.description",
+    challenge: "prj4.challenge",
+    learned: "prj4.learned"
 }
 
-export default IsabelaFlores
+export default FLORES_ONLINE

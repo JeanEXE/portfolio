@@ -1,8 +1,4 @@
-import * as React from "react"
-import { useRef } from "react"
-import { useTranslation } from "react-i18next"
 import { IProjectPage } from "../../types/Types"
-import ProjectPage from "../../components/ProjectPage"
 import isaLogo from "../../assets/IsabelaFlores/isaLogo.png"
 import isa1 from "../../assets/IsabelaFlores/isa1.jfif"
 import isa2 from "../../assets/IsabelaFlores/isa2.jfif"
@@ -41,52 +37,46 @@ import isa35 from "../../assets/IsabelaFlores/isa35.jfif"
 import isa36 from "../../assets/IsabelaFlores/isa36.jfif"
 import isa37 from "../../assets/IsabelaFlores/isa37.jfif"
 
-const IsabelaFlores = () => {
-    const { t } = useTranslation()
-
-    const props = useRef<IProjectPage>({
-        name: "Isabela Flores",
-        logo: isaLogo,
-        tags: ["React Native", "TypeScript"],
-        images: [
-            isa1,
-            isa2,
-            isa9,
-            isa3,
-            isa4,
-            isa5,
-            isa11,
-            isa12,
-            isa13,
-            isa17,
-            isa6,
-            isa10,
-            isa7,
-            isa8,
-            isa24,
-            isa25,
-            isa16,
-            isa18,
-            isa26,
-            isa27,
-            isa28,
-            isa30,
-            isa34,
-            isa36,
-            isa33,
-            isa19,
-            isa23,
-            isa29,
-            isa31,
-            isa35,
-            isa37
-        ],
-        description: t("prj3.description"),
-        challenge: t("prj3.challenge"),
-        learned: t("prj3.learned")
-    }).current
-
-    return <ProjectPage {...props} />
+const ISABELA_FLORES: IProjectPage = {
+    name: "Isabela Flores",
+    logo: isaLogo,
+    tags: ["React Native", "TypeScript"],
+    images: [
+        isa1,
+        isa2,
+        isa9,
+        isa3,
+        isa4,
+        isa5,
+        isa11,
+        isa12,
+        isa13,
+        isa17,
+        isa6,
+        isa10,
+        isa7,
+        isa8,
+        isa24,
+        isa25,
+        isa16,
+        isa18,
+        isa26,
+        isa27,
+        isa28,
+        isa30,
+        isa34,
+        isa36,
+        isa33,
+        isa19,
+        isa23,
+        isa29,
+        isa31,
+        isa35,
+        isa37
+    ],
+    description: "prj3.description",
+    challenge: "prj3.challenge",
+    learned: "prj3.learned"
 }
 
-export default IsabelaFlores
+export default ISABELA_FLORES

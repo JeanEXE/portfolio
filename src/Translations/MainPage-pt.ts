@@ -21,7 +21,7 @@ const TRANSLATION = {
     "full-project": "Ver Projeto",
     "education.description": "Bacharelado em Engenharia de Software \npela",
     "portfolio.description": "Uma sessão com alguns projetos que já trabalhei",
-    "skills.description": "Conheça um pouco das minhas habilidades técnicas",
+    "skills.description": "Algumas das minhas habilidades técnicas",
     //works
     "work1.title": "Desenvolvedor Fullstack na Flores Online / Isabela Flores",
     "work1.description": `Participei ativamente no desenvolvimento de 2 sites e 4 aplicativos. Nos aplicativos, atuei desde a definição da arquitetura até a publicação, com foco principal no frontend usando React Native e no backend com Node.js.

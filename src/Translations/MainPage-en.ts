@@ -20,7 +20,7 @@ const TRANSLATION = {
     "full-project": "View Project",
     "education.description": "Bachelor's degree in Software Engineering \nfrom",
     "portfolio.description": "A section with some projects I've worked on",
-    "skills.description": "Learn a bit about my technical skills",
+    "skills.description": "Some of my technical skills",
     //works
     "work1.title": "Fullstack Developer at Flores Online / Isabela Flores",
     "work1.description": `I actively participated in the development of 2 websites and 4 applications. In the apps, I worked from architecture definition to publishing, with a primary focus on frontend using React Native and backend with Node.js.

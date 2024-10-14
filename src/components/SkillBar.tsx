@@ -20,10 +20,10 @@ const SkillBar = ({ stack, width }: ISkillBar) => {
     return (
         <div
             ref={myRef}
-            className="flex  w-full  mb-5 items-center"
+            className="flex mb-5 items-center"
         >
-            <p className=" w-28  pr-2 text-[12px] text-right font-semibold sm:w-2/4">{stack}</p>
-            <div className="w-full h-[1.1rem] sm:w-3/4 polygon-button bg-unselected">
+            <p className="w-2/6 pr-2 text-[12px] font-semibold text-right break-words">{stack}</p>
+            <div className="w-4/6 h-[1.1rem] polygon-button bg-unselected">
                 <div className={`bg-blue h-[100%] transition-width duration-1000 ease-in-out ${widthAnim} `} />
             </div>
         </div>

@@ -13,6 +13,7 @@ import gingo from "../assets/img/gingo.png"
 import gBusiness from "../assets/img/g_business.png"
 import CardProject from "../components/CardProject"
 import ExperienceSlider from "../components/CustomSliders/ExperienceSlider"
+import { SKILL_BAR } from "../mock"
 
 function MainPage() {
     const refAbout = useRef()
@@ -88,51 +89,21 @@ function MainPage() {
                             <p className="text-[14px] 2xl:text-[17px] text-textColor">{t("skills.description")}.</p>
                         </div>
                         <div className="sm:w-6/12">
-                            <div className="flex  w-full  mt-5 mb-2 items-center">
-                                <p className="w-28 sm:w-2/4" />
-                                <div className=" flex justify-between w-full h-[1.1rem] sm:w-3/4">
+                            <div className="flex  w-full mt-5 mb-2 items-center">
+                                <div className="w-2/6" />
+                                <div className=" flex justify-between w-4/6 h-[1.1rem]">
                                     <p className="text-[10px] sm:text-[11px]">{t("basic")}</p>
                                     <p className="text-[10px] sm:text-[11px]">{t("intermediate")}</p>
                                     <p className="text-[10px] sm:text-[11px]">{t("advanced")}</p>
                                 </div>
                             </div>
-                            <SkillBar
-                                stack={"JavaScript"}
-                                width="w-full"
-                            />
-                            <SkillBar
-                                stack={"React Native"}
-                                width="w-full"
-                            />
-                            <SkillBar
-                                stack={"TypeScript"}
-                                width="w-8/12"
-                            />
-                            <SkillBar
-                                stack={"React.js"}
-                                width="w-8/12"
-                            />
-                            <SkillBar
-                                stack={"Node.js"}
-                                width="w-6/12"
-                            />
-                            <SkillBar
-                                stack={"MongoDB/SQL"}
-                                width="w-6/12"
-                            />
-                            <SkillBar
-                                stack={"PHP"}
-                                width="w-2/12"
-                            />
-                            <SkillBar
-                                stack={"Swift"}
-                                width="w-2/12"
-                            />
-                            <SkillBar
-                                stack={"Java"}
-                                width="w-2/12"
-                            />
-                            {/* <SkillBar stack={'Firebase: Crash / Report/ Analytics'} width="w-4/6" /> */}
+                            {SKILL_BAR.map((item, index) => (
+                                <SkillBar
+                                    key={index}
+                                    stack={item.stack}
+                                    width={item.width}
+                                />
+                            ))}
                         </div>
                     </div>
                     <div

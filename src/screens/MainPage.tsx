@@ -39,12 +39,6 @@ function MainPage() {
                             <ExperienceSlider />
                         </div>
                     </div>
-                    {/* <div className="bg-yellow flex flex-col justify-between content-between  h-32 absolute left-0  w-full" ref={refContact}>
-                    <Separator inverted />
-                    <p className=' text-black animate-scrollzada'>jean reis jean reis jean reis jean reis</p>
-                    <Separator />
-                    </div>
-                    <div className='h-36' /> */}
                     <div className="py-7">
                         <h1 ref={refProjects}>{t("header.portfolio")}</h1>
                         <p className="text-[14px] sm:text-[17px] text-textColor">{t("portfolio.description")}.</p>

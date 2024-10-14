@@ -29,8 +29,8 @@ const TRANSLATION = {
 Mais detalhes no meu linkedin.
     `,
     "work2.title": "Desenvolvedor Frontend na Compass.UOL",
-    "work2.description": `Atuei no refactoring de um projeto mobile em react native/typescript, desde a definição de tecnologias a serem utilizadas, design pattern, documentação, code reviews, controle de branchs/versões e sou responsável pela publicação nas lojas.
-    Atualmente sigo dando manutenção/implementação de novas features.
+    "work2.description": `Atuei no refactoring de um projeto mobile em react native/typescript, responsavel pela definição de tecnologias a serem utilizadas, design pattern, documentação, code reviews, controle de branchs/versões, desenvolvimento de features e pela publicação nas lojas.
+    Atualmente sigo dando manutenção e implementando novas features.
 
 Mais detalhes no meu linkedin.
     `,

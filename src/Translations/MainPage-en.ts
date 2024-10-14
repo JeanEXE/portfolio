@@ -27,8 +27,8 @@ const TRANSLATION = {
 
 More details on my LinkedIn.`,
     "work2.title": "Frontend Developer at Compass.UOL",
-    "work2.description": `I worked on refactoring a mobile project in React Native/TypeScript, from defining the technologies to be used, design patterns, documentation, code reviews, branch/version control, and I'm responsible for publishing in app stores.
-    Currently, I continue with maintenance and implementing new features.
+    "work2.description": `I worked on the refactoring of a mobile project in React Native/TypeScript, responsible for defining the technologies to be used, design patterns, documentation, code reviews, branch/version control, feature development, and app store publishing.
+    Currently, I continue to maintain and implement new features.
 
 More details on my LinkedIn.`,
     //footer

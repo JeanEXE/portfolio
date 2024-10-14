@@ -1,19 +1,12 @@
 import * as React from "react"
 import { useRef } from "react"
-import Header from "../components/Header"
-import SkillBar from "../components/SkillBar"
+import { AnimatedBadge, CardProject, Contact, ExperienceSlider, Footer, Header, Profile, SkillBar } from "../components"
+import { SKILL_BAR } from "../mock"
 import { useTranslation } from "react-i18next"
-import Footer from "../components/Footer"
-import AnimatedBadge from "../components/AnimatedBadge"
-import Contact from "../components/Contact"
-import Profile from "../components/Profile"
 import isaLogo from "../assets/IsabelaFlores/isaLogo.png"
 import floresLogo from "../assets/FloresOnline/floresLogo.png"
 import gingo from "../assets/img/gingo.png"
 import gBusiness from "../assets/img/g_business.png"
-import CardProject from "../components/CardProject"
-import ExperienceSlider from "../components/CustomSliders/ExperienceSlider"
-import { SKILL_BAR } from "../mock"
 
 function MainPage() {
     const refAbout = useRef()

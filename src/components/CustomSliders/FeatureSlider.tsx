@@ -3,7 +3,7 @@ import { useState, useRef } from "react"
 import { useTranslation } from "react-i18next"
 import { IFeature } from "../../types/Types"
 import Feature from "../ProjectPage/Feature"
-import { CustomIndicator } from "../Slider/CustomIndicator"
+import CustomIndicator from "../Slider/CustomIndicator"
 import Slider, { ISliderRef } from "../Slider/Slider"
 
 const FeatureSlider = ({ features, isMobile }: { features: IFeature[]; isMobile?: boolean }) => {

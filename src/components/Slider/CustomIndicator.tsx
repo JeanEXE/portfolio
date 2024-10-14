@@ -6,7 +6,7 @@ interface ICustomIndicator {
     refSlide: React.RefObject<{ goTo: (index: number) => void }>
 }
 
-export const CustomIndicator = React.memo(({ quantity, stateSelect, refSlide }: ICustomIndicator) => {
+const CustomIndicator = React.memo(({ quantity, stateSelect, refSlide }: ICustomIndicator) => {
     const handleClick = React.useCallback(
         (index: number) => {
             refSlide.current?.goTo(index)
@@ -28,3 +28,5 @@ export const CustomIndicator = React.memo(({ quantity, stateSelect, refSlide }: 
 })
 
 CustomIndicator.displayName = "CustomIndicator"
+
+export default CustomIndicator

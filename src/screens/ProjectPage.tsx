@@ -1,14 +1,9 @@
 import * as React from "react"
 import { Fragment } from "react"
-import Footer from "../components/Footer"
-import HeaderProject from "../components/ProjectPage/HeaderProject"
-import Tag from "../components/Tag/Tag"
+import { ChallengeLearned, FeatureSlider, Footer, HeaderProject, ImageSlider, Tag } from "../components"
 import "react-slideshow-image/dist/styles.css"
 import useDimensions from "../hooks/useDimensions"
 import { IProjectPage } from "../types/Types"
-import FeatureSlide from "../components/CustomSliders/FeatureSlider"
-import ChallengeLearned from "../components/ProjectPage/ChallengeLearned"
-import ImageSlider from "../components/CustomSliders/ImageSlider"
 import { useLocation } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
@@ -49,7 +44,7 @@ const ProjectPage = () => {
                     learned={t(state.learned)}
                 />
             )}
-            {state.features && <FeatureSlide features={state.features} />}
+            {state.features && <FeatureSlider features={state.features} />}
         </Fragment>
     )
 
@@ -85,7 +80,7 @@ const ProjectPage = () => {
                 />
             )}
             {state.features && (
-                <FeatureSlide
+                <FeatureSlider
                     features={state.features}
                     isMobile
                 />

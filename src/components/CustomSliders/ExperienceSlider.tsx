@@ -1,9 +1,9 @@
 import * as React from "react"
 import { useState, useRef } from "react"
 import { useTranslation } from "react-i18next"
-import { CustomIndicator } from "../Slider/CustomIndicator"
-import Slider, { ISliderRef } from "../Slider/Slider"
 import { IJob } from "../../types/Types"
+import Slider, { ISliderRef } from "../Slider/Slider"
+import CustomIndicator from "../Slider/CustomIndicator"
 
 const ExperienceSlider = () => {
     const [slideSelected, setSlideSelected] = useState<number>(0)

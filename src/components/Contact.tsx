@@ -6,8 +6,6 @@ import { insertEvent } from "../helpers/Analytics"
 import linkedin from "../assets/svg/icon-linkedin.svg"
 import gmail from "../assets/svg/icon-gmail.svg"
 import github from "../assets/svg/icon-github.svg"
-// import whatsapp from '../assets/svg/icon-whatsapp.svg'
-// import telegram from '../assets/svg/icon-telegram.svg'
 
 const Contact = () => {
     const [widthAnim, setWidthAnim] = useState("w-0")
@@ -61,26 +59,6 @@ const Contact = () => {
                         />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">GitHub</p>
                     </a>
-                    {/* <a
-                        className="flex items-center"
-                        target="_blank"
-                        href="https://t.me/jean_exe"
-                        rel="noreferrer"
-                        onClick={() => insertEvent('clicou link: telegram')}
-                    >
-                        <img src={telegram} className="w-6 h-6 mr-4" alt="" />
-                        <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">Telegram</p>
-                    </a>
-                    <a
-                        className="flex items-center"
-                        target="_blank"
-                        href={'https://api.whatsapp.com/send?phone=5535992429970&text=Hi%2C%20I%20came%20from%20your%20website.'}
-                        rel="noreferrer"
-                        onClick={() => insertEvent('clicou link: whatsapp')}
-                    >
-                        <img src={whatsapp} className="w-6 h-6 mr-4" alt="" />
-                        <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">Whatsapp</p>
-                    </a> */}
                     <div
                         className="flex items-center"
                         ref={myRef}

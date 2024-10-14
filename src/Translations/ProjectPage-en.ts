@@ -1,4 +1,4 @@
-const translation = {
+const TRANSLATION = {
     project: "Project",
     challenge: "Challenges",
     learn: "Learnings",
@@ -6,4 +6,4 @@ const translation = {
     "features.description": "Some features that i developed"
 }
 
-export default translation
+export default TRANSLATION

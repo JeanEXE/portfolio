@@ -5,11 +5,11 @@ import Myname from "./MyName"
 import Switch from "./SwitchLanguage/Switch"
 import { useTranslation } from "react-i18next"
 
-type IHeaderItem = {
-    [K in "refAbout" | "refProjects" | "refSkills" | "refContact"]: React.MutableRefObject<undefined>
+type THeader = {
+    [Key in "refAbout" | "refProjects" | "refSkills" | "refContact"]: React.MutableRefObject<undefined>
 }
 
-const Header = ({ refAbout, refProjects, refSkills, refContact }: IHeaderItem) => {
+const Header = ({ refAbout, refProjects, refSkills, refContact }: THeader) => {
     const executeScroll = (ref: React.RefObject<HTMLElement>) => ref.current.scrollIntoView({ behavior: "smooth", block: "start" })
 
     const { t } = useTranslation()

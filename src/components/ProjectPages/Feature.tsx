@@ -1,8 +1,8 @@
 import * as React from "react"
-import { FeatureType } from "../../types/Types"
+import { IFeature } from "../../types/Types"
 import Tag from "../Tag/Tag"
 
-const Feature = ({ title, image, tags, description, mobile }: FeatureType) => {
+const Feature = ({ title, image, tags, description, mobile }: IFeature) => {
     if (mobile) {
         return (
             <div className=" flex flex-col items-center  gap-4 bg-blackSec py-10 polygon-card-mobile">

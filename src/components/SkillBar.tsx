@@ -1,9 +1,9 @@
 import * as React from "react"
 import { useEffect, useState, useRef } from "react"
 import { useInViewport } from "react-in-viewport"
-import { SkillBarType } from "../types/Types"
+import { ISkillBar } from "../types/Types"
 
-const SkillBar = ({ stack, width }: SkillBarType) => {
+const SkillBar = ({ stack, width }: ISkillBar) => {
     const [widthAnim, setWidthAnim] = useState("w-0")
 
     const myRef = useRef()

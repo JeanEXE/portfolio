@@ -1,13 +1,20 @@
 import * as React from "react"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import arrow from "../assets/svg/icon-arrow.svg"
-import { CardProjectType } from "../types/Types"
+import { ICardProject } from "../types/Types"
 import { useTranslation } from "react-i18next"
 import Tag from "./Tag/Tag"
 import { insertEvent } from "../helpers/Analytics"
 
-const CardProject = ({ name, image, tags, description }: CardProjectType) => {
+const CardProject = ({ name, image, tags, description }: ICardProject) => {
     const { t } = useTranslation()
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        const nameFormated = name.trim().replace(" ", "_")
+        insertEvent(`abriu projeto: ${nameFormated}`)
+        navigate(`/${nameFormated}`)
+    }
 
     return (
         <div className="flex flex-col sm:flex-row border  sm:pr-8 rounded-md gap-2 sm:gap-4 overflow-hidden relative bg-black">
@@ -31,20 +38,18 @@ const CardProject = ({ name, image, tags, description }: CardProjectType) => {
                 </div>
                 <p className="indent-4 line-clamp-5 sm:line-clamp-3 text-[14px]">{description}</p>
             </div>
-            <button className="absolute right-6 bottom-3">
-                <Link
-                    to={`/${name.trim().replace(" ", "_")}`}
-                    onClick={() => insertEvent(`abriu projeto: ${name}`)}
-                >
-                    <p className="text-blue text-[17px] font-semibold flex items-center">
-                        {t("full-project")}{" "}
-                        <img
-                            src={arrow}
-                            className={`h-4 bottom-1 rotate-90`}
-                            alt=""
-                        />
-                    </p>
-                </Link>
+            <button
+                className="absolute right-6 bottom-3"
+                onClick={handleClick}
+            >
+                <p className="text-blue text-[17px] font-semibold flex items-center">
+                    {t("full-project")}{" "}
+                    <img
+                        src={arrow}
+                        className={`h-4 bottom-1 rotate-90`}
+                        alt=""
+                    />
+                </p>
             </button>
         </div>
     )

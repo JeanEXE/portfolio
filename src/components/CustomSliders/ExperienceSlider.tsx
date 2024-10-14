@@ -1,14 +1,9 @@
 import * as React from "react"
-import { useState, useRef, Fragment } from "react"
+import { useState, useRef } from "react"
 import { useTranslation } from "react-i18next"
 import { CustomIndicator } from "../Slider/CustomIndicator"
 import Slider, { ISliderRef } from "../Slider/Slider"
-
-interface IJob {
-    title: string
-    time: string
-    description: string
-}
+import { IJob } from "../../types/Types"
 
 const ExperienceSlider = () => {
     const [slideSelected, setSlideSelected] = useState<number>(0)
@@ -30,7 +25,7 @@ const ExperienceSlider = () => {
     ]
 
     return (
-        <Fragment>
+        <>
             <div className="w-full relative flex flex-col">
                 <div className="bg-yellow w-4 mt-4 mb-2 h-1" />
                 <div className="flex items-center mb-2">
@@ -57,7 +52,7 @@ const ExperienceSlider = () => {
                     ))}
                 </Slider>
             </div>
-        </Fragment>
+        </>
     )
 }
 

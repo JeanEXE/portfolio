@@ -1,10 +1,16 @@
-export type TagType = {
+export interface ITag {
     text: string
     small?: boolean
     backgroundColor?: string
 }
 
-export type FeatureType = {
+export interface IJob {
+    title: string
+    time: string
+    description: string
+}
+
+export interface IFeature {
     title: string
     image: string
     tags: string[]
@@ -12,25 +18,27 @@ export type FeatureType = {
     mobile?: boolean
 }
 
-export type ProjectType = {
-    name: string
+export type TProject = "Flores Online" | "Isabela Flores" | "Gingo" | "Gingo Business"
+
+export interface IProjectPage {
+    name: TProject
     logo: string
     tags: string[]
     description: string
     images: string[]
     challenge?: string
     learned?: string
-    features?: FeatureType[]
+    features?: IFeature[]
 }
 
-export type CardProjectType = {
-    name: string
+export interface ICardProject {
+    name: TProject
     image: string
     tags: string[]
     description: string
 }
 
-export type SkillBarType = {
+export interface ISkillBar {
     stack: string
     width: string
 }

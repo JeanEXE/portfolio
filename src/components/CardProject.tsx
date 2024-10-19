@@ -33,7 +33,7 @@ const CardProject = ({ name, image, tags, description }: ICardProject) => {
             <img
                 className="bg-unselected object-contain h-44 sm:h-full w-full sm:w-60 lg:w-48  grayscale-[35%]"
                 src={image}
-                alt=""
+                alt={`${name} project`}
             />
 
             <div className="flex flex-col gap-2 pt-1 pb-3 px-6 sm:px-0 mb-10">
@@ -59,7 +59,7 @@ const CardProject = ({ name, image, tags, description }: ICardProject) => {
                     <img
                         src={arrow}
                         className={`h-4 bottom-1 rotate-90`}
-                        alt=""
+                        alt="View full project"
                     />
                 </p>
             </button>

@@ -22,7 +22,7 @@ const ImageSlider = ({ images, isMobile }: { images: string[]; isMobile?: boolea
                             <img
                                 src={element}
                                 className="w-[220px] 2xl:w-[350px]"
-                                alt=""
+                                alt={`slider ${index}`}
                             />
                         </div>
                     ))}
@@ -57,7 +57,7 @@ const ImageSlider = ({ images, isMobile }: { images: string[]; isMobile?: boolea
                             <img
                                 src={element}
                                 className="w-[65vw] max-w-[280px]"
-                                alt=""
+                                alt={`slider ${index}`}
                             />
                         </div>
                     ))}

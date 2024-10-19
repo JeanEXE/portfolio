@@ -23,7 +23,7 @@ const ProjectPage = () => {
                     <img
                         src={state.logo}
                         className=" h-[150px] 2xl:h-[180px] "
-                        alt=""
+                        alt="project logo"
                     />
                     <div className="flex flex-wrap mt-3 mb-7  gap-4 ">
                         {state.tags.map((name: string, index: number) => (
@@ -54,7 +54,7 @@ const ProjectPage = () => {
                 <img
                     src={state.logo}
                     className=" h-[180px]"
-                    alt=""
+                    alt="project logo"
                 />
                 <div className="flex flex-wrap gap-4 justify-center">
                     {state.tags.map((name: string, index: number) => (

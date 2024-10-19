@@ -12,7 +12,7 @@ const ChallengeLearned = ({ challenge, learned, isMobile }: { challenge: string;
                 <img
                     src={iconChall}
                     className="h-7 2xl:h-9 mb-2"
-                    alt=""
+                    alt="target"
                 />
                 <p className="font-semibold text-[30px] 2xl:text-[40px] mb-4">{t("challenge")}</p>
                 <p className="text-[14px] 2xl:text-[16px]  text-textColor indent-4">{challenge}</p>
@@ -21,7 +21,7 @@ const ChallengeLearned = ({ challenge, learned, isMobile }: { challenge: string;
                 <img
                     src={iconLearn}
                     className="h-7 2xl:h-9 mb-2"
-                    alt=""
+                    alt="star"
                 />
                 <p className="font-semibold text-[30px] 2xl:text-[40px] mb-4">{t("learn")}</p>
                 <p className="text-[14px] 2xl:text-[16px]  text-textColor indent-4">{learned}</p>
@@ -36,7 +36,7 @@ const ChallengeLearned = ({ challenge, learned, isMobile }: { challenge: string;
                     <img
                         src={iconChall}
                         className="h-7 mr-3"
-                        alt=""
+                        alt="target"
                     />
                     <p className="font-semibold text-[28px]">{t("challenge")}</p>
                 </div>
@@ -47,7 +47,7 @@ const ChallengeLearned = ({ challenge, learned, isMobile }: { challenge: string;
                     <img
                         src={iconLearn}
                         className="h-7 mr-3"
-                        alt=""
+                        alt="star"
                     />
                     <p className="font-semibold text-[28px]">{t("learn")}</p>
                 </div>

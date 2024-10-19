@@ -32,14 +32,14 @@ const Switch = () => {
                     isToggled ? "animate-fade-in" : "hidden"
                 } rounded-sm absolute h-[11px] bottom-[4px] left-[5px] sm:h-[13px] sm:bottom-[4px] sm:left-[9px] z-10`}
                 src={pt}
-                alt=""
+                alt="brazil flag"
             />
             <img
                 className={`${
                     !isToggled ? "animate-fade-in" : "hidden"
                 } rounded-sm absolute h-[11px] bottom-[4px] right-[5px] sm:h-[13px] sm:bottom-[4px] sm:right-[9px] z-10`}
                 src={en}
-                alt=""
+                alt="uk flag"
             />
         </label>
     )

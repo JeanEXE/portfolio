@@ -5,7 +5,7 @@ const TRANSLATION = {
     "header.skills": "Skills",
     "header.contact": "Contact",
     //body
-    about: `Hello 👋, I'm Jean and I've been working as a developer since 2019. I worked as a Fullstack developer for some time, using Node.js on the backend, but my greatest experience is in frontend with React Native.
+    about: `Hello 👋, I'm Jean and I've been working as a developer since 2019. I worked as a Full Stack developer for some time, using Node.js on the backend, but my greatest experience is in frontend with React Native.
     
     Besides developing new features, I actively contribute to defining the architecture of applications, performance, code optimization, documentation, test coverage, and releasing updates to production. All while applying clean code concepts, design patterns, SOLID principles, responsive layouts, and agile development. I'm passionate about building successful products, teamwork, improving user experience, and efficiently solving problems.`,
     city: "SP, Brazil",
@@ -22,11 +22,11 @@ const TRANSLATION = {
     "portfolio.description": "A section with some projects I've worked on",
     "skills.description": "Some of my technical skills",
     //works
-    "work1.title": "Fullstack Developer at Flores Online / Isabela Flores",
+    "work1.title": "Full Stack Developer - Flores Online",
     "work1.description": `I actively participated in the development of 2 websites and 4 applications. In the apps, I worked from architecture definition to publishing, with a primary focus on frontend using React Native and backend with Node.js.
 
 More details on my LinkedIn.`,
-    "work2.title": "Frontend Developer at Compass.UOL",
+    "work2.title": "Frontend Developer - Compass.UOL",
     "work2.description": `I worked on the refactoring of a mobile project in React Native/TypeScript, responsible for defining the technologies to be used, design patterns, documentation, code reviews, branch/version control, feature development, and app store publishing.
     Currently, I continue to maintain and implement new features.
 

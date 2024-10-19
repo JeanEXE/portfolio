@@ -52,7 +52,7 @@ const Footer = () => {
                     <img
                         src={heart}
                         className="w-4"
-                        alt=""
+                        alt="heart icon"
                     />
                     .
                 </p>
@@ -64,7 +64,7 @@ const Footer = () => {
                     <img
                         src={react}
                         className="h-10 mb-[2px]"
-                        alt=""
+                        alt="React logo"
                     />{" "}
                     {t("footer.left.text5")}
                 </p>
@@ -73,7 +73,7 @@ const Footer = () => {
                     <img
                         src={tailwind}
                         className=" w-32"
-                        alt=""
+                        alt="Tailwind CSS logo"
                     />
                 </p>
             </div>
@@ -88,7 +88,7 @@ const Footer = () => {
                     <img
                         src={coffe}
                         className="w-5"
-                        alt=""
+                        alt="coffee icon"
                     />
                 </p>
             </div>
@@ -105,7 +105,7 @@ const Footer = () => {
                     <img
                         src={heart}
                         className="h-5 mt-[2px]"
-                        alt=""
+                        alt="heart icon"
                     />
                     . {t("footer.left.text2")}
                 </p>
@@ -114,7 +114,7 @@ const Footer = () => {
                     <img
                         src={react}
                         className="h-12 mb-[3px]"
-                        alt=""
+                        alt="React logo"
                     />
                     {t("footer.left.text5")}
                 </p>
@@ -123,7 +123,7 @@ const Footer = () => {
                     <img
                         src={tailwind}
                         className="w-36 h-20"
-                        alt=""
+                        alt="Tailwind CSS logo"
                     />
                 </p>
             </div>
@@ -134,7 +134,7 @@ const Footer = () => {
                     <img
                         src={coffe}
                         className="w-5"
-                        alt=""
+                        alt="coffee icon"
                     />
                 </p>
             </div>
@@ -156,7 +156,7 @@ const Footer = () => {
                     <img
                         src={arrow}
                         className="w-6 h-6 mr-3"
-                        alt=""
+                        alt="arrow pointing upwards"
                     />
                     <p className="text-[15px] 2xl:text-[17px] text-blue hover:font-semibold">{t("back-top")}</p>
                 </button>

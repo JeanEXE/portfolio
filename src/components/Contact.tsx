@@ -41,7 +41,7 @@ const Contact = () => {
                         <img
                             src={linkedin}
                             className="w-6 h-6 mr-4"
-                            alt=""
+                            alt="LinkedIn profile"
                         />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">Linkedin</p>
                     </a>
@@ -55,7 +55,7 @@ const Contact = () => {
                         <img
                             src={github}
                             className="w-6 h-6 mr-4"
-                            alt=""
+                            alt="GitHub profile"
                         />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-semibold hover:text-blue">GitHub</p>
                     </a>
@@ -66,7 +66,7 @@ const Contact = () => {
                         <img
                             src={gmail}
                             className="w-6 h-6 mr-4"
-                            alt=""
+                            alt="Email address"
                         />
                         <p className="h-6 overflow-hidden text-[14px] 2xl:text-[16px] font-light">jeanreis.dev@gmail.com</p>
                     </div>

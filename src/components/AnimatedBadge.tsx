@@ -9,12 +9,12 @@ const AnimatedBadge = () => {
                 <img
                     className=" rounded-full absolute ml-[33px] mt-[33px] z-10"
                     src={circle}
-                    alt=""
+                    alt="background circle decoration"
                 />
                 <img
                     className=" rounded-full border animate-spin-slow bg-black"
                     src={circleName}
-                    alt=""
+                    alt="name decoration"
                 />
             </div>
         </div>

@@ -9,7 +9,7 @@ const Feature = ({ title, image, tags, description, mobile }: IFeature) => {
                 <img
                     src={image}
                     className="w-[60vw] max-w-[350px]  rounded-md"
-                    alt=""
+                    alt={`feature ${title}`}
                 />
 
                 <div className="px-3 gap-5 flex flex-col text-center">
@@ -35,7 +35,7 @@ const Feature = ({ title, image, tags, description, mobile }: IFeature) => {
             <img
                 src={image}
                 className=" h-[400px] 2xl:h-[600px]  self-center rounded-md"
-                alt=""
+                alt={`feature ${title}`}
             />
 
             <div className=" w-1/2 py-4 gap-5 flex flex-col">

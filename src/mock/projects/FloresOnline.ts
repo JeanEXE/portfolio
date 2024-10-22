@@ -1,5 +1,5 @@
 import { IProjectPage } from "../../types/Types"
-import floresLogo from "../../assets/FloresOnline/floresLogo.png"
+import floresLogo from "../../assets/FloresOnline/flores-logo.png"
 import fol1 from "../../assets/FloresOnline/fol1.jpeg"
 import fol2 from "../../assets/FloresOnline/fol2.jpeg"
 import fol3 from "../../assets/FloresOnline/fol3.jpg"

@@ -1,5 +1,5 @@
 import { IProjectPage } from "../../types/Types"
-import gingo from "../../assets/img/g_business.png"
+import gingo from "../../assets/img/gingo-business.png"
 import ging1 from "../../assets/GingoBusiness/gingo1.jfif"
 import ging2 from "../../assets/GingoBusiness/gingo2.jfif"
 import ging3 from "../../assets/GingoBusiness/gingo3.jfif"

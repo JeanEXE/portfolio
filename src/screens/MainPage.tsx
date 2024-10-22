@@ -4,9 +4,9 @@ import { AnimatedBadge, CardProject, Contact, ExperienceSlider, Footer, Header, 
 import { SKILL_BAR } from "../mock"
 import { useTranslation } from "react-i18next"
 import isaLogo from "../assets/IsabelaFlores/isaLogo.png"
-import floresLogo from "../assets/FloresOnline/floresLogo.png"
+import floresLogo from "../assets/FloresOnline/flores-logo.png"
 import gingo from "../assets/img/gingo.png"
-import gBusiness from "../assets/img/g_business.png"
+import gBusiness from "../assets/img/gingo-business.png"
 
 function MainPage() {
     const refAbout = useRef()

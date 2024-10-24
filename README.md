@@ -1,26 +1,12 @@
-# Portfolio 💥💥
+# Portfolio 🐱‍👤
 
-![Screenshot](https://user-images.githubusercontent.com/56928460/190211830-750fd4eb-d329-419a-a4ca-671684649cfe.PNG)
--------------------------------------------------
-Projeto criado para praticar React.js ⚛ e aprender Tailwind 🍃, utilizei como referência o site do jogo Cyberpunk 2077. 👾
+## ![Screenshot](https://github.com/user-attachments/assets/7dfa10c8-e014-4c2d-b4b9-4713f752fa76)
 
+This project was created to practice React.js ⚛ and explore Tailwind CSS 🍃. For inspiration, I used the Cyberpunk 2077 game website as a reference.
 
-Site do portfolio 👉 https://www.jeanreis.dev
+Check out the live version of the portfolio website 👉 [jeanreis.dev](https://www.jeanreis.dev)
 
-* Site integrado e sendo monitorado via Firebase Analytics. 🤠
+-   Firebase Analytics integration for monitoring.
+-   Deployed with Vercel.
 
-* O deploy foi feito utilizando Vercel. 🎉
-
-* Feedbacks são bem vindos, obrigado. 🌹
-
--------------------------------------------------
-
-Project created to practice React.js ⚛ and learn Tailwind 🍃, I used the Cyberpunk 2077 game website as a reference. 👾
-
-Portfolio website 👉 https://www.jeanreis.dev
-
-* Integrated and being monitored via Firebase Analytics. 🤠
-
-* The deployment was done using Vercel. 🎉
-
-* Feedback is welcome, thanks. 🌹
+Thanks for checking it out!
